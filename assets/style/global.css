@@ -10,56 +10,70 @@ html {
 }
 
 body {
-    background-color: #FCF5E9;
+    background-color: #FCF5E9 !important;
 }
 
 .header {
-    display: flex;
-    max-width: 1200px;
-    width: 100%;
+    padding: 20px 0 !important;
+    display: flex; /* Add flexbox to the header */
+    justify-content: space-between; /* Distribute child elements horizontally */
     align-items: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
 }
 
-a {
-    margin: 0;
-    text-decoration: none;
-    font-weight: bold;
+.col-md-2 {
+    margin: 0 0 0 55px !important;
 }
 
-.logo-element {
-    width: 175px;
+.text-end {
+    margin: 0 !important;
 }
 
 .logo {
-    width: 100px;
+    width: 50%
 }
 
-.widget {
+.nav-bar {
     display: flex;
-    gap: 50px;
+    margin-left: 30px !important;
+}
+
+.nav-link {
     color: black;
-    margin-left: 75px;
+    text-decoration: none;
 }
 
-.widget-container ul {
-    font-size: 14px;
+.navbar-nav {
+    margin-right: 0 !important;
+}
+
+.nav-link:hover {
+    color: #c7daec;
+}
+
+.language {
     display: flex;
-    gap: 50px;
-    color: black;
-    list-style: none;
+    justify-content: center;
+    align-items: center;
+    margin: 0 !important;
 }
 
-.login-register ul {
+.language ul {
     display: flex;
-    list-style: none;
+    flex-wrap: nowrap;
 }
 
-.login-register ul li a{
-    display: flex;
+.language button {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    font-size: 16px;
+    cursor: pointer;
+}
+  
+.language button:hover {
+    background-color: transparent;
 }
 
-.login-register ul span {
-    margin: 0 10px;
+.cart {
+    width: 100%;
 }
