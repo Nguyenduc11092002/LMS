@@ -6,7 +6,6 @@
 }*/
 body {
     font-family: Arial, sans-serif;
-    background-color: #f8f3eb;
     margin: 0;
     padding: 0;
 }
@@ -25,51 +24,56 @@ body {
     padding-right: 20px;
 }
 
-.sidebar .widget {
+.sidebar .wrapper {
     background-color: #fff;
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 8px;
 }
 
-.sidebar .widget h2 {
+.sidebar .wrapper h2 {
     margin-top: 0;
 }
 
-.sidebar .widget ul {
+.sidebar .wrapper ul {
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
 .teachers {
-    width: 75%;
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
+    gap: 60px;
 }
 
 .teacher-card {
     background-color: #fff;
+    border: 1px solid #ddd;
     border-radius: 8px;
-    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
+    padding: 20px;
+    width: fit-content;
+    height: fit-content;
+    margin: 10%;
 }
 
 .teacher-card img {
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
+    width: 300px;
+    height: 300px;
     object-fit: cover;
-    margin-bottom: 10px;
 }
 
 .teacher-card h3 {
     margin: 10px 0 5px;
+    
 }
 
 .teacher-card p {
-    margin: 5px 0 10px;
+    color: #666;
+    margin: 0 0 20px;
     color: #d4813e;
 }
 
@@ -80,39 +84,42 @@ body {
     color: #d4813e;
 }
 
+.social-links img {
+    width: 24px;
+    height: 24px;
+}
 .teacher-card .social-links a:hover {
     color: #555;
 }
 
 .wrapper {
-    background-color: #fff;
     border: 1px solid #e1e1e1;
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 5px;
 }
-.widgettitle {
+.wrappertitle {
     font-size: 1.5em;
     margin-bottom: 10px;
     color: #333;
 }
-.widgettitle.align {
+.wrapertitle.align {
     border-bottom: 2px solid #a7c957;
     display: inline-block;
     padding-bottom: 5px;
 }
-.widget .wrapper ul {
+.wrapper .wrapper ul {
     list-style-type: none;
     padding-left: 0;
 }
-.widget .wrapper ul li {
+.wrapper .wrapper ul li {
     margin-bottom: 10px;
 }
-.widget .wrapper ul li a {
+.wrapper .wrapper ul li a {
     text-decoration: none;
     color: #333;
 }
-.widget .wrapper ul li a:hover {
+.wrapper .wrapper ul li a:hover {
     text-decoration: underline;
 }
 
@@ -178,7 +185,6 @@ a:-webkit-any-link {
     display: flex;
     gap: 10px;
 }
-
 .cart {
     height: 30px;
 }
