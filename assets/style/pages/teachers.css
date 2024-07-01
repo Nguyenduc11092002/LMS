@@ -1,1 +1,15 @@
 /* CSS Teachers */
+.banner {
+    background-color: #d4813e;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+.banner h1 {
+    margin: 0;
+    font-size: 36px;
+}
+.banner p {
+    margin: 0;
+    font-size: 16px;
+}
