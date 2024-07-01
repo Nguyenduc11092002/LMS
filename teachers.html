@@ -1,38 +1,55 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Teachers</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="./assets/style/global.css">
-        <link rel="stylesheet" href="./assets/style/pages/teachers.css">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/i18next/23.11.5/i18next.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/i18next-browser-languagedetector/6.1.2/i18nextBrowserLanguageDetector.min.js"></script>
-    </head>
-    <body>
-        <header class="header">
-            <a href="#" class="logo-element">
-                <img class="logo" src="assets/img/icon/lms-logo.png" alt="lms_logo">
-            </a>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Teachers</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./assets/style/global.css" />
+    <link rel="stylesheet" href="./assets/style/pages/teachers.css" />
+    <script src="https://unpkg.com/i18next@21.8.5/dist/umd/i18next.min.js"></script>
+    <script src="https://unpkg.com/i18next-http-backend@1.4.2/i18nextHttpBackend.min.js"></script>
+    <script src="/assets/script/i18next-setup.js" defer></script>
+    <script src="/assets/script/teachers.js"></script>
+  </head>
+  <body>
+    
+    <header class="header">
+      <a href="#" class="logo-element">
+        <img class="logo" src="assets/img/lms-logo.png" alt="lms_logo" />
+      </a>
 
-            <div class="widget">
-                <div class="widget-container">
-                    <ul>
-                        <li><a href="#">HOME</a></li>
-                        <li><a href="#">COURSE</a></li>
-                        <li><a href="#">PAGES</a></li>
-                        <li><a href="#">BLOG</a></li>
-                        <li><a href="#">GALLERY</a></li>
-                        <li><a href="#">SHOP</a></li>
-                        <li><a href="#">CONTACT</a></li>
-                    </ul>
-                </div>
+      <div class="widget">
+        <div class="widget-container">
+          <ul>
+            <li>
+              <a data-i18n="translation.menuHome" href="home-page.html">HOME</a>
+            </li>
+            <li>
+              <a data-i18n="translation.menuCourse" href="course-template.html"
+                >COURSE</a
+              >
+            </li>
+            <li><a data-i18n="translation.menuPages" href="#">PAGES</a></li>
+            <li><a data-i18n="translation.menuBlog" href="#">BLOG</a></li>
+            <li><a data-i18n="translation.menuGallery" href="#">GALLERY</a></li>
+            <li><a data-i18n="translation.menuShop" href="#">SHOP</a></li>
+            <li>
+              <a data-i18n="translation.menuContact" href="contact.html"
+                >CONTACT</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="language-switcher">
+          <button id="en-button">English</button>
+          <button id="vi-button">Vietnamese</button>
+        </div>
 
-                <button id="changeLanguageBtn">Vietnamese</button>
-                
-                <img class="cart" src="" alt="a">
+        <img class="cart" src="" alt="a" />
+      </div>
+    </header>
 
             </div>
         </header>
@@ -40,7 +57,173 @@
         <main>
             <div class="banner">
                 <h1>Teachers</h1>
-                <p>Home / Teachers</p>
+                <p><a class="title_home" data-i18n="translation.menuHome" href="home-page.html">Home</a> / Teachers</p>
+            </div>
+            <div class="container">
+                <div class="wrapper">
+                  
+                  <div class="container-content">
+                    <aside class="sidebar">
+                        <div class="widget-categories">
+                            <h2>Categories</h2>
+                            <ul>
+                                <li>Uncategorized (7)</li>
+                            </ul>
+                        </div>
+        
+                        <div class="widget-recent-comments">
+                            <h2>Recent Comments</h2>
+                            <ul>
+                                <li>dtimsele on Application Developement</li>
+                                <li>dummy on Power Electronics</li>
+                                <li>kowsi on Video Game Technologies</li>
+                                <li>ram on Advanced Programming</li>
+                                <li>ram on Processing Digital Signal</li>
+                            </ul>
+                        </div>
+        
+                        <div class="widget-archives">
+                            <h2>Archives</h2>
+                            <ul>
+                                <li>November 2023</li>
+                            </ul>
+                        </div>
+        
+                        <div class="widget-tags">
+                            <h2>Tags</h2>
+                            <ul>
+                                <li><a href="#">BLOG</a></li>
+                                <li><a href="#">CHAT</a></li>
+                                <li><a href="#">TIPS</a></li>
+                            </ul>
+                        </div>
+                    </aside>
+        
+                    <section class="teachers">
+                        <div class="teacher-card">
+                            <img src="/assets/img/Teacher-image-1.jpg" alt="Damie Glendell">
+                            <h3>Damie Glendell</h3>
+                            <p>Co-Director</p>
+                            <div class="social-links">
+                                <a href="#">&#xf09a;</a>
+                                <a href="#">&#xf099;</a>
+                                <a href="#">&#xf0d2;</a>
+                            </div>
+                        </div>
+                        <div class="teacher-card">
+                            <img src="/assets/img/Teacher-image-2.jpg" alt="James Catwin">
+                            <h3>James Catwin</h3>
+                            <p>Art Director</p>
+                            <div class="social-links">
+                                <a href="#">&#xf09a;</a>
+                                <a href="#">&#xf099;</a>
+                                <a href="#">&#xf0d2;</a>
+                            </div>
+                        </div>
+                        <div class="teacher-card">
+                            <img src="/assets/img/Teacher-image-3.jpg" alt="Jenny Sheen">
+                            <h3>Jenny Sheen</h3>
+                            <p>Digital Media Programming</p>
+                            <div class="social-links">
+                                <a href="#">&#xf09a;</a>
+                                <a href="#">&#xf099;</a>
+                                <a href="#">&#xf0d2;</a>
+                            </div>
+                        </div>
+                        <div class="teacher-card">
+                            <img src="/assets/img/Teacher-image-4.jpg" alt="Jim Morrison">
+                            <h3>Jim Morrison</h3>
+                            <p>Chief Programmer</p>
+                            <div class="social-links">
+                                <a href="#">&#xf09a;</a>
+                                <a href="#">&#xf099;</a>
+                                <a href="#">&#xf0d2;</a>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+        
+
+                  <div class="theiaStickySidebar">
+                    <aside id="categories-3" class="widget-widget_categories">
+                      <h2 class="widgettitle align">Categories</h2>
+                      <ul>
+                          <li class="cat-item-cat-item-1">
+                              <a href="https://dtlmselementor.wpengine.com/category/uncategorized/">Uncategorized</a> (7)
+                          </li>
+                      </ul>
+                    </aside>
+              
+                    <aside id="recent-comments-3" class="widget-widget_recent_comments">
+                        <h2 class="widgettitle align">Recent Comments</h2>
+                        <ul>
+                            <li class="recentcomments"><span class="comment-author-link"><a href="https://dtlmselementor.wpengine.com/">dtlmsele</a></span> on <a href="https://dtlmselementor.wpengine.com/product/application-developement/#comment-52">Application Developement</a></li>
+                            <li class="recentcomments"><span class="comment-author-link">dummy</span> on <a href="https://dtlmselementor.wpengine.com/courses/power-electronics/#comment-51">Power Electronics</a></li>
+                            <li class="recentcomments"><span class="comment-author-link">kowsi</span> on <a href="https://dtlmselementor.wpengine.com/product/video-game-technologies/#comment-50">Video Game Technologies</a></li>
+                            <li class="recentcomments"><span class="comment-author-link">ram</span> on <a href="https://dtlmselementor.wpengine.com/courses/advanced-programming/#comment-3">Advanced Programming</a></li>
+                            <li class="recentcomments"><span class="comment-author-link">ram</span> on <a href="https://dtlmselementor.wpengine.com/courses/processing-digital-signal/#comment-5">Processing Digital Signal</a></li>
+                        </ul>
+                    </aside>
+                    <aside id="archives-3" class="widget-widget_archives"> <!--archives-->
+                      <h2 class="widgettitle align">Archives</h2>
+                      <ul>
+                          <li class="cat-item-cat-item-1">
+                              <a href="#">November 2023</a>
+                          </li>
+                      </ul>
+                  </aside>
+              
+                  <aside id="tag-cloud-3" class="widget-widget_tag_cloud"> <!--tags-->
+                      <h2 class="widgettitle align">Tags</h2>
+                      <div class="tag-cloud">
+                          <a href="#">BLOG</a>
+                          <a href="#">CHAT</a>
+                          <a href="#">TIPS</a>
+                      </div>
+                  </aside>
+                  <aside id="recent-posts-3" class="widget-recent-posts"> <!--no heading-->
+                    <h2 class="widgettitle align">Recent Posts</h2>
+                    <ul>
+                        <li>
+                            <a href="#" class="post-title">Contrary to popular</a>
+                            <div class="post-meta">
+                                <span class="date">30 Thu</span>
+                                <span class="comments">0</span>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#" class="post-title">Omnis voluptas assumenda</a>
+                            <div class="post-meta">
+                                <span class="date">30 Thu</span>
+                                <span class="comments">0</span>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#" class="post-title">Piece of classical</a>
+                            <div class="post-meta">
+                                <span class="date">30 Thu</span>
+                                <span class="comments">0</span>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#" class="post-title">Latin professor at Hampden</a>
+                            <div class="post-meta">
+                                <span class="date">30 Thu</span>
+                                <span class="comments">0</span>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#" class="post-title">Latin words Ipsum</a>
+                            <div class="post-meta">
+                                <span class="date">30 Thu</span>
+                                <span class="comments">0</span>
+                            </div>
+                        </li>
+                    </ul>
+                </aside>
+ 
+                  </div>
+                </div>
             </div>
         </main>
       
@@ -48,4 +231,7 @@
         <script src="/assets/script/teachers.js"></script>   
     </body>
    
+</html>
+    <main></main>
+  </body>
 </html>

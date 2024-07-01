@@ -1,15 +1,184 @@
 /* CSS Teachers */
+/*body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    padding: 0px;
+}*/
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f3eb;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    max-width: 1200px;
+    width: 100%;
+}
+.content {
+    display: flex;
+    padding: 20px 0;
+}
+
+.sidebar {
+    width: 25%;
+    padding-right: 20px;
+}
+
+.sidebar .widget {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.sidebar .widget h2 {
+    margin-top: 0;
+}
+
+.sidebar .widget ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.teachers {
+    width: 75%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.teacher-card {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+}
+
+.teacher-card img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.teacher-card h3 {
+    margin: 10px 0 5px;
+}
+
+.teacher-card p {
+    margin: 5px 0 10px;
+    color: #d4813e;
+}
+
+.teacher-card .social-links a {
+    text-decoration: none;
+    font-size: 20px;
+    margin: 0 5px;
+    color: #d4813e;
+}
+
+.teacher-card .social-links a:hover {
+    color: #555;
+}
+
+.wrapper {
+    background-color: #fff;
+    border: 1px solid #e1e1e1;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+.widgettitle {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #333;
+}
+.widgettitle.align {
+    border-bottom: 2px solid #a7c957;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+.widget .wrapper ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+.widget .wrapper ul li {
+    margin-bottom: 10px;
+}
+.widget .wrapper ul li a {
+    text-decoration: none;
+    color: #333;
+}
+.widget .wrapper ul li a:hover {
+    text-decoration: underline;
+}
+
+
+title_home a:-webkit-any-link {
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+a:-webkit-any-link {
+    color: rgb(15, 13, 13);
+    cursor: pointer;
+}
 .banner {
     background-color: #d4813e;
     color: white;
     padding: 20px;
-    text-align: center;
+    text-align: left;
 }
 .banner h1 {
-    margin: 0;
     font-size: 36px;
+    max-width: 1200px;
+    width: 100%;
 }
 .banner p {
-    margin: 0;
     font-size: 16px;
+    max-width: 1200px;
+    width: 100%;
+}
+.banner:hover a{
+    color: black;
+}
+.recent-posts ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+.recent-posts ul li {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #e1e1e1;
+    padding-bottom: 10px;
+}
+.recent-posts ul li:last-child {
+    border-bottom: none;
+}
+.recent-posts .post-title {
+    font-size: 1.2em;
+    color: #333;
+    text-decoration: none;
+}
+.recent-posts .post-title:hover {
+    text-decoration: underline;
+}
+.post-meta {
+    font-size: 0.9em;
+    color: #a7c957;
+}
+.post-meta span {
+    margin-right: 10px;
+}
+.post-meta .comments {
+    color: #a7c957;
+}
+.language-switcher {
+    display: flex;
+    gap: 10px;
+}
+
+.cart {
+    height: 30px;
 }
