@@ -1,48 +1,54 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Home Page</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="./assets/style/global.css">
-        <link rel="stylesheet" href="./assets/style/pages/home-page.css">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/i18next/23.11.5/i18next.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/i18next-browser-languagedetector/6.1.2/i18nextBrowserLanguageDetector.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/i18next-http-backend/1.3.1/i18nextHttpBackend.min.js"></script>
-    </head>
-    <body>
-        <header class="header">
-            <a href="#" class="logo-element">
-                <img class="logo" src="assets/img/icon/lms-logo.png" alt="lms_logo">
-            </a>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Home Page</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./assets/style/global.css" />
+    <link rel="stylesheet" href="./assets/style/pages/home-page.css" />
+    <script src="https://unpkg.com/i18next@21.8.5/dist/umd/i18next.min.js"></script>
+    <script src="https://unpkg.com/i18next-http-backend@1.4.2/i18nextHttpBackend.min.js"></script>
+    <script src="/assets/script/i18next-setup.js" defer></script>
+    <script src="/assets/script/home-page.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <a href="#" class="logo-element">
+        <img class="logo" src="assets/img/icon/lms-logo.png" alt="lms_logo" />
+      </a>
 
-            <div class="widget">
-                <div class="widget-container">
-                    <ul>
-                        <li><a href="#" id="home">HOME</a></li>
-                        <li><a href="#" id="course">COURSE</a></li>
-                        <li><a href="#" id="pages">PAGES</a></li>
-                        <li><a href="#" id="blog">BLOG</a></li>
-                        <li><a href="#" id="gallery">GALLERY</a></li>
-                        <li><a href="#" id="shop">SHOP</a></li>
-                        <li><a href="#" id="contact">CONTACT</a></li>
-                    </ul>
-                </div>
+      <div class="widget">
+        <div class="widget-container">
+          <ul>
+            <li>
+              <a data-i18n="translation.menuHome" href="home-page.html">HOME</a>
+            </li>
+            <li>
+              <a data-i18n="translation.menuCourse" href="course-template.html"
+                >COURSE</a
+              >
+            </li>
+            <li><a data-i18n="translation.menuPages" href="#">PAGES</a></li>
+            <li><a data-i18n="translation.menuBlog" href="#">BLOG</a></li>
+            <li><a data-i18n="translation.menuGallery" href="#">GALLERY</a></li>
+            <li><a data-i18n="translation.menuShop" href="#">SHOP</a></li>
+            <li>
+              <a data-i18n="translation.menuContact" href="contact.html"
+                >CONTACT</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="language-switcher">
+          <button id="en-button">English</button>
+          <button id="vi-button">Vietnamese</button>
+        </div>
+        <img class="cart" src="" alt="a" />
+      </div>
+    </header>
 
-                <button id="changeLanguageBtn">Vietnamese</button>
-                <img class="cart" src="" alt="a">
-
-            </div>
-        </header>
-
-        <main>
-            
-        </main>
-      
-        <script src="/assets/script/i18next.js"></script>     
-        <script src="/assets/script/home-page.js"></script>
-    </body>
-   
+    <main></main>
+  </body>
 </html>

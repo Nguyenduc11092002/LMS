@@ -1,10 +1,14 @@
 {
-  "menuHome": "HOME",
-  "menuCourse": "COURSE",
-  "menuPages": "PAGES",
-  "menuBlog": "BLOG",
-  "menuGallery": "GALLERY",
-  "menuShop": "SHOP",
-  "menuContact": "CONTACT"
+  "translation":{
+    "menuHome": "HOME",
+    "menuCourse": "COURSE",
+    "menuPages": "PAGES",
+    "menuBlog": "BLOG",
+    "menuGallery": "GALLERY",
+    "menuShop": "SHOP",
+    "menuContact": "CONTACT"
+  
+  }
+ 
 
 }
