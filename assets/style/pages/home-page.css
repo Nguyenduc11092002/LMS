@@ -1,3 +1,87 @@
+/* Blog - Phat */
+.blog{
+    max-width: 1200px;
+    margin: 0;
+}
+.blog-title h1{
+    font-weight: 400;
+    font-size: 24px;
+}
+.blog img{
+    max-width: 100%;
+}
+.btn-group-vertical{
+    display:grid;
+}
+.blog-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+.blog-cards {
+    display: flex;
+    text-align: center;
+    flex-wrap:wrap ;
+    gap: 15px;
+}
+.blog-card {
+    flex: 0 1 30%;
+    max-width: 30%;
+    border: none;
+}
+.btn-btn-primary1{
+    height: 45px;
+    width: 70px;
+}
+.btn-btn-primary2{
+    width: 69px;
+    height: 34px;
+    cursor: pointer;
+}
+.btn-btn-primary2 :hover{
+    background-image:rgb(228, 101, 3);
+} 
+.card-body{
+    display: flex;
+    margin: 0;
+}
+.blog-card-tile{
+    text-align: left;
+    margin-right: 60px;
+}
+.card-title{
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+.card-text1{
+    font-size: 14px;
+    margin-top: 10px;
+}
+.card-text{
+    font-size: 14px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.card-text:hover{
+    color:rgb(228, 101, 3);
+}
+@media (max-width: 768px) {
+    .blog-card {
+        flex: 0 1 45%; /* Two cards per row on medium screens */
+        max-width: 45%;
+    }
+}
+@media (max-width: 576px) {
+    .blog-card {
+        flex: 0 1 100%; /* One card per row on small screens */
+        max-width: 100%;
+    }
+}
+
+
 .courses {
     max-width: 1200px;
     padding: 70px 0px 70px 0px;
@@ -119,11 +203,11 @@
 }
 
 .left::before {
-    right: -45px;
+    right: -39px;
 }
 
 .right::before {
-    left: -45px;
+    left: -41px;
 }
 
 .process__content {
@@ -193,7 +277,7 @@
 }
 
 .process__text_right::after {
-    left: -34px;
+    left: -36px;
 }
 
 .process__step::before {
@@ -207,12 +291,12 @@
 }
 
 .process__step_first::before {
-    right: -45px;
+    right: -39px;
     top: 0px;
 }
 
 .process__step_final::before {
-    left: -45px;
+    left: -41px;
     bottom: -100px;
     z-index: 2;
 }
