@@ -21,7 +21,22 @@
     "Home/ Contact": "Home/ Contact",
     "Give": "Give Us A Message",
     "Contact": "Contact Info",
-    "The": "The Design Themes Inc. Mary Jane St, Sydney 2233 Australia."
+    "The": "The Design Themes Inc. Mary Jane St, Sydney 2233 Australia.",
+
+
+
+    "Process": "OUR PROCESS",
+    "Step01": "Step 01",
+    "Step02": "Step 02",
+    "Step03": "Step 03",
+    "Step04": "Step 04",
+    "SearchStep": "Search for your course",
+    "LessonStep": "Take a Sample Lesson",
+    "PreviewStep": "Preview the Syllabus",
+    "PurchaseStep": "Purchase the Course",
+    "testText": "Nemo enim ipsam voluptatem quia voluptas sit atur aut odit aut fugit, sed quia consequuntur magni res."
+    
   }  
+    
 }
 
