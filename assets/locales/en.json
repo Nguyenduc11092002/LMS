@@ -7,7 +7,13 @@
     "menuGallery": "GALLERY",
     "menuShop": "SHOP",
     "menuContact": "CONTACT",
-    "cardTitle": "Contrary to popular belief"
+    "cardTitle": "Contrary to popular belief",
+    "blogEvent":"UPCOMING EVENTS",
+    "blogGetin": "GET IN TOUCH WITH US",
+    "blogFooter":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia alias, doloremque at eum nobis nemo amet officia suscipit asperiores esse tempora maxime iusto consectetur magnam, error, accusantium enim est tempore.",
+    "blogCardDetail": "Welcoming 25th Batch",
+    "blogCardTime": "December 12,2024@8:00 am -December 13,2025 @ 5:00 pm",
+    "blogCardAddress": "Peppard Hill, United States"
   }
  
 
