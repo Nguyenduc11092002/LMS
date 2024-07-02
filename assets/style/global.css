@@ -20,8 +20,8 @@ body {
     align-items: center;
 }
 
-.col-md-2 {
-    margin: 0 0 0 55px !important;
+.header .col-md-2 {
+    margin: 0 !important;
 }
 
 .text-end {
@@ -29,12 +29,12 @@ body {
 }
 
 .logo {
-    width: 50%
+    width: 45%
 }
 
 .nav-bar {
     display: flex;
-    margin-left: 30px !important;
+    margin-right: 100px !important;
 }
 
 .nav-link {
@@ -55,13 +55,14 @@ body {
     justify-items: center;
     align-items: center;
     margin-right: 30px;
+    font-size: 14px;
 }
 
 .language {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 !important;
+    margin: 0px !important;
 }
 
 .language ul {
@@ -73,7 +74,7 @@ body {
     background-color: transparent;
     border: none;
     padding: 0;
-    font-size: 16px;
+    font-size: 14px;
     cursor: pointer;
 }
 
@@ -117,7 +118,7 @@ body {
 .nav-item.active {
     border: 2px solid black;
     border-radius: 3px;
-    padding: 3px 10px;
+    padding: 0 20px;
     background-color: #FCF5E9;
 }
 
