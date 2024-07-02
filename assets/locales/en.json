@@ -1,21 +1,18 @@
 {
-  "translation":{
+  "translation": {
     "menuHome": "HOME",
     "menuCourse": "COURSE",
     "menuPages": "PAGES",
     "menuBlog": "BLOG",
     "menuGallery": "GALLERY",
     "menuShop": "SHOP",
-    "menuContact": "CONTACT"
-  
-  }
- 
+    "menuContact": "CONTACT",
+    "cardTitle": "Contrary to popular belief",
 
-}
-
-{
-  "contact":{
-    "contact-layout-2": "Contact-layout-2"
-
+    "contact": "Contact",
+    "Home/ Contact": "Home/ Contact",
+    "Give": "Give Us A Message",
+    "Contact": "Contact Info",
+    "The": "The Design Themes Inc. Mary Jane St, Sydney 2233 Australia."
   }
 }

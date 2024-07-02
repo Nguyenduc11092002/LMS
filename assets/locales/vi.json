@@ -6,17 +6,14 @@
     "menuBlog": "BLOG",
     "menuGallery": "HÌNH ẢNH",
     "menuShop": "CỬA HÀNG",
-    "menuContact": "LIÊN HỆ"
-   
+    "menuContact": "LIÊN HỆ",
+    "cardTitle": "Trái ngược với niềm tin phổ biến",
 
-  }
-  
-}
-
-{
-  "contact":{
-    "contact-layout-2": "Bố cục liên hệ 2"
-
+    "contact": "liên hệ",
+    "Home/ Contact": "Nhà/ Liên hệ",
+    "Give": "Gửi tin nhắn cho chúng tôi",
+    "Contact": "Thông tin liên hệ",
+    "The": "Công ty TNHH Thiết kế Chủ đề, Đường Mary Jane, Sydney 2233, Úc.",
+    "Send": "Gửi Email"
   }
 }
-

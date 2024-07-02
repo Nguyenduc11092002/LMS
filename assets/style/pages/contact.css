@@ -1,5 +1,3 @@
-/* CSS Contact */
-/* send mail */
 .contact-form {
   background-color: #fdf6ea;
   width: 100%;
@@ -29,6 +27,10 @@
   border-radius: 4px;
 }
 
+.contact-home a {
+  color: #fff;
+}
+
 textarea {
   resize: none;
   height: 100px;
@@ -42,13 +44,6 @@ button {
   border-radius: 4px;
   cursor: pointer;
 }
-/* label {
-  pointer-events: none;
-  position: absolute;
-  top: 50%;
-  left: 5px;
-  transform: translateY(-50%);
-} */
 .form-group input:focus + label {
   top: 0px;
 }
@@ -77,55 +72,59 @@ button:hover {
   width: 800px;
 }
 
-/*form-contact-layout*/
-
 .container-contact {
   display: grid;
 }
 
+.contact-button #btn-contactsubmit {
+  margin-left: 680px;
+}
+
 .contact-box {
+  padding-top: 60px;
   display: grid;
   grid-template-columns: 2fr 1fr;
   background-color: #fdf6ea;
-  /* gap: 0px; */
 }
-.contact-button #btn-contactsubmit {
-  margin-left: 720px;
-}
+
 .contact-left {
   /* chỉ để hiển thị rõ ràng */
-  /* margin-left: 350px; */
-  margin-left: auto;
+  margin-left: 350px;
+  /* margin-left: auto; */
   /* padding: 20px; */
 }
 .contact-right {
-  /* chỉ để hiển thị rõ ràng */
-  /* padding: 20px; */
-  margin-right: auto;
+  margin-left: -40px;
 }
 .info-item {
   display: flex;
-  align-items: center;
-  margin-bottom: 15px;
-  margin-top: 35px;
-  height: auto;
+  gap: 10px;
+  height: 80px;
+}
+/*sửa*/
+.info-item .icon {
+  margin: 0;
+}
+.info-item .info-text {
+  margin: 0;
 }
 
 .icon {
   font-size: 24px;
   color: #f08000;
-  margin-right: 15px;
 }
 .info-item > i {
   /* border-bottom: solid 1px #f08000; */
 }
 .info-text {
-  color: #5d5b5b;
+  gap: 10px;
+  justify-content: space-between;
   font-size: 16px;
-  border-bottom: solid 1px #b9b9b9;
 }
 .form-group {
   margin-right: 120px;
+  /* margin-bottom: 15px;
+  position: relative; */
 }
 
 .form-contact-layout {
@@ -135,8 +134,14 @@ button:hover {
 }
 .form-contact-layout h2 {
   color: white;
-  margin-right: 100px;
+  size: 100px;
+  margin-left: 320px;
 }
+.contact-home-layout {
+  margin-left: 320px;
+  color: #fff;
+}
+
 .contact-map {
   width: 100%;
   background-color: #fdf6ea;

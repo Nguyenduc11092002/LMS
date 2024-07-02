@@ -49,9 +49,9 @@ document
         };
 
         // Display form data
-        // alert(
-        //   `Form Data:\nName: ${formData.name}\nEmail: ${formData.email}\nPhone: ${formData.phone}\nMessage: ${formData.message}`
-        // );
+        alert(
+          `Form Data:\nName: ${formData.name}\nEmail: ${formData.email}\nPhone: ${formData.phone}\nMessage: ${formData.message}`
+        );
 
         spinner.style.display = "none"; // Hide spinner after form submission
       }, 1000); // Simulate a 1-second delay for form submission
