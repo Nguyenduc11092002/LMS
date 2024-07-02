@@ -81,17 +81,18 @@ body {
     padding: 10px;
     background-color: #f9f9f9;
     border-radius: 5px;
-    width: fit-content;
-    height: fit-content;
+    width: 280px;
+    height: 460px;
 
 }
 .teacher-card:hover {
     color: #808080;
     background-color: #838C48;
+    display:flex;
 }
 .teacher-card img {
     width: 260px;
-    height: 260px;
+    height: 280px;
     object-fit: cover;
 }
 
@@ -143,6 +144,15 @@ body {
     display: inline-block;
     padding-bottom: 5px;
 }
+
+
+.wrapper_tag_cloud{
+    border-bottom: 2px solid #a7c957;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+
 .wrapper .wrapper ul {
     list-style-type: none;
     padding-left: 0;
