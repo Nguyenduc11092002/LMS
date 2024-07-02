@@ -38,11 +38,13 @@
 .btn-btn-primary1{
     height: 45px;
     width: 70px;
+    background: none;
 }
 .btn-btn-primary2{
     width: 69px;
     height: 34px;
     cursor: pointer;
+    background: none;
 }
 .btn-btn-primary2 :hover{
     background-image:rgb(228, 101, 3);
@@ -72,6 +74,60 @@
 .card-text:hover{
     color:rgb(228, 101, 3);
 }
+
+
+.blog-container {
+    position: relative;
+  
+  }
+  
+  /* Make the image to responsive */
+ 
+  /* The overlay effect (full height and width) - lays on top of the container and over the image */
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: none;
+    overflow: hidden;
+    width: 80%;
+    height: 80%;
+    transform: scale(0);
+    transition: .3s ease;
+  }
+  
+  /* When you mouse over the container, the overlay text will "zoom" in display */
+  .container:hover .overlay {
+    transform: scale(1);
+  }
+  
+  /* Some text inside the overlay, which is positioned in the middle vertically and horizontally */
+  .text {
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (max-width: 768px) {
     .blog-card {
         flex: 0 1 45%; /* Two cards per row on medium screens */
