@@ -21,7 +21,7 @@ body {
 }
 
 .header .col-md-2 {
-    margin: 0 0 0 110px !important;
+    margin: 0 !important;
 }
 
 .text-end {
@@ -34,7 +34,7 @@ body {
 
 .nav-bar {
     display: flex;
-    margin-left: 30px !important;
+    margin-right: 100px !important;
 }
 
 .nav-link {
@@ -54,7 +54,7 @@ body {
     display: flex;
     justify-items: center;
     align-items: center;
-    margin-right: 25px;
+    margin-right: 30px;
     font-size: 14px;
 }
 
@@ -62,7 +62,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 !important;
+    margin: 0px !important;
 }
 
 .language ul {
@@ -118,7 +118,7 @@ body {
 .nav-item.active {
     border: 2px solid black;
     border-radius: 3px;
-    padding: 0 15px;
+    padding: 0 20px;
     background-color: #FCF5E9;
 }
 
