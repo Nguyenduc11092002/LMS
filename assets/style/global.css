@@ -1,65 +1,66 @@
 * {
-    padding: 0; 
-    margin: 0 auto;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0 auto;
+  box-sizing: border-box;
 }
 
 html {
-    font-family: 'Open Sans', sans-serif;
-    scroll-behavior: smooth;
+  font-family: "Open Sans", sans-serif;
+  scroll-behavior: smooth;
 }
 
 body {
-    background-color: #FCF5E9;
+  background-color: #fcf5e9;
 }
 
 .header {
-    display: flex;
-    max-width: 1200px;
-    width: 100%;
-    align-items: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
+  display: flex;
+  max-width: 1200px;
+  width: 100%;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: #fdf6ea;
 }
 
 a {
-    margin: 0;
-    text-decoration: none;
-    font-weight: bold;
+  margin: 0;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 .logo-element {
-    width: 175px;
+  width: 175px;
 }
 
 .logo {
-    width: 100px;
+  width: 100px;
 }
 
 .widget {
-    display: flex;
-    gap: 50px;
-    color: black;
-    margin-left: 75px;
+  display: flex;
+  gap: 50px;
+  color: black;
+  margin-left: 75px;
 }
 
 .widget-container ul {
-    font-size: 14px;
-    display: flex;
-    gap: 50px;
-    color: black;
-    list-style: none;
+  font-size: 14px;
+  display: flex;
+  gap: 50px;
+  color: black;
+  list-style: none;
 }
 
-.login-register  { 
-    display: flex;
-    list-style: none;
+.login-register {
+  display: flex;
+  list-style: none;
 }
 
-.login-register ul li a{
-    display: flex;
+.login-register ul li a {
+  display: flex;
 }
 
 .login-register ul span {
-    margin: 0 10px;
+  margin: 0 10px;
 }
