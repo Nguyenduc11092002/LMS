@@ -6,8 +6,16 @@
     "menuBlog": "BLOG",
     "menuGallery": "HÌNH ẢNH",
     "menuShop": "CỬA HÀNG",
-    "menuContact": "LIÊN HỆ"
-   
-
+    "menuContact": "LIÊN HỆ",
+    "Process": "QUÁ TRÌNH CỦA CHÚNG TÔI",
+    "Step01": "Bước 01",
+    "Step02": "Bước 02",
+    "Step03": "Bước 03",
+    "Step04": "Bước 04",
+    "SearchStep": "Tìm kiếm khóa học của bạn",
+    "LessonStep": "Tham gia một bài học mẫu",
+    "PreviewStep": "Xem trước giáo trình",
+    "PurchaseStep": "Mua khóa học",
+    "testText": "Vì không ai tránh né, ghét bỏ hay chạy trốn niềm vui vì đó là niềm vui, mà vì kết quả là những điều tuyệt vời."
   }
 }

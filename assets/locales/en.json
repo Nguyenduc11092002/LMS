@@ -6,8 +6,17 @@
     "menuBlog": "BLOG",
     "menuGallery": "GALLERY",
     "menuShop": "SHOP",
-    "menuContact": "CONTACT"
-  
+    "menuContact": "CONTACT",
+    "Process": "OUR PROCESS",
+    "Step01": "Step 01",
+    "Step02": "Step 02",
+    "Step03": "Step 03",
+    "Step04": "Step 04",
+    "SearchStep": "Search for your course",
+    "LessonStep": "Take a Sample Lesson",
+    "PreviewStep": "Preview the Syllabus",
+    "PurchaseStep": "Purchase the Course",
+    "testText": "Nemo enim ipsam voluptatem quia voluptas sit atur aut odit aut fugit, sed quia consequuntur magni res."
   }
  
 
