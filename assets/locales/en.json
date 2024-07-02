@@ -1,5 +1,5 @@
 {
-  "translation":{
+  "translation": {
     "menuHome": "HOME",
     "menuCourse": "COURSE",
     "menuPages": "PAGES",
@@ -13,8 +13,15 @@
     "blogFooter":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia alias, doloremque at eum nobis nemo amet officia suscipit asperiores esse tempora maxime iusto consectetur magnam, error, accusantium enim est tempore.",
     "blogCardDetail": "Welcoming 25th Batch",
     "blogCardTime": "December 12,2024@8:00 am -December 13,2025 @ 5:00 pm",
-    "blogCardAddress": "Peppard Hill, United States"
-  }
- 
+    "blogCardAddress": "Peppard Hill, United States",
 
+
+
+    "contact": "Contact",
+    "Home/ Contact": "Home/ Contact",
+    "Give": "Give Us A Message",
+    "Contact": "Contact Info",
+    "The": "The Design Themes Inc. Mary Jane St, Sydney 2233 Australia."
+  }  
 }
+
