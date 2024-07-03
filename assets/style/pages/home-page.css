@@ -152,106 +152,109 @@ body, html {
 }
 
 
-/* This is Course part */
-.courses {
-  max-width: 1200px;
+
+
+
+/* Blog - Phat */
+.blog{
+    max-width: 1200px;
 }
 
 .courses__title {
-  text-align: left;
-  position: relative;
-  display: block;
-  text-transform: uppercase;
-  padding-bottom: 10px;
-  color: rgb(48, 48, 48);
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 1.2rem;
-  margin-bottom: 30px;
+    text-align: left;
+    position: relative;
+    display: block;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+    color: rgb(48, 48, 48);
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.2rem;
+    margin-bottom: 30px;
 }
 
 .courses__title::after {
-  content: "";
-  position: absolute;
-  /* left: 50%; */
-  right: 95%;
-  bottom: -12px;
-  width: 3%;
-  height: 2px;
-  background: black;
-  transform: translateX(-50%);
-  pointer-events: none;
-}
+    content: "";
+    position: absolute;
+    /* left: 50%; */
+    right: 95%;
+    bottom: -12px;
+    width: 3%;
+    height: 2px;
+    background: black;
+    transform: translateX(-50%);
+    pointer-events: none;
+  }
 
 .courses__title_sub {
-  font-size: 20px;
-  font-weight: bold;
-  margin-bottom: 1rem;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 1rem;
 }
 
 .courses__description {
-  font-size: 12px;
-  font-weight: 400;
-  color: #666;
-  margin-bottom: 1rem;
+    font-size: 12px;
+    font-weight: 400;
+    color: #666;
+    margin-bottom: 1rem;
 }
 
 .courses__button {
-  font-size: 14px;
-  font-weight: 700;
-  color: rgb(48, 48, 48);
-  background: transparent;
-  border: 2px solid rgb(48, 48, 48);
-  border-radius: 5px;
-  padding: 10px 20px;
-  text-transform: uppercase;
-  margin-bottom: 2rem;
-  transition: color 0.3s ease, background 0.3s ease, border 0.3s ease;
+    font-size: 14px;
+    font-weight: 700;
+    color: rgb(48, 48, 48);
+    background: transparent;
+    border: 2px solid rgb(48, 48, 48);
+    border-radius: 5px;
+    padding: 20px 10px;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
 }
 
 .courses__button:hover {
-  color: #fff;
-  background: #838C48;
-  border: 2px solid transparent;
+    color: #fff;
+    background: #838C48;
+    border: 2px solid transparent;
 
 }
 
 .course__image {
-  width: 100%;
-  height: auto;
+    width: 100%;
+    height: auto;
 }
 
 .course__badge {
-  font-size: 0.875rem;
-  margin-bottom: 0.5rem;
+    font-size: 0.875rem;
+    margin-bottom: 0.5rem;
 }
 
 .course__title {
-  font-size: 1.25rem;
-  font-weight: bold;
-  margin-bottom: 0.5rem;
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
 }
 
 .course__category,
 .course__time,
 .course__rating {
-  font-size: 0.875rem;
-  color: #666;
+    font-size: 0.875rem;
+    color: #666;
 }
 
 .ad__image {
-  width: 100%;
-  height: auto;
+    width: 100%;
+    height: auto;
 }
 
 .col-md-8 {
-width: calc(100% - (100% / 3));
-display: inline-flex;
+  width: calc(100% - (100% / 3));
+  display: inline-flex;
 }
 
 .col-md-4 {
-width: calc(100% / 3);
+  width: calc(100% / 3);
 }
+
 
 /* This is Blog part */
 .blog {
@@ -266,6 +269,47 @@ width: calc(100% / 3);
 .blog img {
   max-width: 100%;
 }
+/*  */
+.blog-container {
+    position: relative;
+    overflow: hidden; /* Ẩn các phần tử vượt ra ngoài container */
+}
+.blog img.card-img-top{
+    width: 120%;
+    height: 120%;
+  
+}
+
+
+.blog-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Màu nền và độ mờ cho lớp phủ */
+    display: flex;
+    align-items: flex-end;
+    opacity: 0; /* Ẩn lớp phủ khi không di chuột */
+   
+}
+
+.overlay-text {
+    color: white;
+    font-size: 14px;
+    text-align: center;
+}
+
+.blog-container:hover .card-img-top {
+    transform: scale(0.8); /* Thu nhỏ hình ảnh khi di chuột vào */
+}
+
+.blog-container:hover .blog-overlay {
+    opacity: 1; /* Hiển thị lớp phủ khi di chuột vào */
+}
+
+/*  */
+
 .btn-group-vertical{
     display:grid;
 }
@@ -292,17 +336,17 @@ width: calc(100% / 3);
   max-width: 30%;
   border: none;
 }
-.btn-btn-primary1 {
-  height: 45px;
-  width: 70px;
-  background: none;
+.btn-btn-primary1{
+    height: 45px;
+    width: 70px;
+    background: none;
 }
-.btn-btn-primary2 {
-  border-top: none;
-  width: 69.5px;
-  height: 34px;
-  cursor: pointer;
-  background: none;
+.btn-btn-primary2{
+    border-top: none;
+    width: 69.5px;
+    height: 34px;
+    cursor: pointer;
+    background: none;
 }
 .btn-btn-primary2 :hover{
     background-image:rgb(228, 101, 3);
@@ -310,12 +354,14 @@ width: calc(100% / 3);
 .card-body{
     display: flex;
     margin: 0;
+    background: #fcf5e9;
 }
-.blog-card-tile {
-  text-align: left;
-  margin-right: 50px;
-  padding-left: 20px;
+.blog-card-tile{
+    text-align: left;
+    margin-right: 50px;
+    padding-left: 20px;
 }
+
 .card-title{
     font-size: 18px;
     font-weight: 500;
@@ -340,124 +386,127 @@ width: calc(100% / 3);
   }
 .blog-svg{
     background-image: url(/assets/img/blog-svg-background.jpg);
+    background-attachment: fixed;
     background-position:center center;
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     text-align: center;
     align-items: center;
     padding: 100px 0px 100px 0px;
     margin-top: 100px;
+    
 }
 
 .blog-svg svg {
-  width: 32px;
-  height: 32px;
-  fill: #ffffff;
-  margin-top: 26px;
+    width: 32px;
+    height: 32px;
+    fill:#ffffff;
+    margin-top: 26px;
+}
+.blog-svg p{
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    margin-top: 5px;
+    margin-bottom: 10px;
 }
 
-.blog-svg p {
-  font-size: 20px;
-  font-weight: 400;
-  letter-spacing: 0.5px;
-  margin-top: 5px;
-  margin-bottom: 10px;
-}
-
-.blog-icon-html5 {
-  background-color: #f2672e;
-  border-radius: 50%;
-}
-
-.blog-icon {
-  height: 90px;
-  width: 90px;
-}
+.blog-icon-html5{
+    background-color: #F2672E;
+    border-radius: 50%;
+  }
+  .blog-icon{
+    height: 90px;
+    width: 90px;
+  }
 
 .blog-icon-css {
-  background-color: #0171bb;
-  border-radius: 50%;
+    background-color: #0171BB;
+    border-radius: 50%;
+}
+.blog-icon-android{
+    background-color: #9FBF3A;
+    border-radius: 50%;
+}
+.blog-icon-photoshop{
+    background-color: #0171BB;
+    border-radius: 50%;
+}
+.blog-icon-jquery{
+    background-color: #E5A329;
+    border-radius: 50%;
+}
+.blog-icon-ruby{
+    background-color: #D10101;
+    border-radius: 50%;
 }
 
-.blog-icon-android {
-  background-color: #9fbf3a;
-  border-radius: 50%;
-}
 
-.blog-icon-photoshop {
-  background-color: #0171bb;
-  border-radius: 50%;
-}
-
-.blog-icon-jquery {
-  background-color: #e5a329;
-  border-radius: 50%;
-}
-
-.blog-icon-ruby {
-  background-color: #d10101;
-  border-radius: 50%;
-}
-
-.blog-events {
-  margin-top: 100px;
+.blog-events{
+    margin-top: 100px;
 }
 .blog-events-title {
-  display: flex;
-  align-items: center;
-}
-
-.blog-events-title h1 {
-  flex: 1;
-  margin-right: 10px;
-  font-size: 24px;
-}
-
-.blog-events-title span {
-  margin-left: 90%;
-}
-
-.blog-events-title svg {
-  height: 24px;
-  width: 24px;
-  fill: currentColor;
-  cursor: pointer;
-}
+    display: flex;
+    align-items: center; 
+  }
+  
+  .blog-events-title h1 {
+    flex: 1; 
+    margin-right: 10px; 
+    font-size: 24px;
+  }
+  .blog-events-title span{
+    margin-left: 90%;
+  }
+  .blog-events-title svg {
+    height: 24px; 
+    width: 24px; 
+    fill: currentColor; 
+    cursor: pointer; 
+  }
 
 .blog-events-detail {
-  display: inline-flex;
-}
+    display: inline-flex;
 
-.blog-events-detail img {
-  width: 150px;
-  height: auto;
+  }
+  
 
-  object-fit: cover;
-}
+  .blog-events-detail img {
+    width: 150px; 
+    height: auto; 
 
-.blog-card-details {
-  display: flex;
-  flex-direction: column;
-  margin-left: 20px;
-}
+  
+    object-fit: cover; 
+  }
+  
 
-.blog-card-details h2 {
-  margin: 0;
-  padding: 0;
-  font-size: 24px;
-  font-weight: 400;
-}
+  .blog-card-details {
+    display: flex;
+    flex-direction: column; 
+    margin-left: 20px;
+    
+  }
+  
 
-.blog-card-details p {
-  margin: 10px 0;
-  padding: 0;
-  color: #555;
-}
+  .blog-card-details h2 {
+    margin: 0; 
+    padding: 0;
+    font-size: 24px; 
+    font-weight: 400;
+  }
+  
+  .blog-card-details p {
+    margin: 10px 0; 
+    padding: 0;
+    color: #555;
+  }
 
   .blog-footer{
     background-image: url(/assets/img/blog-newsletter.png);
+    background-attachment: fixed;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -470,27 +519,31 @@ width: calc(100% / 3);
     width: 70%;
     text-align: center;
 }
-.getin h1 {
-  font-size: 24px;
+.getin h1{
+   
+    font-size: 24px;
 }
 
 .getin-btn{
     display: flex;
+    width: 60%;
 
 }
-.getin-btn button {
-  margin-top: 18px;
-  cursor: pointer;
-  padding: 12px 24px;
-  background-color: #838c48;
-  color: white;
-  border: none;
+.getin-btn button{
+    margin-top: 18px;
+    cursor: pointer;
+    padding: 12px 24px;
+    background-color: #838C48;
+    color:white;
+    border: none;
 }
-.getin-btn button:hover {
-  background-color: black;
+.getin-btn button:hover{
+    background-color:  black;
 }
 
-/* Make the image to responsive */
+
+
+  /* Make the image to responsive */
 
 @media (max-width: 768px) {
   .blog-card {
@@ -502,6 +555,28 @@ width: calc(100% / 3);
     .blog-card {
         flex: 0 1 100%; /* One card per row on small screens */
         max-width: 100%;
+    }
+    .blog-svg {
+        padding: 30px 0;
+        margin-top: 20px;
+        background-size: contain;
+    }
+
+    .blog-svg p {
+        font-size: 14px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    .blog-svg svg {
+        width: 20px;
+        height: 20px;
+        margin-top: 10px;
+    }
+
+    .blog-icon {
+        height: 50px;
+        width: 50px;
     }
 }
 

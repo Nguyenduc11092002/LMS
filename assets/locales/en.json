@@ -41,10 +41,15 @@
     "CourseBtn": "View All Courses",
     "courseTitleSub": "About Courses",
     "courseDescription1": "Student Registration and Administration Nemo enim ipsam voluptatem quia voluptas sit atur aut odit aut fugit, sed quia consequuntur magni res eos qui ratione voluptatem sequi nesciunt.",
+<<<<<<< HEAD
     "courseDescription2": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised believable.",
     "testText": "Nemo enim ipsam voluptatem quia voluptas sit atur aut odit aut fugit, sed quia consequuntur magni res."
     
   }  
     
+=======
+    "courseDescription2": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised believable."
+  }
+>>>>>>> c5474f5d83a2732b9825151864252c0b0cbabd5d
 }
 
