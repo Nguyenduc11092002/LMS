@@ -1,3 +1,157 @@
+/* CSS Home Page */
+footer{
+    background: #F5E9D4;
+    
+}
+
+.footer{
+    width: 33.3%;
+}
+
+.list{
+    padding: 0;
+}
+
+.list li{
+    width: auto;
+    text-align: center;
+    list-style-type: none;
+    padding: 7px;
+    position: relative;
+}
+
+.list li::before{
+    content: "";
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 100%;
+    width: 0;
+    height: 2px;
+    background: #f18930;
+    transition-duration: .5s;
+}
+
+.list li:hover::before{
+    width: 70px;
+}
+
+.social-icons{
+    text-align: center;
+    padding: 0;
+}
+
+.social-icons li{
+    display: inline-block;
+    text-align: center;
+    padding: 5px;
+}
+
+.social-icons i{
+    color:#838C48 ;
+    font-size: 25px;
+}
+
+/* của Pháp */
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero {
+    height: 100vh;
+    background: url('/assets/img/fullscreen-slider.jpg') no-repeat center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    color: white;
+    text-align: center;
+    padding: 0px 10px;
+    max-width: 100%;
+    top: -131px;
+    z-index: -2;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-all{
+    display:block;
+    position: relative;
+    top: 260px;
+   
+}
+
+.hero-content {
+    margin-bottom: 30px;
+}
+
+.search-bar {
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: 15px;
+    
+}
+
+.search-bar input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    width: 300px;
+}
+
+.search-bar button {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+.hero p {
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+.view-courses {
+    display: inline-block;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.hero-stats {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.stat {
+    text-align: center;
+}
+
+.stat .number {
+    font-size: 48px;
+    display: block;
+}
+
+.stat .label {
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+
 /* This is Course part */
 .courses {
   max-width: 1200px;
@@ -112,8 +266,8 @@ width: calc(100% / 3);
 .blog img {
   max-width: 100%;
 }
-.btn-group-vertical {
-  display: grid;
+.btn-group-vertical{
+    display:grid;
 }
 .blog-title {
   display: flex;
@@ -122,12 +276,17 @@ width: calc(100% / 3);
   flex-direction: column;
   margin-bottom: 30px;
 }
+.blog-title h1{
+    font-size: 24px;
+    font-weight: 500;
+}
 .blog-cards {
   display: flex;
   text-align: center;
   flex-wrap: wrap;
   gap: 15px;
 }
+
 .blog-card {
   flex: 0 1 30%;
   max-width: 30%;
@@ -145,22 +304,22 @@ width: calc(100% / 3);
   cursor: pointer;
   background: none;
 }
-.btn-btn-primary2 :hover {
-  background-image: rgb(228, 101, 3);
-}
-.card-body {
-  display: flex;
-  margin: 0;
+.btn-btn-primary2 :hover{
+    background-image:rgb(228, 101, 3);
+} 
+.card-body{
+    display: flex;
+    margin: 0;
 }
 .blog-card-tile {
   text-align: left;
   margin-right: 50px;
   padding-left: 20px;
 }
-.card-title {
-  font-size: 18px;
-  font-weight: 500;
-  margin-top: 10px;
+.card-title{
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 10px;
 }
 .card-text1 {
   font-size: 14px;
@@ -176,20 +335,20 @@ width: calc(100% / 3);
 }
 
 .blog-container {
-  position: relative;
-}
-.blog-svg {
-  background-image: url(/assets/img/blog-svg-background.jpg);
-  background-attachment: fixed;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-  display: flex;
-  text-align: center;
-  align-items: center;
-  padding: 100px 0px 100px 0px;
-  margin-top: 100px;
+    position: relative;
+  
+  }
+.blog-svg{
+    background-image: url(/assets/img/blog-svg-background.jpg);
+    background-position:center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    padding: 100px 0px 100px 0px;
+    margin-top: 100px;
 }
 
 .blog-svg svg {
@@ -297,26 +456,27 @@ width: calc(100% / 3);
   color: #555;
 }
 
-.blog-footer {
-  background-image: url(/assets/img/blog-newsletter.png);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  opacity: 1;
-  transition: background-color 0.3s ease;
-  margin-top: 50px;
-  padding: 20px;
-}
-.getin {
-  width: 70%;
-  text-align: center;
+  .blog-footer{
+    background-image: url(/assets/img/blog-newsletter.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 1;
+    transition: background-color 0.3s ease;
+    margin-top: 50px;
+    padding: 20px;
+  }
+.getin{
+    width: 70%;
+    text-align: center;
 }
 .getin h1 {
   font-size: 24px;
 }
 
-.getin-btn {
-  display: flex;
+.getin-btn{
+    display: flex;
+
 }
 .getin-btn button {
   margin-top: 18px;
@@ -339,10 +499,10 @@ width: calc(100% / 3);
   }
 }
 @media (max-width: 576px) {
-  .blog-card {
-    flex: 0 1 100%; /* One card per row on small screens */
-    max-width: 100%;
-  }
+    .blog-card {
+        flex: 0 1 100%; /* One card per row on small screens */
+        max-width: 100%;
+    }
 }
 
 /* This is our course part */
