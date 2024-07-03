@@ -7,6 +7,24 @@
     "menuGallery": "HÌNH ẢNH",
     "menuShop": "CỬA HÀNG",
     "menuContact": "LIÊN HỆ",
+
+    
+    "cardTitle": "Trái ngược với niềm tin phổ biến",
+    "blogEvent":"Sự kiện sắp tới",
+    "blogGetin": "LIÊN HỆ VỚI CHÚNG TÔI",
+    "blogFooter":"Bản thân công ty đã là một công ty rất thành công. Ở những người khác, sự kiên cường và đau đớn, nhưng không ai sẽ đảm nhận nhiệm vụ thay chúng ta, rằng thời điểm khắc nghiệt hơn sẽ đặc biệt chính đáng, một hậu quả to lớn, sai lầm, vì đó là thời của những người tố cáo.",
+    "blogCardDetail": "Chào mừng khóa 25",
+    "blogCardTime": "Ngày 12 tháng 12 năm 2024@8:00 sáng -Ngày 13 tháng 12 năm 2025 @ 5:00 chiều",
+    "blogCardAddress": "Đồi Peppard, Hoa Kỳ",
+   
+
+    "contact": "liên hệ",
+    "Home": "Nhà",
+    "Contact1": "liên hệ",
+    "Give": "Gửi tin nhắn cho chúng tôi",
+    "Contact": "Thông tin liên hệ",
+    "The": "Công ty TNHH Thiết kế Chủ đề, Đường Mary Jane, Sydney 2233, Úc.",
+    "Send": "Gửi Email",
     "Process": "QUÁ TRÌNH CỦA CHÚNG TÔI",
     "Step01": "Bước 01",
     "Step02": "Bước 02",
@@ -22,6 +40,8 @@
     "CourseBtn": "Xem toàn bộ khóa học",
     "courseTitleSub": "Về các khóa học",
     "courseDescription1": "Đăng ký và quản lý sinh viên Vì không ai theo đuổi, ghét bỏ hay chạy trốn niềm vui vì đó là niềm vui, mà vì những điều tuyệt vời sẽ đến với những người không biết cách theo đuổi niềm vui một cách hợp lý.",
-    "courseDescription2": "Có nhiều phiên bản khác nhau của Lorem Ipsum, nhưng phần lớn đã được thay đổi ở một số hình thức, bằng cách thêm yếu tố hài hước hoặc ngẫu nhiên hóa để trở nên đáng tin hơn."
+    "courseDescription2": "Có nhiều phiên bản khác nhau của Lorem Ipsum, nhưng phần lớn đã được thay đổi ở một số hình thức, bằng cách thêm yếu tố hài hước hoặc ngẫu nhiên hóa để trở nên đáng tin hơn.",
+    "testText": "Vì không ai tránh né, ghét bỏ hay chạy trốn niềm vui vì đó là niềm vui, mà vì kết quả là những điều tuyệt vời."
+    
   }
 }
