@@ -1,4 +1,13 @@
 /* CSS Home Page */
+.effect-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 150px; /* Chiều cao của hiệu ứng */
+    background: linear-gradient(to bottom, rgba(245, 233, 217, 1.9), rgba(0, 0, 0, 0));
+    z-index: -1; /* Đảm bảo nằm dưới nội dung header nhưng trên hình nền */
+}
 
 
 footer{
@@ -87,12 +96,20 @@ body, html {
 .hero-all{
     display:block;
     position: relative;
-    top: 260px;
+    top: 290px;
    
 }
 
 .hero-content {
     margin-bottom: 30px;
+    opacity: 0;
+    transform: translateY(100px);
+    transition: all 0.9s ease-out;
+}
+
+.hero-content.animate {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .search-bar {
@@ -107,41 +124,62 @@ body, html {
     font-size: 16px;
     border: none;
     border-radius: 5px 0 0 5px;
-    width: 300px;
+    width: 400px;
 }
 
 .search-bar button {
     padding: 10px;
-    font-size: 16px;
     border: none;
-    background-color: #4CAF50;
-    color: white;
+    background-color: #838C48;
     border-radius: 0 5px 5px 0;
-    cursor: pointer;
+    position: relative;
+    top: 7px;
 }
 
-.hero p {
-    font-size: 24px;
+.courses-text{
+    font-size: 20px;
+    color: black;
     margin: 20px 0;
+    font-optical-sizing: auto;
+  font-weight: 390;
+  font-style: italic;
+  font-variation-settings:
+    "wdth" 100;
 }
 
 .view-courses {
     display: inline-block;
     padding: 10px 20px;
-    color: white;
+    color: #838C48;
     text-decoration: none;
     border-radius: 5px;
-    font-size: 18px;
+    font-size: 20px;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
 }
+
 
 .hero-stats {
     display: flex;
     justify-content: center;
-    gap: 50px;
+    gap: 14px;
     flex-wrap: wrap;
+    color: #000000;
+    transform: translateY(-2.1rem);
+    transition: all 0.5s ease-out;
+}
+
+.hero-stats.animate {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .stat {
+
     text-align: center;
 }
 
@@ -155,6 +193,19 @@ body, html {
     margin-top: 5px;
 }
 
+.number{
+    font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.hero-stats .stat .number {
+     /* Change this to your desired color for the list items */
+    border-bottom: 3px solid #838C48; /* Add a small line under each list item */
+    padding-bottom: 10px; /* Add some padding at the bottom */
+    margin-bottom: 10px; /* Add some margin at the bottom */
+}
 
 
 
