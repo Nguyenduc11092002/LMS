@@ -1,9 +1,13 @@
 .breadcrumb {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
     background-color: #DA853D;
-    padding: 25px 0 25px 330px !important;
+    padding: 25px 0 25px 0 !important;
+}
+
+.breadcrumb-container {
+    max-width: 1100px !important;
+    width: 100% !important;
+    display: block;
+    justify-content: center;
 }
 
 .breadcrumb h1 {
@@ -31,6 +35,8 @@
 .container {
     max-width: 1100px !important;
     width: 100% !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
 }
 
 .col-md-4 {
@@ -107,10 +113,11 @@
 
 .course-detail .grid-button {
     margin-right: 10px;
-    transition: 0.5s
+    transition: 0.5s;
 }
 
-.course-detail .grid-button.active {
+.course-detail .grid-button.active,
+.course-detail .list-button.active {
     border-color: transparent;
     background-color: #838C49;
     color: white;
@@ -123,11 +130,12 @@
 }
 
 .course-detail button:hover img {
-    filter: brightness(0) invert(1); /* Đổi màu ảnh sang trắng */
+    filter: brightness(0) invert(1);
 }
 
-.course-detail .grid-button.active img {
-    filter: brightness(0) invert(1); /* Đổi màu ảnh sang trắng */
+.course-detail .grid-button.active img,
+.course-detail .list-button.active img {
+    filter: brightness(0) invert(1);
 }
 
 .search-bar {
@@ -228,6 +236,13 @@ select option[value="Select Order"] {
     color: #838C49; /* Change color on hover if needed */
 }
 
+:root {
+    --wdtPrimaryColorRgb: 131, 140, 73; /* Định nghĩa màu chính */
+    --imgScale: 1.05;
+    --imgTransition: transform 0.3s ease-in-out;
+    --overlayTransition: opacity 0.3s ease-in-out, transform 0.4s ease-in-out;
+}
+
 .course-cards {
     display: flex;
     flex-wrap: wrap;
@@ -238,6 +253,8 @@ select option[value="Select Order"] {
     box-sizing: border-box;
     padding: 10px;
     overflow: hidden;
+    position: relative;
+    perspective: 1000px;
 }
 
 .course-card-header {
@@ -271,9 +288,73 @@ select option[value="Select Order"] {
     font-size: 14px;
 }
 
-.course-card img {
+.course-card-img {
+    position: relative;
+    overflow: hidden;
+}
+
+.course-card-img img {
+    display: block;
     width: 100%;
     height: auto;
+    transition: var(--imgTransition);
+    backface-visibility: hidden;
+}
+
+.course-card-img::before {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(var(--wdtPrimaryColorRgb), 0.9);
+    opacity: 0;
+    transition: var(--overlayTransition);
+    transform: rotateY(-180deg);
+}
+
+.course-card:hover .course-card-img::before {
+    opacity: 1;
+    transform: rotateY(0);
+}
+
+.course-card:hover .course-card-img img {
+    transform: scale(var(--imgScale));
+}
+
+.view-course {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0; /* Bắt đầu với opacity 0 */
+    transition: opacity 0.3s ease-in-out; /* Thêm transition cho opacity */
+}
+
+.course-card:hover .view-course {
+    opacity: 1;
+    transition: 0.5s ;
+}
+
+.view-course span {
+    padding: 5px 10px;
+    color: white;
+    border: 2px solid white;
+    text-align: center;
+    font-size: 12px;
+    transition: 0.5s;
+}
+
+.view-course:hover {
+    background-color: white;
+}
+
+.view-course span:hover {
+    color: black
 }
 
 .details {
@@ -323,7 +404,6 @@ select option[value="Select Order"] {
     color: green;
 }
 
-
 .page-button {
     display: flex;
     justify-content: center;
@@ -339,6 +419,7 @@ select option[value="Select Order"] {
     font-weight: 600;
     background: transparent;
     transition: 0.5s;
+    border: 2px solid black;
 }
 
 .page-button .page-num:hover {

@@ -27,10 +27,12 @@
     
 
   <main>
-  <div class="breadcrumb">
-        <h1>Courses-Template</h1>
-        <div class="breadcrumb-link">
-          <a href="#">Home</a> / Courses-Template
+      <div class="breadcrumb">
+          <div class="breadcrumb-container">
+            <h1>Courses-Template</h1>
+            <div class="breadcrumb-link">
+            <a href="#">Home</a> / Courses-Template
+          </div>
         </div>
       </div>
 
@@ -95,7 +97,7 @@
         </div>
 
         <div class="course-content">
-        <div class="course-detail">
+          <div class="course-detail">
             <button class="grid-button active">
               <img src="/assets/img/grid.png" alt="">
               GRID
@@ -105,21 +107,26 @@
               LIST
             </button>
         
-          <div class="order-by">
-            Order by :
-            <select>
-              <option value="Select Order" selected disabled>Select Order</option>
-              <option value="recent">Recent Courses</option>
-              <option value="highest">Highest Rated</option>
-              <option value="members">Most Members</option>
-              <option value="alphabetical">Alphabetical</option>
-            </select>
+            <div class="order-by">
+              Order by :
+              <select>
+                <option value="Select Order" selected disabled>Select Order</option>
+                <option value="recent">Recent Courses</option>
+                <option value="highest">Highest Rated</option>
+                <option value="members">Most Members</option>
+                <option value="alphabetical">Alphabetical</option>
+              </select>
+            </div>
           </div>
-        </div>
           
           <div class="course-cards">
             <div class="course-card">
+              <div class="course-card-img">
               <img src="/assets/img/courses-listing-image-1.jpg" class="course-card-image">
+              <div class="view-course">
+                <span>VIEW COURSE</span>
+              </div>
+              </div>
               <div class="course-card-header">
                 <h5>Free</h5>
               </div>
@@ -143,7 +150,12 @@
                 </div>
             </div>
             <div class="course-card">
+              <div class="course-card-img">
               <img src="/assets/img/courses-listing-image-2.jpg" class="course-card-image">
+              <div class="view-course">
+                <span>VIEW COURSE</span>
+              </div>
+              </div>
               <div class="course-card-header">
                 <h5>Free</h5>
               </div>
@@ -167,7 +179,12 @@
                 </div>
             </div>
             <div class="course-card">
+              <div class="course-card-img">
               <img src="/assets/img/courses-listing-image-3.jpg" class="course-card-image">
+              <div class="view-course">
+                <span>VIEW COURSE</span>
+              </div>
+              </div>
               <div class="course-card-header">
                 <h5>Free</h5>
               </div>
@@ -191,7 +208,12 @@
                 </div>
             </div>
             <div class="course-card">
-              <img src="/assets/img/courses-listing-image-4.jpg" class="course-card-image">
+              <div class="course-card-img">
+                <img src="/assets/img/courses-listing-image-4.jpg" class="course-card-image">
+                <div class="view-course">
+                  <span>VIEW COURSE</span>
+                </div>
+              </div>
               <div class="course-card-header">
                 <h5>$50</h5>
               </div>
@@ -215,7 +237,12 @@
                 </div>
             </div>
             <div class="course-card">
-              <img src="/assets/img/courses-listing-image-5.jpg" class="course-card-image">
+              <div class="course-card-img">
+                <img src="/assets/img/courses-listing-image-5.jpg" class="course-card-image">
+                <div class="view-course">
+                  <span>VIEW COURSE</span>
+                </div>
+                </div>
               <div class="course-card-header">
                 <h5>Free</h5>
               </div>
@@ -239,7 +266,12 @@
                 </div>
             </div>
             <div class="course-card">
-              <img src="/assets/img/courses-listing-image-6.jpg" class="course-card-image">
+              <div class="course-card-img">
+                <img src="/assets/img/courses-listing-image-6.jpg" class="course-card-image">
+                <div class="view-course">
+                  <span>VIEW COURSE</span>
+                </div>
+                </div>
               <div class="course-card-header">
                 <h5>Free</h5>
               </div>
@@ -265,8 +297,8 @@
         </div>
         
         <div class="page-button">
-          <button class="page-num active">1</button>
-          <button class="page-num">2</button>
+          <button class="page-num active" data-page="1">1</button>
+          <button class="page-num" data-page="2">2</button>
           <button class="page-num">Next <i class="fas fa-arrow-right"></i></button>
         </div>
         </div>
