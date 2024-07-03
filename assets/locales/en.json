@@ -8,23 +8,20 @@
     "menuShop": "SHOP",
     "menuContact": "CONTACT",
     "cardTitle": "Contrary to popular belief",
-    "blogEvent":"UPCOMING EVENTS",
+    "blogEvent": "UPCOMING EVENTS",
     "blogGetin": "GET IN TOUCH WITH US",
-    "blogFooter":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia alias, doloremque at eum nobis nemo amet officia suscipit asperiores esse tempora maxime iusto consectetur magnam, error, accusantium enim est tempore.",
+    "blogFooter": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia alias, doloremque at eum nobis nemo amet officia suscipit asperiores esse tempora maxime iusto consectetur magnam, error, accusantium enim est tempore.",
     "blogCardDetail": "Welcoming 25th Batch",
     "blogCardTime": "December 12,2024@8:00 am -December 13,2025 @ 5:00 pm",
     "blogCardAddress": "Peppard Hill, United States",
-
-
 
     "contact": "Contact",
     "Home": "Home",
     "Contact1": "Contact",
     "Give": "Give Us A Message",
     "Contact": "Contact Info",
+    "Send": "Send Email",
     "The": "The Design Themes Inc. Mary Jane St, Sydney 2233 Australia.",
-
-
 
     "Process": "OUR PROCESS",
     "Step01": "Step 01",
@@ -44,4 +41,3 @@
     "courseDescription2": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised believable."
   }
 }
-

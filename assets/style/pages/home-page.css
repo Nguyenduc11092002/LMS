@@ -116,7 +116,6 @@ body, html {
     display: inline-flex;
     align-items: center;
     margin-bottom: 15px;
-    
 }
 
 .search-bar input[type="text"] {
@@ -211,9 +210,6 @@ body, html {
 
 
 /* Blog - Phat */
-
-
-
 .blog{
     max-width: 1200px;
 }
