@@ -18,6 +18,8 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <script src="https://unpkg.com/i18next@21.8.5/dist/umd/i18next.min.js"></script>
     <script src="https://unpkg.com/i18next-http-backend@1.4.2/i18nextHttpBackend.min.js"></script>
     <script src="/assets/script/i18next-setup.js" defer></script>
@@ -35,67 +37,111 @@
       <div class="banner"></div>
       <div class="icon_banner"></div>
       <div class="courses" mt-4>
-        <h2 class="courses__title"data-aos="fade-up" data-i18n="translation.Courses">
-          Courses
-        </h2>
-          <section class="courses_warpaper">
-            
-              <div class="row">
-                <div class="col-md-4 mb-4">
-                  <!-- <div class="col-12"> -->
-                  <div>  
-                      <h3 class="courses__title_sub" data-i18n="translation.courseTitleSub">About Courses</h3>
-                      <p class="courses__description" data-i18n="translation.courseDescription1">Student Registration and Administration Nemo enim ipsam voluptatem quia voluptas sit atur aut odit aut fugit, sed quia consequuntur magni res eos qui ratione voluptatem sequi nesciunt.</p>
-                      <p class="courses__description" data-i18n="translation.courseDescription2">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised believable.</p>
-                      <button class="courses__button" data-i18n="translation.CourseBtn">
-                        View All Courses
-                      </button>
-                  </div>
-                </div>
-                <div class="col-md-8 mb-4">
-                  <div class="col-md-4">
-                    <div class="card course">
-                        <img src="https://via.placeholder.com/400x200" class="card-img-top course__image" alt="Course Image">
-                        <div class="card-body course__body">
-                            <span class="badge bg-success course__badge">Free</span>
-                            <h5 class="card-title course__title">Power Electronics</h5>
-                            <p class="card-text course__category">Education | 7 Curriculum</p>
-                            <p class="card-text course__time"><small class="text-muted">1d 1h 50m</small></p>
-                            <p class="card-text course__rating"><small class="text-muted">7 votes, average: 4.14 out of 5</small></p>
-                        </div>
-                    </div>
-                  </div>
-                  <div class="col-md-4">
-                      <div class="card course">
-                          <img src="https://via.placeholder.com/400x200" class="card-img-top course__image" alt="Course Image">
-                          <div class="card-body course__body">
-                              <span class="badge bg-success course__badge">Free</span>
-                              <h5 class="card-title course__title">Introduction to Calculus</h5>
-                              <p class="card-text course__category">Mathematics | 5 Curriculum</p>
-                              <p class="card-text course__time"><small class="text-muted">1m 21d 22h</small></p>
-                              <p class="card-text course__rating"><small class="text-muted">9 votes, average: 4.67 out of 5</small></p>
-                        </div>
-                      </div>
-                  </div>
-                </div> 
+        <h2 class="courses__title" data-aos="fade-up" data-i18n="translation.Courses">Courses</h2>
+        <section class="courses_wrapper">
+          <div class="info_courses">
+            <div class="about_course">
+              <div>
+                <h3 class="courses__title_sub" data-i18n="translation.courseTitleSub">About Courses</h3>
+                <p class="courses__description" data-i18n="translation.courseDescription1">Student Registration and Administration Nemo enim ipsam voluptatem quia voluptas sit atur aut odit aut fugit, sed quia consequuntur magni res eos qui ratione voluptatem sequi nesciunt.</p>
+                <p class="courses__description" data-i18n="translation.courseDescription2">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised believable.</p>
+                <button class="courses__button" data-i18n="translation.CourseBtn">View All Courses</button>
               </div>
-            <div class="row">
-                <div class="col-md-4 mb-4">
-                    <div class="card ad">
-                        <img src="./assets/img/lms-banner1.jpg" class="card-img-top ad__image" alt="Ad Image">
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card ad">
-                        <img src="./assets/img/lms-banner2.jpg" class="card-img-top ad__image" alt="Ad Image">
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card ad">
-                        <img src="./assets/img/lms-banner3.jpg" class="card-img-top ad__image" alt="Ad Image">
-                    </div>
-                </div>
             </div>
+            <div class="courses__content">
+              <div class="course">
+                <div class="course_details">
+                  <div class="course_img">
+                    <img src="./assets/img/courses-listing-image-1.jpg" class="card-img-top course__image" alt="Course Image">
+                    <div class="view-course">
+                      <a href="">VIEW COURSE</a>
+                    </div>
+                  </div>
+                  <div class="card-body course__body">
+                    <span class="course__badge">Free</span>
+                    <h5 class="card-title course__title">
+                      <a href="">Power Electronics</a>
+                    </h5>
+                    <div class="card-text course__category">
+                      <p class="course__category_item">Education</p>
+                      <p class="course__category_classes"> <span>7</span> Curriculum</p>
+                    </div>
+                    <div class="card-text course__time">
+                      <i class="fa-regular fa-clock"></i>
+                      <p><small class="text-muted">1d 1h 50m</small></p>
+                    </div>
+                    <div class="course__rating">
+                      <div class="course__rating_vote"></div>
+                      <div class="course__rating_vote_star">
+                        <div class="star_vote">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                        <p><small class="text-muted">(<span>7</span> votes, average: <span>4.14</span> out of 5 <span>rated</span>)</small></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="course">
+                <div class="course_details">
+                  <div class="course_img">
+                    <img src="./assets/img/courses-listing-image-2.jpg" class="card-img-top course__image" alt="Course Image">
+                    <div class="view-course">
+                      <a href="">VIEW COURSE</a>
+                    </div>
+                  </div>
+                  <div class="card-body course__body">
+                    <span class="course__badge">Free</span>
+                    <h5 class="card-title course__title">
+                      <a href="">Introduction to Calculus</a>
+                    </h5>
+                    <div class="card-text course__category">
+                      <p class="course__category_item">Mathematics</p>
+                      <p class="course__category_classes"> <span>5</span> Curriculum</p>
+                    </div>
+                    <div class="card-text course__time">
+                      <i class="fa-regular fa-clock"></i>
+                      <p><small class="text-muted">1m 21d 22h</small></p>
+                    </div>
+                    <div class="course__rating">
+                      <div class="course__rating_vote"></div>
+                      <div class="course__rating_vote_star">
+                        <div class="star_vote">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                        <p><small class="text-muted">(<span>10</span> votes, average: <span>4.74</span> out of 5 <span>rated</span>)</small></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4 mb-4">
+              <div class="card ad">
+                <img src="./assets/img/lms-banner1.jpg" class="card-img-top ad__image" alt="Ad Image">
+              </div>
+            </div>
+            <div class="col-md-4 mb-4">
+              <div class="card ad">
+                <img src="./assets/img/lms-banner2.jpg" class="card-img-top ad__image" alt="Ad Image">
+              </div>
+            </div>
+            <div class="col-md-4 mb-4">
+              <div class="card ad">
+                <img src="./assets/img/lms-banner3.jpg" class="card-img-top ad__image" alt="Ad Image">
+              </div>
+            </div>
+          </div>
         </section>
       </div>
       <div class="blog">
