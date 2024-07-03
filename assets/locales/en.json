@@ -56,8 +56,6 @@
     "courseCardCate6": "Engineering | 7 Curriculum",
     
 
-
-
     "contact": "Contact",
     "Home": "Home",
     "Contact1": "Contact",
@@ -65,6 +63,60 @@
     "Contact": "Contact Info",
     "Send": "Send Email",
     "The": "The Design Themes Inc. Mary Jane St, Sydney 2233 Australia.",
+
+    "menuTeacher": "TEACHERS",
+    "title": {
+      "teachers": "Teachers",
+      "categories": "Categories",
+      "recentComments": "Recent Comments",
+      "archives": "Archives",
+      "tags": "Tags"
+    },
+    "categories": {
+      "uncategorized": "Uncategorized (7)"
+    },
+    "comments": {
+      "dtlmsele": "dtlmsele on App Development",
+      "dummy": "dummy on Power Electronics",
+      "kowsi": "kowsi on Game Technology",
+      "ram1": "ram on Advanced Programming",
+      "ram2": "ram on Digital Signal Processing"
+    },
+    "archives": {
+      "november2023": "November, 2023"
+    },
+    "tags": {
+      "blog": "BLOG",
+      "chat": "CHAT",
+      "tips": "TIPS"
+    },
+    "chat": {
+      "contrary": "Contrary to Popular Belief",
+      "omnis": "Omnis voluptas assumenda",
+      "piece": "A Classic Piece",
+      "latinProfessor": "Latin Professor at Hampden",
+      "latinWords": "Latin Ipsum Words",
+      "date": "30 Thursday",
+      "comments": "0"
+    },
+    "teachers": {
+      "damieGlendell": {
+        "name": "DAMIE GLENDELL",
+        "title": "Co-Director"
+      },
+      "jamesCatwin": {
+        "name": "JAMES CATWIN",
+        "title": "Art Director"
+      },
+      "jennySheen": {
+        "name": "JENNY SHEEN",
+        "title": "Digital Media Programming"
+      },
+      "jimMorrison": {
+        "name": "JIM MORRISON",
+        "title": "Chief Programmer"
+      }
+    },
 
     "Process": "OUR PROCESS",
     "Step01": "Step 01",
@@ -81,6 +133,8 @@
     "CourseBtn": "View All Courses",
     "courseTitleSub": "About Courses",
     "courseDescription1": "Student Registration and Administration Nemo enim ipsam voluptatem quia voluptas sit atur aut odit aut fugit, sed quia consequuntur magni res eos qui ratione voluptatem sequi nesciunt.",
-    "courseDescription2": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised believable."
+    "courseDescription2": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised believable.",
+  
+    "menuTeacher": "Teacher"
   }
 }

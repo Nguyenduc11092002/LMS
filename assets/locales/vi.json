@@ -56,6 +56,59 @@
     "blogCardTime": "Ngày 12 tháng 12 năm 2024@8:00 sáng -Ngày 13 tháng 12 năm 2025 @ 5:00 chiều",
     "blogCardAddress": "Đồi Peppard, Hoa Kỳ",
    
+    "menuTeacher": "Giáo Viên",
+    "title": {
+      "teachers": "Giáo viên",
+      "categories": "Danh mục",
+      "recentComments": "Bình luận gần đây",
+      "archives": "Lưu trữ",
+      "tags": "Thẻ"
+    },
+    "categories": {
+      "uncategorized": "Chưa phân loại (7)"
+    },
+    "comments": {
+      "dtlmsele": "dtlmsele về Phát triển ứng dụng",
+      "dummy": "dummy về Điện tử công suất",
+      "kowsi": "kowsi về Công nghệ trò chơi điện tử",
+      "ram1": "ram về Lập trình nâng cao",
+      "ram2": "ram về Xử lý tín hiệu số"
+    },
+    "archives": {
+      "november2023": "Tháng 11, 2023"
+    },
+    "tags": {
+      "blog": "BLOG",
+      "chat": "CHAT",
+      "tips": "MẸO"
+    },
+    "chat": {
+      "contrary": "Ngược lại với phổ biến",
+      "omnis": "Omnis voluptas assumenda",
+      "piece": "Một phần cổ điển",
+      "latinProfessor": "Giáo sư tiếng Latin tại Hampden",
+      "latinWords": "Từ tiếng Latin Ipsum",
+      "date": "30 Thứ Năm",
+      "comments": "0"
+    },
+    "teachers": {
+      "damieGlendell": {
+        "name": "DAMIE GLENDELL",
+        "title": "Đồng Giám Đốc"
+      },
+      "jamesCatwin": {
+        "name": "JAMES CATWIN",
+        "title": "Giám Đốc Nghệ Thuật"
+      },
+      "jennySheen": {
+        "name": "JENNY SHEEN",
+        "title": "Lập Trình Truyền Thông Kỹ Thuật Số"
+      },
+      "jimMorrison": {
+        "name": "JIM MORRISON",
+        "title": "Trưởng Lập Trình Viên"
+      }
+    },
 
     "contact": "liên hệ",
     "Home": "Nhà",

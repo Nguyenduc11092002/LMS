@@ -139,8 +139,11 @@ img {
   background-color: white;
   color: black;
 }
-
-title_home a:-webkit-any-link {
+.title_teacher a:-webkit-any-link {
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+.title_home a:-webkit-any-link {
     color: rgb(255, 255, 255);
     cursor: pointer;
 }
