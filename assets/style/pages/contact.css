@@ -14,11 +14,6 @@
   width: 800px;
 }
 
-/* .form-group label {
-  display: block;
-  margin-bottom: 5px;
-} */
-
 .form-group input,
 .form-group textarea {
   width: 100%;
@@ -88,10 +83,7 @@ button:hover {
 }
 
 .contact-left {
-  /* chỉ để hiển thị rõ ràng */
   margin-left: 350px;
-  /* margin-left: auto; */
-  /* padding: 20px; */
 }
 .contact-right {
   margin-left: -40px;
@@ -113,9 +105,6 @@ button:hover {
   font-size: 24px;
   color: #f08000;
 }
-.info-item > i {
-  /* border-bottom: solid 1px #f08000; */
-}
 .info-text {
   gap: 10px;
   justify-content: space-between;
@@ -123,8 +112,6 @@ button:hover {
 }
 .form-group {
   margin-right: 120px;
-  /* margin-bottom: 15px;
-  position: relative; */
 }
 
 .form-contact-layout {
