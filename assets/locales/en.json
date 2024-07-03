@@ -17,6 +17,11 @@
     "PreviewStep": "Preview the Syllabus",
     "PurchaseStep": "Purchase the Course",
     "testText": "Nemo enim ipsam voluptatem quia voluptas sit atur aut odit aut fugit, sed quia consequuntur magni res.",
-    "cardTitle": "Contrary to popular belief"
+    "cardTitle": "Contrary to popular belief",
+    "Courses": "Courses",
+    "CourseBtn": "View All Courses",
+    "courseTitleSub": "About Courses",
+    "courseDescription1": "Student Registration and Administration Nemo enim ipsam voluptatem quia voluptas sit atur aut odit aut fugit, sed quia consequuntur magni res eos qui ratione voluptatem sequi nesciunt.",
+    "courseDescription2": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised believable."
   }
 }
