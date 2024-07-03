@@ -154,13 +154,36 @@ html {
   margin-top: 4rem;
 }
 
+.course_title_btn {
+  display: flex; 
+  flex-direction: row; 
+  justify-content: space-between
+}
+
 .courses__title {
   text-align: left;
   font-weight: bold;
-  font-size: 24px;
+  font-size: 30px;
+  line-height: 36px;
   color: #333;
   text-transform: uppercase;
   margin-bottom: 2rem;
+  margin-left: 0;
+}
+
+.button_slider {
+  margin-right: 0;
+}
+
+.btn_slider {
+  padding: 10px 20px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.btn_slider:hover {
+  background: #838c48;
+  color: #fff;
+  border: 1px solid transparent;
 }
 
 .course__details {
@@ -168,7 +191,7 @@ html {
 }
 
 .courses_wrapper {
-  /* padding: 2rem; */
+  
 }
 
 .info_courses {
@@ -220,6 +243,8 @@ html {
   flex-direction: row;
   flex-wrap: nowrap;
   width: 66.666%;
+  transition: transform 0.5s ease-in-out;
+  margin: 0;
 }
 
 .course {
@@ -262,7 +287,6 @@ html {
 .course img {
   width: 100%;
   height: auto;
-  /* ms-bottom: 1px; */
 }
 
 .course_img::before {
@@ -295,8 +319,8 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
-  opacity: 0; /* Bắt đầu với opacity 0 */
-  transition: opacity 0.3s ease-in-out; /* Thêm transition cho opacity */
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
 }
 
 .course_details:hover .view-course {
@@ -324,7 +348,6 @@ html {
 .view-course span:hover {
   color: black
 }
-
 
 .course__image {
   /* position: relative; */
@@ -390,6 +413,11 @@ html {
 
 .course__category p {
   margin: 0;
+}
+
+.course__curriculum {
+  padding-left: 3px;
+  line-height: 20px;
 }
 
 .course__category_item {
@@ -491,6 +519,22 @@ html {
 .ad img {
   width: 100%;
   height: auto;
+}
+
+.card-img {
+  border-radius: 0;
+}
+
+/* Slider in course */
+.slider {
+  position: relative;
+  width: 66.666%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.course {
+  min-width: 71%;
 }
 
 /* This is Blog part */
@@ -811,7 +855,7 @@ html {
 .our_process {
   max-width: 1200px;
   padding: 70px 0px 70px 0px;
-  margin-bottom: 100px;
+  margin-bottom: 150px;
 }
 
 /* This is title of Our Process part */
@@ -822,8 +866,8 @@ html {
   padding-bottom: 10px;
   color: rgb(48, 48, 48);
   font-weight: 600;
-  font-size: 24px;
-  line-height: 1.2rem;
+  font-size: 30px;
+  line-height: 36px;
 }
 
 .text-center::after {
@@ -997,7 +1041,7 @@ html {
   width: 10px;
   height: 100%;
   background: #f5e9d4;
-  top: 100px;
+  top: 98px;
 }
 
 .none::after {
