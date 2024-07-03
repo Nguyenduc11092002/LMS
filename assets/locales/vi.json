@@ -7,13 +7,34 @@
     "menuGallery": "HÌNH ẢNH",
     "menuShop": "CỬA HÀNG",
     "menuContact": "LIÊN HỆ",
+
+    
     "cardTitle": "Trái ngược với niềm tin phổ biến",
+    "blogEvent":"Sự kiện sắp tới",
+    "blogGetin": "LIÊN HỆ VỚI CHÚNG TÔI",
+    "blogFooter":"Bản thân công ty đã là một công ty rất thành công. Ở những người khác, sự kiên cường và đau đớn, nhưng không ai sẽ đảm nhận nhiệm vụ thay chúng ta, rằng thời điểm khắc nghiệt hơn sẽ đặc biệt chính đáng, một hậu quả to lớn, sai lầm, vì đó là thời của những người tố cáo.",
+    "blogCardDetail": "Chào mừng khóa 25",
+    "blogCardTime": "Ngày 12 tháng 12 năm 2024@8:00 sáng -Ngày 13 tháng 12 năm 2025 @ 5:00 chiều",
+    "blogCardAddress": "Đồi Peppard, Hoa Kỳ",
+   
 
     "contact": "liên hệ",
-    "Home/ Contact": "Nhà/ Liên hệ",
+    "Home": "Nhà",
+    "Contact1": "liên hệ",
     "Give": "Gửi tin nhắn cho chúng tôi",
     "Contact": "Thông tin liên hệ",
     "The": "Công ty TNHH Thiết kế Chủ đề, Đường Mary Jane, Sydney 2233, Úc.",
-    "Send": "Gửi Email"
+    "Send": "Gửi Email",
+    "Process": "QUÁ TRÌNH CỦA CHÚNG TÔI",
+    "Step01": "Bước 01",
+    "Step02": "Bước 02",
+    "Step03": "Bước 03",
+    "Step04": "Bước 04",
+    "SearchStep": "Tìm kiếm khóa học của bạn",
+    "LessonStep": "Tham gia một bài học mẫu",
+    "PreviewStep": "Xem trước giáo trình",
+    "PurchaseStep": "Mua khóa học",
+    "testText": "Vì không ai tránh né, ghét bỏ hay chạy trốn niềm vui vì đó là niềm vui, mà vì kết quả là những điều tuyệt vời."
+    
   }
 }

@@ -20,7 +20,6 @@
     <script src="https://unpkg.com/i18next-http-backend@1.4.2/i18nextHttpBackend.min.js"></script>
     <script src="/assets/script/i18next-setup.js" defer></script>
     <script src="/assets/script/contact.js"></script>
-
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -29,49 +28,6 @@
     />
   </head>
   <body>
-    <!-- <div class="container-contact">
-      <header class="header">
-        <a href="#" class="logo-element">
-          <img class="logo" src="assets/img/lms-logo.png" alt="lms_logo" />
-        </a>
-
-        <div class="widget">
-          <div class="widget-container">
-            <ul>
-              <li>
-                <a data-i18n="translation.menuHome" href="home-page.html"
-                  >HOME</a
-                >
-              </li>
-              <li>
-                <a
-                  data-i18n="translation.menuCourse"
-                  href="course-template.html"
-                  >COURSE</a
-                >
-              </li>
-              <li><a data-i18n="translation.menuPages" href="#">PAGES</a></li>
-              <li><a data-i18n="translation.menuBlog" href="#">BLOG</a></li>
-              <li>
-                <a data-i18n="translation.menuGallery" href="#">GALLERY</a>
-              </li>
-              <li><a data-i18n="translation.menuShop" href="#">SHOP</a></li>
-              <li>
-                <a data-i18n="translation.menuContact" href="/contact.html"
-                  >CONTACT</a
-                >
-              </li>
-            </ul>
-          </div>
-          <div class="language-switcher">
-            <button id="en-button">English</button>
-            <button id="vi-button">Vietnamese</button>
-          </div>
-
-          <img class="cart" src="" alt="a" />
-        </div>
-      </header>
-    </div> -->
     <div id="header-placeholder"></div>
     <main>
       <div class="form">
@@ -79,9 +35,8 @@
           <h2 data-i18n="translation.contact">Contact</h2>
           <div class="contact-home">
             <div class="contact-home-layout">
-              <a data-i18n="translation.Home/ Contact" href="/home-page.html"
-                >Home</a span </a>/ Contact</a>
-              >
+              <a data-i18n="translation.Home" href="/home-page.html">Home</a> /
+              <span data-i18n="translation.Contact1"> Contact</span>
             </div>
           </div>
         </div>
@@ -96,7 +51,7 @@
               novalidate
             >
               <div class="form-group">
-                <!-- <label for="name">Your Name</label> -->
+                <!-- <label for="name"><i class="fa-solid fa-user"></i></label> -->
                 <input
                   type="text"
                   id="name"
@@ -159,8 +114,7 @@
               <i class="icon fas fa-map-marker-alt"></i>
               <div class="info-text">
                 <a data-i18n="translation.The">
-                  The Design Themes Inc. Mary Jane St,<br />
-                  Sydney 2233 Australia.</a
+                  The Design Themes Inc. Mary Jane St, Sydney 2233 Australia.</a
                 >
               </div>
             </div>
