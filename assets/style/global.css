@@ -1,23 +1,23 @@
 * {
-    padding: 0; 
-    margin: 0 auto;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0 auto;
+  box-sizing: border-box;
 }
 
 html {
-    font-family: 'Open Sans', sans-serif;
-    scroll-behavior: smooth;
+  font-family: "Open Sans", sans-serif;
+  scroll-behavior: smooth;
 }
 
 body {
-    background-color: #FCF5E9 !important;
+  background-color: #fcf5e9 !important;
 }
 
 .header {
-    padding: 20px 0 !important;
-    display: flex; /* Add flexbox to the header */
-    justify-content: space-between; /* Distribute child elements horizontally */
-    align-items: center;
+  padding: 20px 0 !important;
+  display: flex; /* Add flexbox to the header */
+  justify-content: space-between; /* Distribute child elements horizontally */
+  align-items: center;
 }
 
 .header .col-md-2 {
