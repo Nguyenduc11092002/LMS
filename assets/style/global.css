@@ -57,6 +57,7 @@ body {
     align-items: center;
     margin-right: 30px;
     font-size: 14px;
+    white-space: nowrap;
 }
 
 .header .language {

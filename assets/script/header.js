@@ -11,13 +11,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
   function initI18next() {
     i18next.use(i18nextHttpBackend).init({
-        lng: 'en', // Ngôn ngữ mặc định
-        fallbackLng: 'en', // Ngôn ngữ fallback
+        lng: 'en',
+        fallbackLng: 'en',
         debug: true,
-        ns: ['translation'], // Namespace mặc định
-        defaultNS: 'translation', // Sử dụng namespace mặc định
+        ns: ['translation'],
+        defaultNS: 'translation',
         backend: {
-            loadPath:'/assets/locales/{{lng}}.json' // Đường dẫn tới các tệp JSON
+            loadPath:'/assets/locales/{{lng}}.json'
         }
     });
 
