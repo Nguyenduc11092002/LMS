@@ -1,67 +1,103 @@
-/* CSS Teachers */
-/*body {
-    font-family: Arial, sans-serif;
-    color: #333;
-    padding: 0px;
-}*/
 body {
-    font-family: Open Sans, sans-serif;
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-}
-
-.container{
-    max-width: 1200px;
-    width: 100%;
-}
-
-.container-content {
-    display: flex;
-    align-items: left;
-    max-width: 880px;
-    max-height: 960px;
-}
-.theiaStickySidebar{
-    max-width: 270px;
-    max-height: 1400px;
-    padding: 0px 0px 1px;
-}
-.content {
-    display: flex;
-    padding: 20px 0;
-
-}
-
-.sidebar {
-    width: 25%;
-    padding-right: 20px;
-}
-
-.sidebar .wrapper {
-    background-color: #fff;
+    --wdtFontTypo_Alt: "Raleway", sans-serif;
+    background-color: #fdf6ea;
+  }
+  
+  .head {
+    background-color: #ff6900;
+    color: white;
     padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 8px;
-}
-
-.sidebar .wrapper h2 {
-    margin-top: 0;
-}
-
-.sidebar .wrapper ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-
-.teachers {
+    max-width: 1920px;
+    padding-left: 150px;
+  }
+  
+  .container {
+    margin-top: 50px;
+  }
+  
+  .home {
+    transition: background-color 0.3s ease;
+  }
+  
+  .home:hover {
+    color: #000;
+  }
+  
+  .categories {
+    padding: 20px;
+    border: 2px solid #f5e9d4;
+  }
+  
+  .recent {
+    margin-top: 20px;
+    padding: 20px;
+    border: 2px solid #f5e9d4;
+  }
+  
+  .archives {
+    margin-top: 20px;
+    padding: 20px;
+    border: 2px solid #f5e9d4;
+  }
+  
+  .tags {
+    margin-top: 20px;
+    padding: 20px;
+    border: 2px solid #f5e9d4;
+  }
+  
+  .chat {
+    margin-top: 20px;
+    padding: 20px;
+    border: 2px solid #f5e9d4;
+  }
+  
+  .title-left {
+    border-bottom: 1px solid black;
+    width: 100%;
+    padding-bottom: 10px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .col-3 span {
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .col-3 span:hover {
+    color: #838c48;
+  }
+  .col-3.title-left{
+    text-align: left;
+  }
+  .col-3 .spec {
+    transition: background-color 0.3s ease;
+  }
+  
+  .col-3 .spec:hover {
+    color: #838c48;
+  }
+  
+  .tags .btn1 {
+    transition: background-color 0.3s ease;
+  }
+  
+  .tags .btn1:hover {
+    background-color: #838c48;
+    color: white;
+    border: white;
+  }
+  .teachers {
     width: 100%;
     max-width: 280px;
     max-height: 460px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 10px;
+    gap: 210px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -71,9 +107,7 @@ body {
     gap: 1em;
     
 }
-
-
-.teacher-card {
+.post_teacher{
     background-color: #fcb900;
     margin-bottom: 20px;
     text-align: center;
@@ -83,100 +117,64 @@ body {
     border-radius: 5px;
     width: 280px;
     height: 460px;
-
+    margin-left: -200px;
 }
-.teacher-card:hover {
-    color: #808080;
+.post_teacher:hover {
+    color: #e4d9d9;
     background-color: #838C48;
-    display:flex;
 }
-.teacher-card img {
+.post_teacher img {
     width: 260px;
     height: 280px;
     object-fit: cover;
 }
 
-.teacher-card h3 {
+.post_teacher  h3 {
     margin: 10px 0 5px;
     color: #DA853D;
 }
 
-.teacher-card p {
+.post_teacher p {
     color: #666;
     margin: 0 0 20px;
     color: #000000;
 }
-.teacher-card .teacher{
+.post_teacher  .teacher{
     margin-top: 10px;
 }
-.teacher-card .social-links a {
+.post_teacher  .social-links a {
     text-decoration: none;
     font-size: 20px;
     margin: 0 5px;
     color: #DA853D;
 }
-
 .social-links img {
     width: 24px;
     height: 24px;
 }
-.teacher-card .social-links a:hover {
+.post_teacher .social-links a:hover {
     color: #555;
+    text-align: center;
 }
-
-.wrapper {
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 5px;
-    max-width: 1200px;
-    width: 100%;
+  .col-9 .col-3 {
     display: flex;
-}
-
-.wrappertitle {
-    border: 3px solid #e2d6c1;
-    font-size: 1.5em;
-    margin-bottom: 10px;
-    color: #333;
-}
-.wrapertitle.align {
-    border-bottom: 2px solid #a7c957;
-    display: inline-block;
-    padding-bottom: 5px;
-}
-
-
-.wrapper_tag_cloud{
-    border-bottom: 2px solid #a7c957;
-    display: inline-block;
-    padding-bottom: 5px;
-}
-
-
-.wrapper .wrapper ul {
-    list-style-type: none;
-    padding-left: 0;
-}
-.wrapper .wrapper ul li {
-    margin-bottom: 10px;
-}
-.wrapper .wrapper ul li a {
-    text-decoration: none;
-    color: #333;
-}
-.wrapper .wrapper ul li a:hover {
-    text-decoration: underline;
-}
-.wrapper_categories, .wrapper_recent_comments, .wrapper_archives, .wrapper_tag_cloud, .recent_posts {
-    border: 3px solid #e2d6c1;
-}
-.wrapper_recent_comments{
+    align-items: center;
+    text-align: center;
     
-}
-.wrapper_recent_comments a {
+  }
+  
+  
+  .col-9 .col-3 i {
     padding: 10px;
-    margin-left: 20px;
-}
+  }
+  
+  .col-9 .col-3 p {
+    padding: 0px;
+  }
+
+
+
+
 title_home a:-webkit-any-link {
     color: rgb(255, 255, 255);
     cursor: pointer;
