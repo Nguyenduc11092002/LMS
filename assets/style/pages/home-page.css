@@ -15,6 +15,11 @@ footer{
     
 }
 
+.container {
+  max-width: 1170px !important;
+  width: 100% !important;
+}
+
 .footer{
     width: 33.3%;
 }
