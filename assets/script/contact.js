@@ -33,6 +33,16 @@ document
         errorMessage.style.display = "inline";
       }
     });
+    // Add event listeners to input fields to hide error messages when user starts typing
+    const inputFields = document.querySelectorAll(
+      "#contactForm input, #contactForm textarea"
+    );
+    inputFields.forEach(function (field) {
+      field.addEventListener("input", function () {
+        const errorMessage = field.nextElementSibling;
+        errorMessage.style.display = "none";
+      });
+    });
 
     if (!formValid) {
       document.querySelector(".form-error").style.display = "block";

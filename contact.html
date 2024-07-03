@@ -20,7 +20,6 @@
     <script src="https://unpkg.com/i18next-http-backend@1.4.2/i18nextHttpBackend.min.js"></script>
     <script src="/assets/script/i18next-setup.js" defer></script>
     <script src="/assets/script/contact.js"></script>
-
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -36,11 +35,8 @@
           <h2 data-i18n="translation.contact">Contact</h2>
           <div class="contact-home">
             <div class="contact-home-layout">
-              <a data-i18n="translation.Home" href="/home-page.html"
-                >Home</a> / <span data-i18n="translation.Contact1">  Contact</span>
-             
-              
-              
+              <a data-i18n="translation.Home" href="/home-page.html">Home</a> /
+              <span data-i18n="translation.Contact1"> Contact</span>
             </div>
           </div>
         </div>
@@ -55,7 +51,7 @@
               novalidate
             >
               <div class="form-group">
-                <!-- <label for="name">Your Name</label> -->
+                <label for="name"><i class="fa-solid fa-user"></i></label>
                 <input
                   type="text"
                   id="name"
@@ -66,7 +62,7 @@
                 <span class="error-message">Please fill out this field.</span>
               </div>
               <div class="form-group">
-                <!-- <label for="email">Email</label> -->
+                <label for="name"><i class="fa-solid fa-envelope"></i></label>
                 <input
                   type="email"
                   id="email"
@@ -76,10 +72,12 @@
                 />
                 <span class="error-message">Please fill out this field.</span>
               </div>
-              <div class="form-group">
-                <!-- <label for="phone">Phone</label> -->
+              <div class="form-group1">
+                <label for="name"
+                  ><i class="fa-solid fa-mobile-screen-button"></i
+                ></label>
                 <input
-                  type="tel"
+                  type="phone"
                   id="phone"
                   name="phone"
                   required
@@ -87,8 +85,8 @@
                 />
                 <span class="error-message">Please fill out this field.</span>
               </div>
-              <div class="form-group">
-                <!-- <label for="message">Message</label> -->
+              <div class="form-group2">
+                <label for="name"><i class="fa-solid fa-file"></i></label>
                 <textarea
                   id="message"
                   name="message"
@@ -98,7 +96,9 @@
                 <span class="error-message">Please fill out this field.</span>
               </div>
               <div class="contact-button">
-                <button type="submit" id="btn-contactsubmit">Send Email</button>
+                <button type="submit" id="btn-contactsubmit">
+                  <a data-i18n="translation.Send">Send Email</a>
+                </button>
                 <div class="spinner" id="spinner"></div>
               </div>
               <div class="form-error">
@@ -116,8 +116,7 @@
               <i class="icon fas fa-map-marker-alt"></i>
               <div class="info-text">
                 <a data-i18n="translation.The">
-                  The Design Themes Inc. Mary Jane St,<br />
-                  Sydney 2233 Australia.</a
+                  The Design Themes Inc. Mary Jane St, Sydney 2233 Australia.</a
                 >
               </div>
             </div>

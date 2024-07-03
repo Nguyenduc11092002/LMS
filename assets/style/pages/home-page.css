@@ -15,6 +15,11 @@ footer{
     
 }
 
+.container {
+  max-width: 1170px !important;
+  width: 100% !important;
+}
+
 .footer{
     width: 33.3%;
 }
@@ -116,7 +121,6 @@ body, html {
     display: inline-flex;
     align-items: center;
     margin-bottom: 15px;
-    
 }
 
 .search-bar input[type="text"] {
@@ -257,9 +261,6 @@ body, html {
 }
 
 /* Blog - Phat */
-
-
-
 .blog{
     max-width: 1200px;
 }
@@ -366,6 +367,7 @@ body, html {
   padding: 60px 0 70px 0;
   margin: 0;
 }
+
 .blog-title h2 {
   font-weight: 400;
   font-size: 24px;
