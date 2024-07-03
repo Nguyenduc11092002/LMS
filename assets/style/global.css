@@ -13,6 +13,11 @@ body {
   background-color: #fcf5e9 !important;
 }
 
+.container {
+    max-width: 1170px;
+    width: 100%;
+}
+
 .header {
   padding: 20px 0 !important;
   display: flex; /* Add flexbox to the header */
@@ -554,7 +559,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    max-width: 1200px;
+    max-width: 1170px;
     margin: 0 auto;
     position: relative;
     top: auto;
