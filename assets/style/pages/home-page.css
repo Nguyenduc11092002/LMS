@@ -1,3 +1,164 @@
+/* CSS Home Page */
+
+
+footer{
+    background: #F5E9D4;
+    
+}
+
+.footer{
+    width: 33.3%;
+}
+
+.list{
+    padding: 0;
+}
+
+.list li{
+    width: auto;
+    text-align: center;
+    list-style-type: none;
+    padding: 7px;
+    position: relative;
+}
+
+.list li::before{
+    content: "";
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 100%;
+    width: 0;
+    height: 2px;
+    background: #f18930;
+    transition-duration: .5s;
+}
+
+.list li:hover::before{
+    width: 70px;
+}
+
+.social-icons{
+    text-align: center;
+    padding: 0;
+}
+
+.social-icons li{
+    display: inline-block;
+    text-align: center;
+    padding: 5px;
+}
+
+.social-icons i{
+    color:#838C48 ;
+    font-size: 25px;
+}
+
+/* của Pháp */
+
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero {
+    height: 100vh;
+    background: url('/assets/img/fullscreen-slider.jpg') no-repeat center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    color: white;
+    text-align: center;
+    padding: 0px 10px;
+    max-width: 100%;
+    top: -131px;
+    z-index: -2;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-all{
+    display:block;
+    position: relative;
+    top: 260px;
+   
+}
+
+.hero-content {
+    margin-bottom: 30px;
+}
+
+.search-bar {
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: 15px;
+    
+}
+
+.search-bar input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    width: 300px;
+}
+
+.search-bar button {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+.hero p {
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+.view-courses {
+    display: inline-block;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.hero-stats {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.stat {
+    text-align: center;
+}
+
+.stat .number {
+    font-size: 48px;
+    display: block;
+}
+
+.stat .label {
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+
+
+
+
 /* Blog - Phat */
 .blog{
     max-width: 1200px;
