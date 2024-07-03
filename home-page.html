@@ -10,6 +10,7 @@
       href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css"
       rel="stylesheet"
     />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./assets/style/global.css" />
     <link rel="stylesheet" href="./assets/style/pages/home-page.css" />
     <link rel="icon" href="./assets/img/lms-logo.png" />
@@ -31,47 +32,109 @@
   <body>
     <div id="header-placeholder"></div>
 
-    
-   
+    <!-- Pháp -->
         <div class="hero">
           <div class="hero-all">
           <div class="hero-content">
             <div class="search-bar">
                 <input type="text" placeholder="Keywords">
-                <button type="button">Search</button>
+                <button type="button"><img src="/assets/img/search.png" alt="Search Icon" /></button>
             </div>
-            <p>We have the largest collection of courses</p>
-            <a href="#" class="view-courses">View All Courses</a>
+            <p class="courses-text">We have the largest collection of courses</p>
+            <a href="#" class="view-courses">View All Courses ≫</a>
         </div>
         <div class="hero-stats">
-            <div class="stat">
-                <span class="number">332</span>
-                <span class="label">Courses</span>
-            </div>
-            <div class="stat">
-                <span class="number">1403</span>
-                <span class="label">Members</span>
-            </div>
-            <div class="stat">
-                <span class="number">60</span>
-                <span class="label">Authors</span>
-            </div>
-            <div class="stat">
-                <span class="number">120</span>
-                <span class="label">Subjects</span>
+          <div class="stat">
+            <span class="number" data-target="332">0</span>
+            <span class="label">Courses</span>
+        </div>
+        <div class="stat">
+            <span class="number" data-target="1403">0</span>
+            <span class="label">Members</span>
+        </div>
+        <div class="stat">
+            <span class="number" data-target="60">0</span>
+            <span class="label">Authors</span>
+        </div>
+        <div class="stat">
+            <span class="number" data-target="120">0</span>
+            <span class="label">Subjects</span>
             </div>
         </div>
+        </div>
+        </div>
+    <main class="container mt-5">
+      <div class="banner"></div>
+      <div class="icon_banner"></div>
+      <div class="courses" mt-4>
+        <h2 class="courses__title"data-aos="fade-up" data-i18n="translation.Courses">
+          Courses
+        </h2>
+          <section class="courses_warpaper">
+            
+              <div class="row">
+                <div class="col-md-4 mb-4">
+                  <!-- <div class="col-12"> -->
+                  <div>  
+                      <h3 class="courses__title_sub" data-i18n="translation.courseTitleSub">About Courses</h3>
+                      <p class="courses__description" data-i18n="translation.courseDescription1">Student Registration and Administration Nemo enim ipsam voluptatem quia voluptas sit atur aut odit aut fugit, sed quia consequuntur magni res eos qui ratione voluptatem sequi nesciunt.</p>
+                      <p class="courses__description" data-i18n="translation.courseDescription2">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised believable.</p>
+                      <button class="courses__button" data-i18n="translation.CourseBtn">
+                        View All Courses
+                      </button>
+                  </div>
+                </div>
+                <div class="col-md-8 mb-4">
+                  <div class="col-md-4">
+                    <div class="card course">
+                        <img src="https://via.placeholder.com/400x200" class="card-img-top course__image" alt="Course Image">
+                        <div class="card-body course__body">
+                            <span class="badge bg-success course__badge">Free</span>
+                            <h5 class="card-title course__title">Power Electronics</h5>
+                            <p class="card-text course__category">Education | 7 Curriculum</p>
+                            <p class="card-text course__time"><small class="text-muted">1d 1h 50m</small></p>
+                            <p class="card-text course__rating"><small class="text-muted">7 votes, average: 4.14 out of 5</small></p>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                      <div class="card course">
+                          <img src="https://via.placeholder.com/400x200" class="card-img-top course__image" alt="Course Image">
+                          <div class="card-body course__body">
+                              <span class="badge bg-success course__badge">Free</span>
+                              <h5 class="card-title course__title">Introduction to Calculus</h5>
+                              <p class="card-text course__category">Mathematics | 5 Curriculum</p>
+                              <p class="card-text course__time"><small class="text-muted">1m 21d 22h</small></p>
+                              <p class="card-text course__rating"><small class="text-muted">9 votes, average: 4.67 out of 5</small></p>
+                        </div>
+                      </div>
+                  </div>
+                </div> 
+              </div>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card ad">
+                        <img src="./assets/img/lms-banner1.jpg" class="card-img-top ad__image" alt="Ad Image">
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card ad">
+                        <img src="./assets/img/lms-banner2.jpg" class="card-img-top ad__image" alt="Ad Image">
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card ad">
+                        <img src="./assets/img/lms-banner3.jpg" class="card-img-top ad__image" alt="Ad Image">
+                    </div>
+                </div>
+            </div>
+        </section>
       </div>
-    </div>
 
- <main class="container">
-        <div class="icon_banner"></div>
-        <div class="courses"></div>
-
-      <!--Phat  -->
+      <!-- Phát -->
       <div class="blog">
-        <div class="blog-title">
-          <h1 data-i18n="translation.menuBlog">BLOG</h1>
+        <div class="text-center blog-title">
+          <h2 data-i18n="translation.menuBlog">BLOG</h2>
         </div>
         <div class="blog-cards">
           <!-- Blog Card 1 -->
@@ -263,6 +326,7 @@
           <div class="blog-events-title">
             <h1 data-i18n="translation.blogEvent">UPCOMING EVENTS</h1>
           </div>
+          <div class="line"></div>
         </div>
         <div class="blog-events-detail">
           <img src="/assets/img/blog-event.jpg" alt="" />
@@ -285,25 +349,22 @@
               asperiores esse tempora maxime iusto consectetur magnam, error,
               accusantium enim est tempore.
             </p>
-            <div class="getin-btn">
-              <input
-                type="email"
-                name="email"
-                required="required"
-                placeholder="Your Email Address"
-                value=""
-              />
-              <button type="submit">SUBCRIBE</button>
-            </div>
+            <div class="blog-subscribe">
+              <form class="subscribe-form">
+                  <input type="email" id="email" name="email" placeholder="Your Email Address" required>
+                  <button type="submit">SUBCRIBE</button>
+              </form>
+          </div>
           </div>
         </div>
       </div>
 
+      <!-- Đức -->
       <div class="process"></div>
       </div>
       <div class="our_process">
         <h2
-          class="text-center"
+          class="text-center our_process_text"
           data-aos="fade-up"
           data-i18n="translation.Process"
         >
@@ -557,8 +618,9 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
-    <script src="/assets/script/header.js" defer></script>
-    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <script src="/assets/script/header.js"></script>
   </body>
   <footer></footer>
   <script src="/assets/script/footer.js" defer></script>
