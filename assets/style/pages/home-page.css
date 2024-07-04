@@ -119,6 +119,11 @@ body, html {
     transition: all 0.9s ease-out;
 }
 
+.hero-content a{
+    z-index: 2;
+
+}
+
 .hero-content.animate {
     opacity: 1;
     transform: translateY(0);
