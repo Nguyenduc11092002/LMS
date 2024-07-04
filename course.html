@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Course</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./assets/style/pages/course.css" />
+    <script src="https://unpkg.com/i18next@21.8.5/dist/umd/i18next.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+    <script src="https://unpkg.com/i18next-http-backend@1.4.2/i18nextHttpBackend.min.js"></script>
+    <script src="/assets/script/i18next-setup.js" defer></script>
+    <script src="/assets/script/course-template.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="./assets/style/global.css">
+  </head>
+  <body>
+    <div id="header-placeholder"></div>
+
+    <main>
+        <div class="breadcrumb">
+              <h1>Courses</h1>
+              <div class="breadcrumb-link">
+                <a href="#">Home</a> / Courses
+              </div>
+            </div>
+      
+            <div class="container py-5" data-aos="fade-up" data-aos-delay="500">
+                <div class="content-wrapper">
+                    <div class="category">
+                      <div class="col-md-4">
+                        <h6><span class="course">Course Categories</span></h6>
+                        <div class="form-check-group">
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="education">
+                            <label class="form-check-label" for="education">Education</label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="engineering">
+                            <label class="form-check-label" for="engineering">Engineering</label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="health">
+                            <label class="form-check-label" for="health">Health</label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="law">
+                            <label class="form-check-label" for="law">Law</label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="mathematics">
+                            <label class="form-check-label" for="mathematics">Mathematics</label>
+                          </div>
+                        </div>
+                      </div>
+                  
+                      <div class="col-md-4">
+                        <h6><span class="instructor">Instructor</span></h6>
+                        <div class="form-check-group">
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="instructor" id="DamieGlendell">
+                            <label class="form-check-label" for="DamieGlendell">Damie Glendell</label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="instructor" id="JamesCatwin">
+                            <label class="form-check-label" for="JamesCatwin">James Catwin</label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="instructor" id="JennySheen">
+                            <label class="form-check-label" for="JennySheen">Jenny Sheen</label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="instructor" id="JimMorrison">
+                            <label class="form-check-label" for="JimMorrison">Jim Morrison</label>
+                          </div>
+                        </div>
+                      </div>
+                  
+                      <div class="col-md-4">
+                        <h6><span class="cost">Cost</span></h6>
+                        <div class="form-check-group">
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="cost" id="all">
+                            <label class="form-check-label" for="all">All</label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="cost" id="free">
+                            <label class="form-check-label" for="free">Free</label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="cost" id="paid">
+                            <label class="form-check-label" for="paid">Paid</label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                                   
+      
+              <div class="course-content">
+              <div class="course-detail">
+                  <button class="grid-button active">
+                    <img src="/assets/img/grid.png" alt="">
+                    GRID
+                  </button>
+                  <button class="list-button">
+                    <img src="/assets/img/list.png" alt="">
+                    LIST
+                  </button>
+              
+                <div class="order-by">
+                  Order by :
+                  <select>
+                    <option value="Select Order" selected disabled>Select Order</option>
+                    <option value="recent">Recent Courses</option>
+                    <option value="highest">Highest Rated</option>
+                    <option value="members">Most Members</option>
+                    <option value="alphabetical">Alphabetical</option>
+                  </select>
+                </div>
+              </div>
+                
+              <div class="course-cards">
+                <div class="course-card">
+                  <div class="course-card-img">
+                  <img src="/assets/img/courses-listing-image-1.jpg" class="course-card-image">
+                  <div class="view-course">
+                    <span data-i18n="translation.courseViewCourse">VIEW COURSE</span>
+                  </div>
+                  </div>
+                  <div class="course-card-header">
+                    <h5 data-i18n="translation.courseCardHeader1">Free</h5>
+                  </div>
+                  <div class="course-card-body">
+                    <a data-i18n="translation.courseCardTitle1" href="#">Power Electronics</a>
+                    <p  data-i18n="translation.courseCardCate1"><a href="#">Education</a> | 7 Curriculum</p>
+                  </div>
+                    <div class="details">
+                      <div class="duration">
+                        <img src="/assets/img/course-clock.png" alt="">
+                        1d 1h 50m
+                      </div>
+                      <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span class="vote-count">(<span class="upper">7</span> votes, average: <span class="upper">4.14</span> out of 5)</span>
+                      </div>
+                    </div>
+                </div>
+                <div class="course-card">
+                  <div class="course-card-img">
+                  <img src="/assets/img/courses-listing-image-2.jpg" class="course-card-image">
+                  <div class="view-course">
+                    <span data-i18n="translation.courseViewCourse">VIEW COURSE</span>
+                  </div>
+                  </div>
+                  <div class="course-card-header">
+                    <h5 data-i18n="translation.courseCardHeader1">Free</h5>
+                  </div>
+                  <div class="course-card-body">
+                    <a data-i18n="translation.courseCardTitle2" href="#">Introduction to Calculus</a>
+                    <p data-i18n="translation.courseCardCate2"><a href="#">Mathematics</a> | 5 Curriculum</p>
+                  </div>
+                    <div class="details">
+                      <div class="duration">
+                        <img src="/assets/img/course-clock.png" alt="">
+                        1m 21d 22h
+                      </div>
+                      <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span class="vote-count">(<span class="upper">8</span> votes, average: <span class="upper">4.63</span> out of 5, <span class="upper">rated</span>)</span>
+                      </div>
+                    </div>
+                </div>
+                <div class="course-card">
+                  <div class="course-card-img">
+                  <img src="/assets/img/courses-listing-image-3.jpg" class="course-card-image">
+                  <div class="view-course">
+                    <span data-i18n="translation.courseViewCourse">VIEW COURSE</span>
+                  </div>
+                  </div>
+                  <div class="course-card-header">
+                    <h5 data-i18n="translation.courseCardHeader1">Free</h5>
+                  </div>
+                  <div class="course-card-body">
+                    <a data-i18n="translation.courseCardTitle3" href="#">Basic Laws and Policies</a>
+                    <p data-i18n="translation.courseCardCate3"><a href="#">Law</a> | 5 Curriculum</p>
+                  </div>
+                    <div class="details">
+                      <div class="duration">
+                        <img src="/assets/img/course-clock.png" alt="">
+                        20d 18h 30m
+                      </div>
+                      <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <span class="vote-count">(<span class="upper">7</span> votes, average: <span class="upper">3.57</span> out of 5)</span>
+                      </div>
+                    </div>
+                </div>
+                <div class="course-card">
+                  <div class="course-card-img">
+                    <img src="/assets/img/courses-listing-image-4.jpg" class="course-card-image">
+                    <div class="view-course">
+                      <span data-i18n="translation.courseViewCourse">VIEW COURSE</span>
+                    </div>
+                  </div>
+                  <div class="course-card-header">
+                    <h5 data-i18n="translation.courseCardHeader2">$50</h5>
+                  </div>
+                  <div class="course-card-body">
+                    <a data-i18n="translation.courseCardTitle4" href="#">Healthcare Delivery</a>
+                    <p data-i18n="translation.courseCardCate4"><a href="#">Health</a> | 4 Curriculum</p>
+                  </div>
+                    <div class="details">
+                      <div class="duration">
+                        <img src="/assets/img/course-clock.png" alt="">
+                        3d 2h 50m
+                      </div>
+                      <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <span class="vote-count">(<span class="upper">7</span> votes, average: <span class="upper">3.57</span> out of 5, <span class="upper">rated</span>)</span>
+                      </div>
+                    </div>
+                </div>
+                <div class="course-card">
+                  <div class="course-card-img">
+                    <img src="/assets/img/courses-listing-image-5.jpg" class="course-card-image">
+                    <div class="view-course">
+                      <span data-i18n="translation.courseViewCourse">VIEW COURSE</span>
+                    </div>
+                    </div>
+                  <div class="course-card-header">
+                    <h5 data-i18n="translation.courseCardHeader1">Free</h5>
+                  </div>
+                  <div class="course-card-body">
+                    <a data-i18n="translation.courseCardTitle5" href="#">General Business Law</a>
+                    <p data-i18n="translation.courseCardCate5"><a href="#">Law</a> | 7 Curriculum</p>
+                  </div>
+                    <div class="details">
+                      <div class="duration">
+                        <img src="/assets/img/course-clock.png" alt="">
+                        1m 25d 12h 50m
+                      </div>
+                      <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <span class="vote-count">(<span class="upper">3</span> votes, average: <span class="upper">3.67</span> out of 5)</span>
+                      </div>
+                    </div>
+                </div>
+                <div class="course-card">
+                  <div class="course-card-img">
+                    <img src="/assets/img/courses-listing-image-6.jpg" class="course-card-image">
+                    <div class="view-course">
+                      <span data-i18n="translation.courseViewCourse">VIEW COURSE</span>
+                    </div>
+                    </div>
+                  <div class="course-card-header">
+                    <h5 data-i18n="translation.courseCardHeader6">Free</h5>
+                  </div>
+                  <div class="course-card-body">
+                    <a data-i18n="translation.courseCardTitle6" href="#">Emergin Trends and Technologies</a>
+                    <p data-i18n="translation.courseCardCate2"><a href="#">Engineering</a> | 4 Curriculum</p>
+                  </div>
+                  <div class="details">
+                    <div class="duration">
+                      <img src="/assets/img/course-clock.png" alt="">
+                      1m 16d 3h
+                    </div>
+                    <div class="rating">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="far fa-star"></i>
+                      <span class="vote-count">(<span class="upper">4</span> votes, average: <span class="upper">3.00</span> out of 5)</span>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            
+            <div class="page-button">
+              <button class="page-num active" data-page="1">1</button>
+              <button class="page-num" data-page="2">2</button>
+              <button class="page-num">Next <i class="fas fa-arrow-right"></i></button>
+            </div>
+            </div>
+          </div>
+        </main>
+    
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+          crossorigin="anonymous"
+        ></script>
+        <script src="/assets/script/header.js"></script>
+        <script src="/assets/script/course.js"></script>
+        <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+        <script>
+          AOS.init();
+        </script>
+      </body>
+      <footer></footer>
+      <script src="/assets/script/footer.js" defer></script>
+    </html>
