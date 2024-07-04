@@ -62,6 +62,59 @@
     "blogCardTime": "Ngày 12 tháng 12 năm 2024@8:00 sáng -Ngày 13 tháng 12 năm 2025 @ 5:00 chiều",
     "blogCardAddress": "Đồi Peppard, Hoa Kỳ",
    
+    "menuTeacher": "Giáo Viên",
+    "title": {
+      "teachers": "Giáo viên",
+      "categories": "Danh mục",
+      "recentComments": "Bình luận gần đây",
+      "archives": "Lưu trữ",
+      "tags": "Thẻ"
+    },
+    "categories": {
+      "uncategorized": "Chưa phân loại (7)"
+    },
+    "comments": {
+      "dtlmsele": "dtlmsele về Phát triển ứng dụng",
+      "dummy": "dummy về Điện tử công suất",
+      "kowsi": "kowsi về Công nghệ trò chơi điện tử",
+      "ram1": "ram về Lập trình nâng cao",
+      "ram2": "ram về Xử lý tín hiệu số"
+    },
+    "archives": {
+      "november2023": "Tháng 11, 2023"
+    },
+    "tags": {
+      "blog": "BLOG",
+      "chat": "CHAT",
+      "tips": "MẸO"
+    },
+    "chat": {
+      "contrary": "Ngược lại với phổ biến",
+      "omnis": "Omnis voluptas assumenda",
+      "piece": "Một phần cổ điển",
+      "latinProfessor": "Giáo sư tiếng Latin tại Hampden",
+      "latinWords": "Từ tiếng Latin Ipsum",
+      "date": "30 Thứ Năm",
+      "comments": "0"
+    },
+    "teachers": {
+      "damieGlendell": {
+        "name": "DAMIE GLENDELL",
+        "title": "Đồng Giám Đốc"
+      },
+      "jamesCatwin": {
+        "name": "JAMES CATWIN",
+        "title": "Giám Đốc Nghệ Thuật"
+      },
+      "jennySheen": {
+        "name": "JENNY SHEEN",
+        "title": "Lập Trình Truyền Thông Kỹ Thuật Số"
+      },
+      "jimMorrison": {
+        "name": "JIM MORRISON",
+        "title": "Trưởng Lập Trình Viên"
+      }
+    },
 
     "contact": "liên hệ",
     "Home": "Nhà",
@@ -81,10 +134,33 @@
     "PurchaseStep": "Mua khóa học",
     "testText": "Vì không ai tránh né, ghét bỏ hay chạy trốn niềm vui vì đó là niềm vui, mà vì kết quả là những điều tuyệt vời.",
     "cardTitle": "Trái ngược với niềm tin phổ biến",
+    "testText": "Vì không ai tránh né, ghét bỏ hay chạy trốn niềm vui vì đó là niềm vui, mà vì kết quả là những điều tuyệt vời.",
+
+
     "Courses": "Các khóa học",
     "CourseBtn": "Xem toàn bộ khóa học",
     "courseTitleSub": "Về các khóa học",
     "courseDescription1": "Đăng ký và quản lý sinh viên Vì không ai theo đuổi, ghét bỏ hay chạy trốn niềm vui vì đó là niềm vui, mà vì những điều tuyệt vời sẽ đến với những người không biết cách theo đuổi niềm vui một cách hợp lý.",
-    "courseDescription2": "Có nhiều phiên bản khác nhau của Lorem Ipsum, nhưng phần lớn đã được thay đổi ở một số hình thức, bằng cách thêm yếu tố hài hước hoặc ngẫu nhiên hóa để trở nên đáng tin hơn."
+    "courseDescription2": "Có nhiều phiên bản khác nhau của Lorem Ipsum, nhưng phần lớn đã được thay đổi ở một số hình thức, bằng cách thêm yếu tố hài hước hoặc ngẫu nhiên hóa để trở nên đáng tin hơn.",
+    "ViewCourseBtn": "XEM KHÓA HỌC",
+    "FreeCourse": "Miễn Phí",
+    "PowerElectronics": "Năng lượng điện",
+    "IntroductionToCalculus": "Giới thiệu về phép tính",
+    "BasicLawsAndPolicies": "Luật và chính sách cơ bản",
+    "HealthcareDelivery": "Cung cấp dịch vụ chăm sóc sức khỏe",
+    "GeneralBusinessLaw": "Luật kinh doanh chung",
+    "EmergingTrendsAndTechnologies": "Xu hướng và công nghệ mới nổi",
+    "FitnessTrainingProgram": "Chương trình đào tạo thể hình",
+    "ArchitectureAnalysis&Design": "Phân tích & Thiết kế kiến trúc",
+    "MaintenanceTraining": "Đào tạo bảo trì",
+    "AnalysisOfAlgorithms": "Phân tích thuộc toán",
+    "ProcessingDigitalSignal": "Xử lý tín hiệu số",
+    "AdvancedProgramming": "Lập trình nâng cao",
+    "Curriculum": "Chương trình giảng dạy",
+    "Education": "Giáo dục",
+    "Mathematics": "Toán học",
+    "Law": "Luật",
+    "Heath": "Sức khỏe",
+    "Engineering": "Kỹ thuật"
   }
 }
