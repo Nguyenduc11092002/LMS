@@ -84,6 +84,7 @@ body {
   
 .tags .btn1 {
   transition: background-color 0.3s ease;
+  padding: 5px;
 }
 .tags .btn1:hover {
   background-color: #838c48;
@@ -151,6 +152,7 @@ a:-webkit-any-link {
     color: rgb(15, 13, 13);
     cursor: pointer;
 }
+
 .banner {
     background-color: #d4813e;
     color: white;
