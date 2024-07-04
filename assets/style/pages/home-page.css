@@ -229,35 +229,40 @@ transition: all 0.5s ease;
 }
 
 .media-icon {
-display: flex;
-justify-content: center;
-align-items: center;
-width: 150px;
-height: 150px;
-padding: 10px;
-border-radius: 50%;
-background-color: #E2D6C1;
-border: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 150px;
+  padding: 10px;
+  border-radius: 50%;
+  background-color: #F5E9D4;
+  border: transparent;
+  transition: all 0.5s ease;
 }
 
-.media img {
-width: 55%;
-transition: transform 0.5s ease;
-filter: sepia(1) saturate(10) hue-rotate(10deg);
+.media-icon span {
+  width: 65%;
+  height: 65%;
 }
 
-.media span {
-margin-top: 15px;
-font-size: 20px;
-transition: color 0.5s ease;
+.media-icon span i {
+  fill:rgb(218, 133, 61);
+  transition: all 0.5s ease;
 }
 
-.media:hover img {
-transform: scale(0.90); /* Giảm kích thước ảnh khi hover */
+.media p {
+  margin-top: 15px;
+  font-size: 20px;
+  transition: color 0.5s ease;
 }
 
-.media:hover span {
-color: #838C49; /* Đổi màu chữ khi hover */
+.media:hover svg {
+  transform: scale(0.90);
+}
+
+.media:hover p {
+  color: #838C49
 }
 
 /* Blog - Phat */
