@@ -10,10 +10,35 @@
     "cardTitle": "Contrary to popular belief",
     "blogEvent": "UPCOMING EVENTS",
     "blogGetin": "GET IN TOUCH WITH US",
-    "blogFooter": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia alias, doloremque at eum nobis nemo amet officia suscipit asperiores esse tempora maxime iusto consectetur magnam, error, accusantium enim est tempore.",
+    "blogFooter": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which Ipsum slightly believable",
     "blogCardDetail": "Welcoming 25th Batch",
     "blogCardTime": "December 12,2024@8:00 am -December 13,2025 @ 5:00 pm",
     "blogCardAddress": "Peppard Hill, United States",
+
+  
+    "effect": "We have the largest collection of courses",
+    "viewall": "View All Courses",
+    "Course": "Courses",
+    "Members": "Members",
+    "Authors": "Authors",
+    "Subjects": "Subjects",
+
+    "AboutUs": "About Us",
+    "footerLoremipsum": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et lobortis diam. Duis tellus enim, vestibulum eget varius id, vulputate et mi. Nullam feugiat, diam quis interdum varius",
+    "Start": "START LEARNING NOW",
+    "Popular": "Popular Courses",
+    "Power": "Power Electronics",
+    "Introduction": "Introduction to Calculus",
+    "Basic": "Basic Laws and Policies",
+    "Quick":"Quick Links",
+    "footerAll":"All Courses",
+    "Summer":"Summer Sessions",
+    "Professional":"Professional Courses",
+    "Privacy":"Privacy Policy",
+    "Terms":"Terms of Use",
+    "footerContact":"Contact Us",
+    "footerloco":"The Design Themes Inc Mary Jane St, Sydney 2233 Australia",
+    
 
     
 
@@ -142,6 +167,11 @@
     "CourseBtn": "View All Courses",
     "courseTitleSub": "About Courses",
     "courseDescription1": "Student Registration and Administration Nemo enim ipsam voluptatem quia voluptas sit atur aut odit aut fugit, sed quia consequuntur magni res eos qui ratione voluptatem sequi nesciunt.",
+    "courseDescription2": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised believable."
+
+    
+  },
+
     "courseDescription2": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised believable.",
     "ViewCourseBtn": "VIEW COURSE",
     "FreeCourse": "Free",
@@ -163,10 +193,11 @@
     "Law": "Law",
     "Heath": "Heath",
     "Engineering": "Engineering"
-  }  ,
+    ,
     
     "courseDescription2": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised believable.",
   
     "menuTeacher": "Teacher"
   }
+
 

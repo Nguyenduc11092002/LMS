@@ -91,7 +91,7 @@ body, html {
   text-align: center;
   padding: 0px 10px;
   max-width: 100%;
-  top: -131px;
+  top: -140px;
   z-index: -2;
   flex-direction: column;
   justify-content: center;
@@ -101,7 +101,7 @@ body, html {
 .hero-all{
   display:block;
   position: relative;
-  top: 290px;
+  top: 470px;
  
 }
 
@@ -118,9 +118,13 @@ body, html {
 }
 
 .search-bar {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   margin-bottom: 15px;
+  position: relative;
+  justify-content: center;
+  bottom: 980px;
+ 
 }
 
 .search-bar input[type="text"] {
@@ -819,8 +823,11 @@ color: rgb(228, 101, 3);
   letter-spacing: 0.5px;
   margin-top: 5px;
   margin-bottom: 10px;
+  cursor:default;
 }
-
+.blog-svg p:hover{
+  color: #F2672E;
+}
 .blog-icon-html5{
   background-color: #F2672E;
   border-radius: 50%;
@@ -890,8 +897,6 @@ color: rgb(228, 101, 3);
 .blog-events-detail img {
   width: 150px; 
   height: auto; 
-
-
   object-fit: cover; 
 }
 
@@ -915,6 +920,7 @@ color: rgb(228, 101, 3);
   margin: 10px 0; 
   padding: 0;
   color: #555;
+  max-width: 370px;
 }
 
 .blog-footer{
@@ -930,7 +936,7 @@ color: rgb(228, 101, 3);
   padding: 70px;
 }
 .getin{
-  width: 70%;
+  width: 63%;
   text-align: center;
   color: #ddd;
 }
@@ -947,7 +953,7 @@ text-align: center;
 justify-content: center;
 display:flex;
 align-items: center;
-width: 100%;
+width: 70%;
 }
 .subscribe-form input[type="email"] {
 width: 60%; 

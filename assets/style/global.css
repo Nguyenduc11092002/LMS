@@ -564,6 +564,7 @@ body {
     position: relative;
     top: auto;
     margin-bottom: 30px;
+    text-align: left;
 }
 
 .footer-links {
@@ -613,14 +614,14 @@ body {
 .footer-section .footer-links .line1 {
     color: #666; /* Change this to your desired color for the list items */
     border-bottom: 1px solid #ccc; /* Add a small line under each list item */
-    padding-bottom: 10px; /* Add some padding at the bottom */
-    margin-bottom: 10px; /* Add some margin at the bottom */
+    padding-bottom: 10px; 
+    margin-bottom: 10px; 
 }
 
 /*footer-links2*/
 .footer-section .footer-links2 a {
     padding-bottom: 10px; /* Add some padding at the bottom */
-    margin-bottom: 10px; /* Add some margin at the bottom */
+    margin-bottom: 10px;  
     font-size: 14px; 
     color: #33333393;
 }
@@ -630,7 +631,7 @@ body {
     color: #666; /* Change this to your desired color for the list items */
     border-bottom: 1px solid #ccc; /* Add a small line under each list item */
     padding-bottom: 10px; /* Add some padding at the bottom */
-    margin-bottom: 10px; /* Add some margin at the bottom */
+    margin-bottom: 10px;  
     font-size: 14px;
 }
 
@@ -756,6 +757,8 @@ body {
 .hover-text {
     color: #fff; /* Default text color */
     transition: color 0.3s; /* Smooth transition */
+    position: relative;
+    right: 110px;
 }
 
 .hover-text:hover {
