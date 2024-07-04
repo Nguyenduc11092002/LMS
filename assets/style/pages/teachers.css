@@ -1,6 +1,6 @@
 body {
   box-sizing: border-box;
-  margin: 0;
+  margin: 0 !important;
   padding: 0;
   --wdtFontTypo_Alt: "Raleway", sans-serif;
   background-color: #fdf6ea;
@@ -63,24 +63,25 @@ body {
   font-weight: bold;
 }
   
-.col-3 span {
+.col-4 span {
   font-weight: bold;
   transition: background-color 0.3s ease;
 }
   
-.col-3 span:hover {
+.col-4 span:hover {
   color: #838c48;
 }
-.col-3.title-left{
+.col-4.title-left{
   text-align: left;
 }
-.col-3 .spec {
+.col-4 .spec {
   transition: background-color 0.3s ease;
 }
   
-.col-3 .spec:hover {
+.col-4 .spec:hover {
   color: #838c48;
 }
+
   
 .tags .btn1 {
   transition: background-color 0.3s ease;
@@ -98,15 +99,32 @@ img {
     
 .col-9 .col-3 {
   margin: 20px;
-  background-color: #f5e9d4;
+   background: transparent;
   display: flex;
-  align-items: center;
   text-align: center;
-  padding: 20px;
   transition: background-color 0.3s ease;
+}
+.col-4{
+  margin: 0;
+  display: flex;
+  border-radius: 5px;
+  padding-top: 10px;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.card-teacher {
+  background-color: #f5e9d4;
+  padding: 10px 0 5px;
+  margin: 0 !important;
+  width: 100%;
 }
     
 .col-9 .col-3 i {
+  padding: 10px;
+  border-radius: 25px;
+}
+.col-4 i {
   padding: 10px;
   border-radius: 25px;
 }
@@ -123,19 +141,43 @@ img {
   margin: 0 auto;
   padding-bottom: 5px;
 }
+.col-4 hr {
+  max-width: 50px;
+  width: 100%;
+  margin: 0 auto;
+  padding-bottom: 5px;
+}
     
 .col-9 .col-3:hover {
   background-color: #838c48;
   color: white;
 }
-    
-.col-3:hover .spec2 {
-  color: white;
-} 
-.col-3:hover .spec2:hover {
+.col-4:hover .card-teacher {
+  background-color: #838c48;
   color: black;
 }
-    
+.col-4:hover .spec2 {
+  color: white;
+} 
+
+.col-4:hover .spec3 {
+  color: white;
+} 
+.col-4:hover .spec2:hover {
+  color: black;
+}
+.col-4:hover i {
+  color: white;
+}
+.col-4 i:hover {
+  background-color: white;
+  color: black;
+}    
+.row {
+  margin-left: 5px !important;
+}
+
+
 .col-9 .col-3 i:hover {
   background-color: white;
   color: black;
