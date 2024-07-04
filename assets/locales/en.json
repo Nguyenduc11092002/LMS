@@ -31,13 +31,14 @@
     "Introduction": "Introduction to Calculus",
     "Basic": "Basic Laws and Policies",
     "Quick":"Quick Links",
-    "footerAll":"All Courses",
+    "footerALL":"All Courses",
     "Summer":"Summer Sessions",
     "Professional":"Professional Courses",
     "Privacy":"Privacy Policy",
     "Terms":"Terms of Use",
     "footerContact":"Contact Us",
     "footerloco":"The Design Themes Inc Mary Jane St, Sydney 2233 Australia",
+    "ContactUs":"Contact Us",
     
 
     
@@ -167,11 +168,6 @@
     "CourseBtn": "View All Courses",
     "courseTitleSub": "About Courses",
     "courseDescription1": "Student Registration and Administration Nemo enim ipsam voluptatem quia voluptas sit atur aut odit aut fugit, sed quia consequuntur magni res eos qui ratione voluptatem sequi nesciunt.",
-    "courseDescription2": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised believable."
-
-    
-  },
-
     "courseDescription2": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised believable.",
     "ViewCourseBtn": "VIEW COURSE",
     "FreeCourse": "Free",
@@ -192,12 +188,17 @@
     "Mathematics": "Mathematics",
     "Law": "Law",
     "Heath": "Heath",
-    "Engineering": "Engineering"
-    ,
-    
+    "Engineering": "Engineering",
+    "Vote": "votes, average:",
+    "OutOf": "out of",
+    "Rated": "rated",
+
+
+
     "courseDescription2": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised believable.",
-  
     "menuTeacher": "Teacher"
+    
+  }
   }
 
 

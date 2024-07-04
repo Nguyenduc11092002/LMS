@@ -95,7 +95,7 @@
       
       <div class="courses" mt-4>
         <div class="course_title_btn">
-          <h2 class="courses__title" data-aos="fade-up" data-i18n="translation.Courses">Courses</h2>
+          <h2 class="courses__title" data-aos="fade-left" data-i18n="translation.Courses">Courses</h2>
           <div class= "button_slider">
             <button class="btn_slider prev" onclick="prevSlide()">&#10094;</button>
             <button class="btn_slider next" onclick="nextSlide()">&#10095;</button>
@@ -103,7 +103,7 @@
         </div>
         <section class="courses_wrapper">
           <div class="info_courses">
-            <div class="about_course">
+            <div class="about_course" data-aos="fade-left">
               <div>
                 <h3 class="courses__title_sub" data-i18n="translation.courseTitleSub">About Courses</h3>
                 <p class="courses__description" data-i18n="translation.courseDescription1">Student Registration and Administration Nemo enim ipsam voluptatem quia voluptas sit atur aut odit aut fugit, sed quia consequuntur magni res eos qui ratione voluptatem sequi nesciunt.</p>
@@ -111,7 +111,7 @@
                 <button class="courses__button" data-i18n="translation.CourseBtn">View All Courses</button>
               </div>
             </div>
-            <div class="slider">
+            <div class="slider" data-aos="fade-right">
               <div class="courses__content">
                 <!-- Course 1 -->
                 <div class="course">
@@ -138,7 +138,7 @@
                       </div>
                       <div class="course__rating">
                         <div class="course__rating_vote"></div>
-                        <div class="course__rating_vote_star">
+<div class="course__rating_vote_star">
                           <div class="star_vote">
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
@@ -146,7 +146,16 @@
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star-half-stroke"></i>
                           </div>
-                          <p><small class="text-muted">(<span>7</span> votes, average: <span>4.14</span> out of 5 <span>rated</span>)</small></p>
+                          <p>
+                            <small class="text-muted">
+                              (<span>7</span>
+                              <p class="text-muted_text" data-i18n="translation.Vote">votes, average:</p>
+                              <span>4.14</span> 
+                              <p data-i18n="translation.OutOf">out of</p>
+                              <p>5</p>
+                              <span data-i18n="translation.Rated">rated</span>)
+                            </small>
+                          </p>
                         </div>
                       </div>
                     </div>
@@ -182,10 +191,19 @@
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star-half-stroke"></i>
                           </div>
-                          <p><small class="text-muted">(<span>10</span> votes, average: <span>4.74</span> out of 5 <span>rated</span>)</small></p>
+                          <p>
+                            <small class="text-muted">
+                              (<span>7</span>
+                              <p class="text-muted_text" data-i18n="translation.Vote">votes, average:</p>
+                              <span>4.14</span> 
+                              <p data-i18n="translation.OutOf">out of</p>
+                              <p>5</p>
+                              <span data-i18n="translation.Rated">rated</span>)
+                            </small>
+                          </p>
                         </div>
                       </div>
                     </div>
@@ -224,7 +242,16 @@
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star-half-stroke"></i>
                           </div>
-                          <p><small class="text-muted">(<span>8</span> votes, average: <span>3.75</span> out of 5 <span>rated</span>)</small></p>
+                          <p>
+                            <small class="text-muted">
+                              (<span>7</span>
+<p class="text-muted_text" data-i18n="translation.Vote">votes, average:</p>
+                              <span>4.14</span> 
+                              <p data-i18n="translation.OutOf">out of</p>
+                              <p>5</p>
+                              <span data-i18n="translation.Rated">rated</span>)
+                            </small>
+                          </p>
                         </div>
                       </div>
                     </div>
@@ -263,7 +290,16 @@
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star-half-stroke"></i>
                           </div>
-                          <p><small class="text-muted">(<span>7</span> votes, average: <span>3.57</span> out of 5 <span>rated</span>)</small></p>
+                          <p>
+                            <small class="text-muted">
+                              (<span>7</span>
+                              <p class="text-muted_text" data-i18n="translation.Vote">votes, average:</p>
+                              <span>4.14</span> 
+                              <p data-i18n="translation.OutOf">out of</p>
+                              <p>5</p>
+<span data-i18n="translation.Rated">rated</span>)
+                            </small>
+                          </p>
                         </div>
                       </div>
                     </div>
@@ -302,14 +338,23 @@
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star-half-stroke"></i>
                           </div>
-                          <p><small class="text-muted">(<span>3</span> votes, average: <span>3.67</span> out of 5 <span>rated</span>)</small></p>
+                          <p>
+                            <small class="text-muted">
+                              (<span>7</span>
+                              <p class="text-muted_text" data-i18n="translation.Vote">votes, average:</p>
+                              <span>4.14</span> 
+                              <p data-i18n="translation.OutOf">out of</p>
+                              <p>5</p>
+                              <span data-i18n="translation.Rated">rated</span>)
+                            </small>
+                          </p>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
                 <!-- Course 6 -->
-                <div class="course">
+<div class="course">
                   <div class="course_details">
                     <div class="course_img">
                       <img src="./assets/img/courses-listing-image-6.jpg" class="card-img-top course__image" alt="Course Image">
@@ -341,7 +386,16 @@
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star-half-stroke"></i>
                           </div>
-                          <p><small class="text-muted">(<span>4</span> votes, average: <span>3.00</span> out of 5 <span>rated</span>)</small></p>
+                          <p>
+                            <small class="text-muted">
+                              (<span>7</span>
+                              <p class="text-muted_text" data-i18n="translation.Vote">votes, average:</p>
+                              <span>4.14</span> 
+                              <p data-i18n="translation.OutOf">out of</p>
+                              <p>5</p>
+                              <span data-i18n="translation.Rated">rated</span>)
+                            </small>
+                          </p>
                         </div>
                       </div>
                     </div>
@@ -352,7 +406,7 @@
                   <div class="course_details">
                     <div class="course_img">
                       <img src="./assets/img/courses-listing-image-7.jpg" class="card-img-top course__image" alt="Course Image">
-                      <div class="view-course">
+<div class="view-course">
                         <a href="" data-i18n="translation.ViewCourseBtn">VIEW COURSE</a>
                       </div>
                     </div>
@@ -380,7 +434,16 @@
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star-half-stroke"></i>
                           </div>
-                          <p><small class="text-muted">(<span>7</span> votes, average: <span>4.14</span> out of 5 <span>rated</span>)</small></p>
+                          <p>
+                            <small class="text-muted">
+                              (<span>7</span>
+                              <p class="text-muted_text" data-i18n="translation.Vote">votes, average:</p>
+                              <span>4.14</span> 
+                              <p data-i18n="translation.OutOf">out of</p>
+                              <p>5</p>
+                              <span data-i18n="translation.Rated">rated</span>)
+                            </small>
+                          </p>
                         </div>
                       </div>
                     </div>
@@ -397,7 +460,7 @@
                     </div>
                     <div class="card-body course__body">
                       <span class="course__badge">$30</span>
-                      <h5 class="card-title course__title">
+<h5 class="card-title course__title">
                         <a href="" data-i18n="translation.ArchitectureAnalysis&Design">Architecture Analysis & Design</a>
                       </h5>
                       <div class="card-text course__category">
@@ -419,7 +482,16 @@
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star-half-stroke"></i>
                           </div>
-                          <p><small class="text-muted">(<span>246</span> votes, average: <span>4.21</span> out of 5 <span>rated</span>)</small></p>
+                          <p>
+                            <small class="text-muted">
+                              (<span>7</span>
+                              <p class="text-muted_text" data-i18n="translation.Vote">votes, average:</p>
+                              <span>4.14</span> 
+                              <p data-i18n="translation.OutOf">out of</p>
+                              <p>5</p>
+                              <span data-i18n="translation.Rated">rated</span>)
+                            </small>
+                          </p>
                         </div>
                       </div>
                     </div>
@@ -440,7 +512,7 @@
                         <a href="" data-i18n="translation.MaintenanceTraining">Maintenance Training</a>
                       </h5>
                       <div class="card-text course__category">
-                        <p class="course__category_item" data-i18n="translation.Engineering">Engineering</p>
+<p class="course__category_item" data-i18n="translation.Engineering">Engineering</p>
                         <p class="course__category_classes"> <span>4</span></p>
                         <p class="course__curriculum" data-i18n="translation.Curriculum">Curriculum</p>
                       </div>
@@ -458,7 +530,16 @@
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star-half-stroke"></i>
                           </div>
-                          <p><small class="text-muted">(<span>4</span> votes, average: <span>4.75</span> out of 5 <span>rated</span>)</small></p>
+                          <p>
+                            <small class="text-muted">
+                              (<span>7</span>
+                              <p class="text-muted_text" data-i18n="translation.Vote">votes, average:</p>
+                              <span>4.14</span> 
+                              <p data-i18n="translation.OutOf">out of</p>
+                              <p>5</p>
+                              <span data-i18n="translation.Rated">rated</span>)
+                            </small>
+                          </p>
                         </div>
                       </div>
                     </div>
@@ -483,7 +564,7 @@
                         <p class="course__category_classes"> <span>7</span></p>
                         <p class="course__curriculum" data-i18n="translation.Curriculum">Curriculum</p>
                       </div>
-                      <div class="card-text course__time">
+<div class="card-text course__time">
                         <i class="fa-regular fa-clock"></i>
                         <p><small class="text-muted">30d 5h 50m</small></p>
                       </div>
@@ -534,9 +615,18 @@
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star-half-stroke"></i>
+<i class="fa-solid fa-star-half-stroke"></i>
                           </div>
-                          <p><small class="text-muted">(<span>52</span> votes, average: <span>4.19</span> out of 5 <span>rated</span>)</small></p>
+                          <p>
+                            <small class="text-muted">
+                              (<span>7</span>
+                              <p class="text-muted_text" data-i18n="translation.Vote">votes, average:</p>
+                              <span>4.14</span> 
+                              <p data-i18n="translation.OutOf">out of</p>
+                              <p>5</p>
+                              <span data-i18n="translation.Rated">rated</span>)
+                            </small>
+                          </p>
                         </div>
                       </div>
                     </div>
@@ -575,7 +665,16 @@
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star-half-stroke"></i>
                           </div>
-                          <p><small class="text-muted">(<span>53</span> votes, average: <span>3.94</span> out of 5 <span>rated</span>)</small></p>
+                          <p>
+                            <small class="text-muted">
+                              (<span>7</span>
+                              <p class="text-muted_text" data-i18n="translation.Vote">votes, average:</p>
+<span>4.14</span> 
+                              <p data-i18n="translation.OutOf">out of</p>
+                              <p>5</p>
+                              <span data-i18n="translation.Rated">rated</span>)
+                            </small>
+                          </p>
                         </div>
                       </div>
                     </div>
@@ -584,18 +683,18 @@
               </div>
             </div>
           </div>
-          <div class="row">
+          <div class="row swiper" data-aos="fade-up">
             <div class="col-md-4 mb-4">
-              <div class="card ad">
+              <div class="card ad swiper-slide">
                 <img src="./assets/img/lms-banner1.jpg" class="card-img-top ad__image" alt="Ad Image">
               </div>
             </div>
             <div class="col-md-4 mb-4">
-              <div class="card ad">
+              <div class="card ad swiper-slide">
                 <img src="./assets/img/lms-banner2.jpg" class="card-img-top ad__image" alt="Ad Image">
               </div>
             </div>
-            <div class="col-md-4 mb-4">
+            <div class="col-md-4 mb-4 swiper-slide">
               <div class="card ad">
                 <img src="./assets/img/lms-banner3.jpg" class="card-img-top ad__image" alt="Ad Image">
               </div>

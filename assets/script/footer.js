@@ -6,3 +6,9 @@ document.addEventListener("DOMContentLoaded", function() {
         })
         .catch(error => console.error('Error loading footer:', error));
 });
+
+function redirectToGoogle() {
+    const address = encodeURIComponent("The Design Themes Inc. Mary Jane St, Sydney 2233 Australia.");
+    const googleMapsUrl = `https://www.google.com/maps/search/${address}`;
+    window.location.href = googleMapsUrl;
+}

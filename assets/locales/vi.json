@@ -73,18 +73,19 @@
     "AboutUs": "Về Chúng Tôi",
     "footerLoremipsum": "Khách hàng rất quan trọng, khách hàng sẽ được khách hàng theo đuổi. Cũng như chính sách diam.Đối với hai nước, tiền đình cần một cái khác, vulputate và tôi. Tôi không biết phải nói gì",
     "Start": "BẮT ĐẦU HỌC NGAY",
-    "Popular": "Các khóa học phổ biến",
+    "Popular": "Các khóa học",
     "Power": "Năng lượng điện",
     "Introduction": "Giới thiệu về Giải tích",
     "Basic": "Luật và chính sách cơ bản",
     "Quick":"đường dẫn ",
-    "footerAll":"Tất cả các khóa học",
+    "footerALL":"Tất cả các khóa học",
     "Summer":"Phiên bản mùa hè",
     "Professional":"Khóa học chuyên nghiệp",
     "Privacy":"Chính sách bảo mật",
     "Terms":"Điều khoản sử dụng",
     "footerContact":"Liên hệ chúng tôi",
     "footerloco":"Chủ đề thiết kế từ Mary Jane , Sydney 2233 Australia",
+    "ContactUs":"Liên Hệ ",
     
 
 
@@ -187,6 +188,10 @@
     "Mathematics": "Toán học",
     "Law": "Luật",
     "Heath": "Sức khỏe",
-    "Engineering": "Kỹ thuật"
+    "Engineering": "Kỹ thuật",
+    "Vote": "phiếu bầu, trung bình:",
+    "OutOf": "trên ",
+    "Rated": "đánh giá"
+
   }
 }

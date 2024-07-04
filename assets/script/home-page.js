@@ -1,74 +1,45 @@
-// let currentIndex = 0;
-// const coursesContent = document.querySelector('.courses__content');
-// const courses = document.querySelectorAll('.course');
-// const totalCourses = courses.length;
-// const coursesPerView = 2;
 
-// function updateSlider() {
-//   const offset = -(currentIndex * 50); // 50% cho mỗi slide
-//   coursesContent.style.transform = `translateX(${offset}%)`;
-// }
-
-// function prevSlide() {
-//   if (currentIndex > 0) {
-//     currentIndex -= 1;
-//   } else {
-//     currentIndex = totalCourses - coursesPerView;
-//   }
-//   updateSlider();
-// }
-
-// function nextSlide() {
-//   if (currentIndex < totalCourses - coursesPerView) {
-//     currentIndex += 1;
-//   } else {
-//     currentIndex = 0;
-//   }
-//   updateSlider();
-// }
-
-// updateSlider();
-
+// DUC
+let slideIndex = 0;
+const slidesToShow = 2; // Số lượng slide hiển thị mỗi lần
+let slides = document.querySelectorAll('.course');
+let totalSlides = slides.length;
 let currentIndex = 0;
-const coursesContent = document.querySelector('.courses__content');
-const courses = document.querySelectorAll('.course');
-const totalCourses = courses.length;
-const coursesPerView = 2;
 
-function updateSlider() {
-  const offset = -(currentIndex * 100 / coursesPerView); // 50% cho mỗi slide
-  coursesContent.style.transform = `translateX(${offset}%)`;
-}
-
-function prevSlide() {
-  if (currentIndex > 0) {
-    currentIndex -= 1;
-  } else {
-    currentIndex = totalCourses - coursesPerView;
+function showSlides() {
+  for (let i = 0; i < totalSlides; i++) {
+    slides[i].style.display = 'none';
   }
-  updateSlider();
+  
+  for (let i = currentIndex; i < currentIndex + slidesToShow; i++) {
+    if (i < totalSlides) {
+      slides[i].style.display = 'block';
+    }
+  }
 }
 
 function nextSlide() {
-  if (currentIndex < totalCourses - coursesPerView) {
-    currentIndex += 1;
-  } else {
+  currentIndex += slidesToShow;
+  if (currentIndex >= totalSlides) {
     currentIndex = 0;
   }
-  updateSlider();
+  showSlides();
 }
 
-updateSlider();
-/*document.addEventListener("DOMContentLoaded", function() {
-    fetch('/component/home-page.html')
-        .then(response => response.text())
-        .then(data => {
-            document.querySelector('home-page').innerHTML = data;
-        })
-        .catch(error => console.error('Error loading footer:', error));
-});*/
+function prevSlide() {
+  currentIndex -= slidesToShow;
+  if (currentIndex < 0) {
+    currentIndex = totalSlides - slidesToShow;
+  }
+  showSlides();
+}
+
+showSlides();
 
 
+
+
+// PHAP
 window.addEventListener('load', function() {
     document.querySelector('.hero-content').classList.add('animate');
 });
