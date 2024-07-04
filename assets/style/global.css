@@ -14,7 +14,7 @@ body {
 }
 
 .container {
-    max-width: 1170px;
+    max-width: 1170px !important;
     width: 100%;
 }
 
@@ -23,6 +23,11 @@ body {
   display: flex; /* Add flexbox to the header */
   justify-content: space-between; /* Distribute child elements horizontally */
   align-items: center;
+}
+
+.header .row {
+    max-width: 1170px !important;
+    width: 100%;
 }
 
 .header .col-md-2 {
@@ -550,6 +555,7 @@ body {
 .site-footer{
     background: #F5E9D4;
     padding: 0px 0;
+    max-width: 1170;
     width: 100%;
     height: auto;
     padding-top: 43px;
@@ -560,6 +566,7 @@ body {
     flex-wrap: wrap;
     justify-content: space-between;
     max-width: 1170px;
+    width: 100%;
     margin: 0 auto;
     position: relative;
     top: auto;
