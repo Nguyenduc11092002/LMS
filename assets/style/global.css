@@ -614,7 +614,7 @@ body {
 }
 
 .footer-section .footer-links li {
-    color: #838C48; /* Change this to your desired color for the list items */
+    color: #33333393; /* Change this to your desired color for the list items */
 }
 
 /* đường line dưới câu */
@@ -705,7 +705,7 @@ body {
 
 .footer-section3 .footer-links3 i {
     color: #838C48; /* Change this to your desired color for the icons */
-    margin-right: 10px; /* Add some space between the icon and the text */
+    margin-right: 10px;
 }
 
 .footer-logo img {

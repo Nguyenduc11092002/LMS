@@ -97,12 +97,20 @@ body, html {
   justify-content: center;
   align-items: center;
 }
+.banner{
+    display: flex;
+    position: relative;
+    bottom: 0px ;
+    
+}
+.head-container{
+    position: relative;
+    top: 470px;
+    max-width: 1170px;
+}
 
 .hero-all{
-  display:block;
-  position: relative;
-  top: 470px;
- 
+    display:block;
 }
 
 .hero-content {
@@ -110,6 +118,11 @@ body, html {
   opacity: 0;
   transform: translateY(100px);
   transition: all 0.9s ease-out;
+}
+
+.hero-content a{
+    z-index: 2;
+
 }
 
 .hero-content.animate {
@@ -209,10 +222,10 @@ font-style: normal;
 }
 
 .hero-stats .stat .number {
-   /* Change this to your desired color for the list items */
-  border-bottom: 3px solid #838C48; /* Add a small line under each list item */
-  padding-bottom: 10px; /* Add some padding at the bottom */
-  margin-bottom: 10px; /* Add some margin at the bottom */
+    
+    border-bottom: 3px solid #838C48; 
+    padding-bottom: 10px; 
+    margin-bottom: 10px; 
 }
 
 
