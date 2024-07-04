@@ -134,10 +134,33 @@
     "PurchaseStep": "Mua khóa học",
     "testText": "Vì không ai tránh né, ghét bỏ hay chạy trốn niềm vui vì đó là niềm vui, mà vì kết quả là những điều tuyệt vời.",
     "cardTitle": "Trái ngược với niềm tin phổ biến",
+    "testText": "Vì không ai tránh né, ghét bỏ hay chạy trốn niềm vui vì đó là niềm vui, mà vì kết quả là những điều tuyệt vời.",
+
+
     "Courses": "Các khóa học",
     "CourseBtn": "Xem toàn bộ khóa học",
     "courseTitleSub": "Về các khóa học",
     "courseDescription1": "Đăng ký và quản lý sinh viên Vì không ai theo đuổi, ghét bỏ hay chạy trốn niềm vui vì đó là niềm vui, mà vì những điều tuyệt vời sẽ đến với những người không biết cách theo đuổi niềm vui một cách hợp lý.",
-    "courseDescription2": "Có nhiều phiên bản khác nhau của Lorem Ipsum, nhưng phần lớn đã được thay đổi ở một số hình thức, bằng cách thêm yếu tố hài hước hoặc ngẫu nhiên hóa để trở nên đáng tin hơn."
+    "courseDescription2": "Có nhiều phiên bản khác nhau của Lorem Ipsum, nhưng phần lớn đã được thay đổi ở một số hình thức, bằng cách thêm yếu tố hài hước hoặc ngẫu nhiên hóa để trở nên đáng tin hơn.",
+    "ViewCourseBtn": "XEM KHÓA HỌC",
+    "FreeCourse": "Miễn Phí",
+    "PowerElectronics": "Năng lượng điện",
+    "IntroductionToCalculus": "Giới thiệu về phép tính",
+    "BasicLawsAndPolicies": "Luật và chính sách cơ bản",
+    "HealthcareDelivery": "Cung cấp dịch vụ chăm sóc sức khỏe",
+    "GeneralBusinessLaw": "Luật kinh doanh chung",
+    "EmergingTrendsAndTechnologies": "Xu hướng và công nghệ mới nổi",
+    "FitnessTrainingProgram": "Chương trình đào tạo thể hình",
+    "ArchitectureAnalysis&Design": "Phân tích & Thiết kế kiến trúc",
+    "MaintenanceTraining": "Đào tạo bảo trì",
+    "AnalysisOfAlgorithms": "Phân tích thuộc toán",
+    "ProcessingDigitalSignal": "Xử lý tín hiệu số",
+    "AdvancedProgramming": "Lập trình nâng cao",
+    "Curriculum": "Chương trình giảng dạy",
+    "Education": "Giáo dục",
+    "Mathematics": "Toán học",
+    "Law": "Luật",
+    "Heath": "Sức khỏe",
+    "Engineering": "Kỹ thuật"
   }
 }

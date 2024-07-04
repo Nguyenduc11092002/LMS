@@ -18,10 +18,12 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <script src="https://unpkg.com/i18next@21.8.5/dist/umd/i18next.min.js"></script>
     <script src="https://unpkg.com/i18next-http-backend@1.4.2/i18nextHttpBackend.min.js"></script>
     <script src="/assets/script/i18next-setup.js" defer></script>
-    <script src="/assets/script/home-page.js"></script>
+    <!-- <script src="/assets/script/home-page.js"></script> -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -92,70 +94,514 @@
         </div>
 
     <main class="container mt-5">
-      <div class="banner"></div>
-      <div class="icon_banner"></div>
       <div class="courses" mt-4>
-        <h2 class="courses__title"data-aos="fade-up" data-i18n="translation.Courses">
-          Courses
-        </h2>
-          <section class="courses_warpaper">
-            
-              <div class="row">
-                <div class="col-md-4 mb-4">
-                  <!-- <div class="col-12"> -->
-                  <div>  
-                      <h3 class="courses__title_sub" data-i18n="translation.courseTitleSub">About Courses</h3>
-                      <p class="courses__description" data-i18n="translation.courseDescription1">Student Registration and Administration Nemo enim ipsam voluptatem quia voluptas sit atur aut odit aut fugit, sed quia consequuntur magni res eos qui ratione voluptatem sequi nesciunt.</p>
-                      <p class="courses__description" data-i18n="translation.courseDescription2">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised believable.</p>
-                      <button class="courses__button" data-i18n="translation.CourseBtn">
-                        View All Courses
-                      </button>
-                  </div>
-                </div>
-                <div class="col-md-8 mb-4">
-                  <div class="col-md-4">
-                    <div class="card course">
-                        <img src="https://via.placeholder.com/400x200" class="card-img-top course__image" alt="Course Image">
-                        <div class="card-body course__body">
-                            <span class="badge bg-success course__badge">Free</span>
-                            <h5 class="card-title course__title">Power Electronics</h5>
-                            <p class="card-text course__category">Education | 7 Curriculum</p>
-                            <p class="card-text course__time"><small class="text-muted">1d 1h 50m</small></p>
-                            <p class="card-text course__rating"><small class="text-muted">7 votes, average: 4.14 out of 5</small></p>
-                        </div>
+        <div class="course_title_btn">
+          <h2 class="courses__title" data-aos="fade-up" data-i18n="translation.Courses">Courses</h2>
+          <div class= "button_slider">
+            <button class="btn_slider prev" onclick="prevSlide()">&#10094;</button>
+            <button class="btn_slider next" onclick="nextSlide()">&#10095;</button>
+          </div>
+        </div>
+        <section class="courses_wrapper">
+          <div class="info_courses">
+            <div class="about_course">
+              <div>
+                <h3 class="courses__title_sub" data-i18n="translation.courseTitleSub">About Courses</h3>
+                <p class="courses__description" data-i18n="translation.courseDescription1">Student Registration and Administration Nemo enim ipsam voluptatem quia voluptas sit atur aut odit aut fugit, sed quia consequuntur magni res eos qui ratione voluptatem sequi nesciunt.</p>
+                <p class="courses__description" data-i18n="translation.courseDescription2">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised believable.</p>
+                <button class="courses__button" data-i18n="translation.CourseBtn">View All Courses</button>
+              </div>
+            </div>
+            <div class="slider">
+              <div class="courses__content">
+                <!-- Course 1 -->
+                <div class="course">
+                  <div class="course_details">
+                    <div class="course_img">
+                      <img src="./assets/img/courses-listing-image-1.jpg" class="course__image" alt="Course Image">
+                      <div class="view-course">
+                        <a href="" data-i18n="translation.ViewCourseBtn">VIEW COURSE</a>
+                      </div>
                     </div>
-                  </div>
-                  <div class="col-md-4">
-                      <div class="card course">
-                          <img src="https://via.placeholder.com/400x200" class="card-img-top course__image" alt="Course Image">
-                          <div class="card-body course__body">
-                              <span class="badge bg-success course__badge">Free</span>
-                              <h5 class="card-title course__title">Introduction to Calculus</h5>
-                              <p class="card-text course__category">Mathematics | 5 Curriculum</p>
-                              <p class="card-text course__time"><small class="text-muted">1m 21d 22h</small></p>
-                              <p class="card-text course__rating"><small class="text-muted">9 votes, average: 4.67 out of 5</small></p>
+                    <div class="card-body course__body">
+                      <span class="course__badge" data-i18n="translation.FreeCourse">Free</span>
+                      <h5 class="card-title course__title">
+                        <a href="" data-i18n="translation.PowerElectronics">Power Electronics</a>
+                      </h5>
+                      <div class="card-text course__category">
+                        <p class="course__category_item" data-i18n="translation.Education">Education</p>
+                        <p class="course__category_classes"> <span>7</span></p>
+                        <p class="course__curriculum" data-i18n="translation.Curriculum">Curriculum</p>
+                      </div>
+                      <div class="card-text course__time">
+                        <i class="fa-regular fa-clock"></i>
+                        <p><small class="text-muted">1d 1h 50m</small></p>
+                      </div>
+                      <div class="course__rating">
+                        <div class="course__rating_vote"></div>
+                        <div class="course__rating_vote_star">
+                          <div class="star_vote">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                          </div>
+                          <p><small class="text-muted">(<span>7</span> votes, average: <span>4.14</span> out of 5 <span>rated</span>)</small></p>
                         </div>
                       </div>
+                    </div>
                   </div>
-                </div> 
+                </div>
+                <!-- Course 2 -->
+                <div class="course">
+                  <div class="course_details">
+                    <div class="course_img">
+                      <img src="./assets/img/courses-listing-image-2.jpg" class="card-img course__image" alt="Course Image">
+                      <div class="view-course">
+                        <a href="" data-i18n="translation.ViewCourseBtn">VIEW COURSE</a>
+                      </div>
+                    </div>
+                    <div class="card-body course__body">
+                      <span class="course__badge" data-i18n="translation.FreeCourse">Free</span>
+                      <h5 class="card-title course__title">
+                        <a href="" data-i18n="translation.IntroductionToCalculus">Introduction to Calculus</a>
+                      </h5>
+                      <div class="card-text course__category">
+                        <p class="course__category_item" data-i18n="translation.Mathematics">Mathematics</p>
+                        <p class="course__category_classes"> <span>5</span></p>
+                        <p class="course__curriculum" data-i18n="translation.Curriculum">Curriculum</p>
+                      </div>
+                      <div class="card-text course__time">
+                        <i class="fa-regular fa-clock"></i>
+                        <p><small class="text-muted">1m 21d 22h</small></p>
+                      </div>
+                      <div class="course__rating">
+                        <div class="course__rating_vote"></div>
+                        <div class="course__rating_vote_star">
+                          <div class="star_vote">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                          </div>
+                          <p><small class="text-muted">(<span>10</span> votes, average: <span>4.74</span> out of 5 <span>rated</span>)</small></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Course 3 -->
+                <div class="course">
+                  <div class="course_details">
+                    <div class="course_img">
+                      <img src="./assets/img/courses-listing-image-3.jpg" class="card-img-top course__image" alt="Course Image">
+                      <div class="view-course">
+                        <a href="" data-i18n="translation.ViewCourseBtn">VIEW COURSE</a>
+                      </div>
+                    </div>
+                    <div class="card-body course__body">
+                      <span class="course__badge" data-i18n="translation.FreeCourse">Free</span>
+                      <h5 class="card-title course__title">
+                        <a href="" data-i18n="translation.BasicLawsAndPolicies">Basic Laws and Policies</a>
+                      </h5>
+                      <div class="card-text course__category">
+                        <p class="course__category_item" data-i18n="translation.Law">Law</p>
+                        <p class="course__category_classes"> <span>5</span></p>
+                        <p class="course__curriculum" data-i18n="translation.Curriculum">Curriculum</p>
+                      </div>
+                      <div class="card-text course__time">
+                        <i class="fa-regular fa-clock"></i>
+                        <p><small class="text-muted">20d 18h 30m</small></p>
+                      </div>
+                      <div class="course__rating">
+                        <div class="course__rating_vote"></div>
+                        <div class="course__rating_vote_star">
+                          <div class="star_vote">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                          </div>
+                          <p><small class="text-muted">(<span>8</span> votes, average: <span>3.75</span> out of 5 <span>rated</span>)</small></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Course 4 -->
+                <div class="course">
+                  <div class="course_details">
+                    <div class="course_img">
+                      <img src="./assets/img/courses-listing-image-4.jpg" class="card-img-top course__image" alt="Course Image">
+                      <div class="view-course">
+                        <a href="" data-i18n="translation.ViewCourseBtn">VIEW COURSE</a>
+                      </div>
+                    </div>
+                    <div class="card-body course__body">
+                      <span class="course__badge" data-i18n="translation.FreeCourse">Free</span>
+                      <h5 class="card-title course__title">
+                        <a href="" data-i18n="translation.HealthcareDelivery">Healthcare Delivery</a>
+                      </h5>
+                      <div class="card-text course__category">
+                        <p class="course__category_item" data-i18n="translation.Heath">Heath</p>
+                        <p class="course__category_classes"> <span>4</span></p>
+                        <p class="course__curriculum" data-i18n="translation.Curriculum">Curriculum</p>
+                      </div>
+                      <div class="card-text course__time">
+                        <i class="fa-regular fa-clock"></i>
+                        <p><small class="text-muted">3d 2h 50m</small></p>
+                      </div>
+                      <div class="course__rating">
+                        <div class="course__rating_vote"></div>
+                        <div class="course__rating_vote_star">
+                          <div class="star_vote">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                          </div>
+                          <p><small class="text-muted">(<span>7</span> votes, average: <span>3.57</span> out of 5 <span>rated</span>)</small></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Course 5 -->
+                <div class="course">
+                  <div class="course_details">
+                    <div class="course_img">
+                      <img src="./assets/img/courses-listing-image-5.jpg" class="card-img-top course__image" alt="Course Image">
+                      <div class="view-course">
+                        <a href="" data-i18n="translation.ViewCourseBtn">VIEW COURSE</a>
+                      </div>
+                    </div>
+                    <div class="card-body course__body">
+                      <span class="course__badge" data-i18n="translation.FreeCourse">Free</span>
+                      <h5 class="card-title course__title">
+                        <a href=""  data-i18n="translation.GeneralBusinessLaw">General Business Law</a>
+                      </h5>
+                      <div class="card-text course__category">
+                        <p class="course__category_item" data-i18n="translation.Law">Law</p>
+                        <p class="course__category_classes"> <span>7</span></p>
+                        <p class="course__curriculum" data-i18n="translation.Curriculum">Curriculum</p>
+                      </div>
+                      <div class="card-text course__time">
+                        <i class="fa-regular fa-clock"></i>
+                        <p><small class="text-muted">1m 25d 12h 50m</small></p>
+                      </div>
+                      <div class="course__rating">
+                        <div class="course__rating_vote"></div>
+                        <div class="course__rating_vote_star">
+                          <div class="star_vote">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                          </div>
+                          <p><small class="text-muted">(<span>3</span> votes, average: <span>3.67</span> out of 5 <span>rated</span>)</small></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Course 6 -->
+                <div class="course">
+                  <div class="course_details">
+                    <div class="course_img">
+                      <img src="./assets/img/courses-listing-image-6.jpg" class="card-img-top course__image" alt="Course Image">
+                      <div class="view-course">
+                        <a href="" data-i18n="translation.ViewCourseBtn">VIEW COURSE</a>
+                      </div>
+                    </div>
+                    <div class="card-body course__body">
+                      <span class="course__badge" data-i18n="translation.FreeCourse">Free</span>
+                      <h5 class="card-title course__title">
+                        <a href="" data-i18n="translation.EmergingTrendsAndTechnologies">Emerging Trends and Technologies</a>
+                      </h5>
+                      <div class="card-text course__category">
+                        <p class="course__category_item" data-i18n="translation.Engineering">Engineering</p>
+                        <p class="course__category_classes"> <span>4</span></p>
+                        <p class="course__curriculum" data-i18n="translation.Curriculum">Curriculum</p>
+                      </div>
+                      <div class="card-text course__time">
+                        <i class="fa-regular fa-clock"></i>
+                        <p><small class="text-muted">1m 16d 3h</small></p>
+                      </div>
+                      <div class="course__rating">
+                        <div class="course__rating_vote"></div>
+                        <div class="course__rating_vote_star">
+                          <div class="star_vote">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                          </div>
+                          <p><small class="text-muted">(<span>4</span> votes, average: <span>3.00</span> out of 5 <span>rated</span>)</small></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Course 7 -->
+                <div class="course">
+                  <div class="course_details">
+                    <div class="course_img">
+                      <img src="./assets/img/courses-listing-image-7.jpg" class="card-img-top course__image" alt="Course Image">
+                      <div class="view-course">
+                        <a href="" data-i18n="translation.ViewCourseBtn">VIEW COURSE</a>
+                      </div>
+                    </div>
+                    <div class="card-body course__body">
+                      <span class="course__badge">$40</span>
+                      <h5 class="card-title course__title">
+                        <a href="" data-i18n="translation.FitnessTrainingProgram">Fitness Training Program</a>
+                      </h5>
+                      <div class="card-text course__category">
+                        <p class="course__category_item" data-i18n="translation.Heath">Heath</p>
+                        <p class="course__category_classes"> <span>3</span></p>
+                        <p class="course__curriculum" data-i18n="translation.Curriculum">Curriculum</p>
+                      </div>
+                      <div class="card-text course__time">
+                        <i class="fa-regular fa-clock"></i>
+                        <p><small class="text-muted">30d 5h 50m</small></p>
+                      </div>
+                      <div class="course__rating">
+                        <div class="course__rating_vote"></div>
+                        <div class="course__rating_vote_star">
+                          <div class="star_vote">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                          </div>
+                          <p><small class="text-muted">(<span>7</span> votes, average: <span>4.14</span> out of 5 <span>rated</span>)</small></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Course 8 -->
+                <div class="course">
+                  <div class="course_details">
+                    <div class="course_img">
+                      <img src="./assets/img/courses-listing-image-8.jpg" class="card-img-top course__image" alt="Course Image">
+                      <div class="view-course">
+                        <a href="" data-i18n="translation.ViewCourseBtn">VIEW COURSE</a>
+                      </div>
+                    </div>
+                    <div class="card-body course__body">
+                      <span class="course__badge">$30</span>
+                      <h5 class="card-title course__title">
+                        <a href="" data-i18n="translation.ArchitectureAnalysis&Design">Architecture Analysis & Design</a>
+                      </h5>
+                      <div class="card-text course__category">
+                        <p class="course__category_item" data-i18n="translation.Engineering">Engineering</p>
+                        <p class="course__category_classes"> <span>3</span></p>
+                        <p class="course__curriculum" data-i18n="translation.Curriculum">Curriculum</p>
+                      </div>
+                      <div class="card-text course__time">
+                        <i class="fa-regular fa-clock"></i>
+                        <p><small class="text-muted">4h 20m</small></p>
+                      </div>
+                      <div class="course__rating">
+                        <div class="course__rating_vote"></div>
+                        <div class="course__rating_vote_star">
+                          <div class="star_vote">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                          </div>
+                          <p><small class="text-muted">(<span>246</span> votes, average: <span>4.21</span> out of 5 <span>rated</span>)</small></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Course 9 -->
+                <div class="course">
+                  <div class="course_details">
+                    <div class="course_img">
+                      <img src="./assets/img/courses-listing-image-9.jpg" class="card-img-top course__image" alt="Course Image">
+                      <div class="view-course">
+                        <a href="" data-i18n="translation.ViewCourseBtn">VIEW COURSE</a>
+                      </div>
+                    </div>
+                    <div class="card-body course__body">
+                      <span class="course__badge">$60</span>
+                      <h5 class="card-title course__title">
+                        <a href="" data-i18n="translation.MaintenanceTraining">Maintenance Training</a>
+                      </h5>
+                      <div class="card-text course__category">
+                        <p class="course__category_item" data-i18n="translation.Engineering">Engineering</p>
+                        <p class="course__category_classes"> <span>4</span></p>
+                        <p class="course__curriculum" data-i18n="translation.Curriculum">Curriculum</p>
+                      </div>
+                      <div class="card-text course__time">
+                        <i class="fa-regular fa-clock"></i>
+                        <p><small class="text-muted">4h 50m</small></p>
+                      </div>
+                      <div class="course__rating">
+                        <div class="course__rating_vote"></div>
+                        <div class="course__rating_vote_star">
+                          <div class="star_vote">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                          </div>
+                          <p><small class="text-muted">(<span>4</span> votes, average: <span>4.75</span> out of 5 <span>rated</span>)</small></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Course 10 -->
+                <div class="course">
+                  <div class="course_details">
+                    <div class="course_img">
+                      <img src="./assets/img/courses-listing-image-10.jpg" class="card-img-top course__image" alt="Course Image">
+                      <div class="view-course">
+                        <a href="" data-i18n="translation.ViewCourseBtn">VIEW COURSE</a>
+                      </div>
+                    </div>
+                    <div class="card-body course__body">
+                      <span class="course__badge" data-i18n="translation.FreeCourse">Free</span>
+                      <h5 class="card-title course__title">
+                        <a href="" data-i18n="translation.AnalysisOfAlgorithms">Analysis of Algorithms</a>
+                      </h5>
+                      <div class="card-text course__category">
+                        <p class="course__category_item" data-i18n="translation.Mathematics">Mathematics</p>
+                        <p class="course__category_classes"> <span>7</span></p>
+                        <p class="course__curriculum" data-i18n="translation.Curriculum">Curriculum</p>
+                      </div>
+                      <div class="card-text course__time">
+                        <i class="fa-regular fa-clock"></i>
+                        <p><small class="text-muted">30d 5h 50m</small></p>
+                      </div>
+                      <div class="course__rating">
+                        <div class="course__rating_vote"></div>
+                        <div class="course__rating_vote_star">
+                          <div class="star_vote">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                          </div>
+                          <p><small class="text-muted">(<span>22</span> votes, average: <span>4.14</span> out of 5 <span>rated</span>)</small></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Course 11 -->
+                <div class="course">
+                  <div class="course_details">
+                    <div class="course_img">
+                      <img src="./assets/img/courses-listing-image-11.jpg" class="card-img-top course__image" alt="Course Image">
+                      <div class="view-course">
+                        <a href="" data-i18n="translation.ViewCourseBtn">VIEW COURSE</a>
+                      </div>
+                    </div>
+                    <div class="card-body course__body">
+                      <span class="course__badge" data-i18n="translation.FreeCourse">Free</span>
+                      <h5 class="card-title course__title">
+                        <a href="" data-i18n="translation.ProcessingDigitalSignal">Processing Digital Signal</a>
+                      </h5>
+                      <div class="card-text course__category">
+                        <p class="course__category_item" data-i18n="translation.Education">Education</p>
+                        <p class="course__category_classes"> <span>5</span></p>\
+                        <p class="course__curriculum" data-i18n="translation.Curriculum">Curriculum</p>
+                      </div>
+                      <div class="card-text course__time">
+                        <i class="fa-regular fa-clock"></i>
+                        <p><small class="text-muted">3h 50m</small></p>
+                      </div>
+                      <div class="course__rating">
+                        <div class="course__rating_vote"></div>
+                        <div class="course__rating_vote_star">
+                          <div class="star_vote">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                          </div>
+                          <p><small class="text-muted">(<span>52</span> votes, average: <span>4.19</span> out of 5 <span>rated</span>)</small></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Course 12 -->
+                <div class="course">
+                  <div class="course_details">
+                    <div class="course_img">
+                      <img src="./assets/img/courses-listing-image-12.jpg" class="card-img-top course__image" alt="Course Image">
+                      <div class="view-course">
+                        <a href="" data-i18n="translation.ViewCourseBtn">VIEW COURSE</a>
+                      </div>
+                    </div>
+                    <div class="card-body course__body">
+                      <span class="course__badge">$60</span>
+                      <h5 class="card-title course__title">
+                        <a href="" data-i18n="translation.AdvancedProgramming">Advanced Programming</a>
+                      </h5>
+                      <div class="card-text course__category">
+                        <p class="course__category_item" data-i18n="translation.Education">Education</p>
+                        <p class="course__category_classes"> <span>6</span></p>
+                        <p class="course__curriculum" data-i18n="translation.Curriculum">Curriculum</p>
+                      </div>
+                      <div class="card-text course__time">
+                        <i class="fa-regular fa-clock"></i>
+                        <p><small class="text-muted">30d 3h 50m</small></p>
+                      </div>
+                      <div class="course__rating">
+                        <div class="course__rating_vote"></div>
+                        <div class="course__rating_vote_star">
+                          <div class="star_vote">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                          </div>
+                          <p><small class="text-muted">(<span>53</span> votes, average: <span>3.94</span> out of 5 <span>rated</span>)</small></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
-            <div class="row">
-                <div class="col-md-4 mb-4">
-                    <div class="card ad">
-                        <img src="./assets/img/lms-banner1.jpg" class="card-img-top ad__image" alt="Ad Image">
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card ad">
-                        <img src="./assets/img/lms-banner2.jpg" class="card-img-top ad__image" alt="Ad Image">
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card ad">
-                        <img src="./assets/img/lms-banner3.jpg" class="card-img-top ad__image" alt="Ad Image">
-                    </div>
-                </div>
             </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4 mb-4">
+              <div class="card ad">
+                <img src="./assets/img/lms-banner1.jpg" class="card-img-top ad__image" alt="Ad Image">
+              </div>
+            </div>
+            <div class="col-md-4 mb-4">
+              <div class="card ad">
+                <img src="./assets/img/lms-banner2.jpg" class="card-img-top ad__image" alt="Ad Image">
+              </div>
+            </div>
+            <div class="col-md-4 mb-4">
+              <div class="card ad">
+                <img src="./assets/img/lms-banner3.jpg" class="card-img-top ad__image" alt="Ad Image">
+              </div>
+            </div>
+          </div>
         </section>
       </div>
 
@@ -385,10 +831,6 @@
           </div>
           </div>
         </div>
-      </div>
-
-      <!-- Đức -->
-      <div class="process"></div>
       </div>
       <div class="our_process">
         <h2
@@ -649,6 +1091,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
     <script src="/assets/script/header.js"></script>
+    <script src="/assets/script/home-page.js"></script>
   </body>
   <footer></footer>
   <script src="/assets/script/footer.js" defer></script>

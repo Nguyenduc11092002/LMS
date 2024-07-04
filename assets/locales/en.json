@@ -136,12 +136,37 @@
     "PurchaseStep": "Purchase the Course",
     "testText": "Nemo enim ipsam voluptatem quia voluptas sit atur aut odit aut fugit, sed quia consequuntur magni res.",
     "cardTitle": "Contrary to popular belief",
+    "testText": "Nemo enim ipsam voluptatem quia voluptas sit atur aut odit aut fugit, sed quia consequuntur magni res.",
+    
     "Courses": "Courses",
     "CourseBtn": "View All Courses",
     "courseTitleSub": "About Courses",
     "courseDescription1": "Student Registration and Administration Nemo enim ipsam voluptatem quia voluptas sit atur aut odit aut fugit, sed quia consequuntur magni res eos qui ratione voluptatem sequi nesciunt.",
     "courseDescription2": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised believable.",
+    "ViewCourseBtn": "VIEW COURSE",
+    "FreeCourse": "Free",
+    "PowerElectronics": "Power Electronics",
+    "IntroductionToCalculus": "Introduction to Calculus",
+    "BasicLawsAndPolicies": "Basic Laws and Policies",
+    "HealthcareDelivery": "Healthcare Delivery",
+    "GeneralBusinessLaw": "General Business Law",
+    "EmergingTrendsAndTechnologies": "Emerging Trends and Technologies",
+    "FitnessTrainingProgram": "Fitness Training Program",
+    "ArchitectureAnalysis&Design": "Architecture Analysis & Design",
+    "MaintenanceTraining": "Maintenance Training",
+    "AnalysisOfAlgorithms": "Analysis of Algorithms",
+    "ProcessingDigitalSignal": "Processing Digital Signal",
+    "AdvancedProgramming": "Advanced Programming",
+    "Curriculum": "Curriculum",
+    "Education": "Education",
+    "Mathematics": "Mathematics",
+    "Law": "Law",
+    "Heath": "Heath",
+    "Engineering": "Engineering"
+  }  ,
+    
+    "courseDescription2": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised believable.",
   
     "menuTeacher": "Teacher"
   }
-}
+
