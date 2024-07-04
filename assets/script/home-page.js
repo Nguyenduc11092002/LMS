@@ -1,4 +1,3 @@
-
 // DUC
 let slideIndex = 0;
 const slidesToShow = 2; // Số lượng slide hiển thị mỗi lần
@@ -35,9 +34,6 @@ function prevSlide() {
 }
 
 showSlides();
-
-
-
 
 // PHAP
 window.addEventListener('load', function() {

@@ -183,21 +183,34 @@ button:hover {
 .info-item .icon {
   margin: 0;
 }
-.info-item .info-text {
-  margin: 0;
-}
 
 .icon {
   font-size: 22px;
   color: #da853d;
   border-bottom: solid 0.83px #da853d;
 }
+
+.fa-envelope {
+  margin-right: 0;
+}
+
 .info-text {
   border-bottom: solid 0.83px #dddddd;
   gap: 10px;
   justify-content: space-between;
   font-size: 16px;
+  margin-left: 0;
 }
+
+.info-text a {
+  text-decoration: none;
+  color: rgb(48, 48, 48)
+}
+
+.info-text:hover a {
+  color: rgb(131, 140, 72);
+}
+
 .form-group {
   margin-right: 120px;
 }
@@ -224,6 +237,7 @@ button:hover {
 .contact-map {
   width: 100%;
   background-color: #fdf6ea;
+  padding-bottom: 110px;
 }
 .contact-map iframe {
   width: 100%;
