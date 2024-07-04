@@ -212,7 +212,53 @@ body, html {
 }
 
 
+/* Media - Nguyen  */
+.media-container {
+  display: flex;
+  max-width: 1170px;
+  width: 100%;
+  margin-bottom: 100px;
+}
 
+.media {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  transition: all 0.5s ease;
+}
+
+.media-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 150px;
+  padding: 10px;
+  border-radius: 50%;
+  background-color: #E2D6C1;
+  border: transparent;
+}
+
+.media img {
+  width: 55%;
+  transition: transform 0.5s ease;
+  filter: sepia(1) saturate(10) hue-rotate(10deg);
+}
+
+.media span {
+  margin-top: 15px;
+  font-size: 20px;
+  transition: color 0.5s ease;
+}
+
+.media:hover img {
+  transform: scale(0.90); /* Giảm kích thước ảnh khi hover */
+}
+
+.media:hover span {
+  color: #838C49; /* Đổi màu chữ khi hover */
+}
 
 /* Blog - Phat */
 .blog{
