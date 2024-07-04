@@ -27,21 +27,14 @@ document
         formValid = false;
         const errorMessage = field.nextElementSibling;
         errorMessage.style.display = "inline";
-      } else if (field.id === "phone" && isNaN(field.value)) {
+      } else if (
+        field.id === "phone" &&
+        (isNaN(field.value) || field.value.length !== 10)
+      ) {
         formValid = false;
         const errorMessage = field.nextElementSibling;
         errorMessage.style.display = "inline";
       }
-    });
-    // Add event listeners to input fields to hide error messages when user starts typing
-    const inputFields = document.querySelectorAll(
-      "#contactForm input, #contactForm textarea"
-    );
-    inputFields.forEach(function (field) {
-      field.addEventListener("input", function () {
-        const errorMessage = field.nextElementSibling;
-        errorMessage.style.display = "none";
-      });
     });
 
     if (!formValid) {
@@ -67,3 +60,47 @@ document
       }, 1000); // Simulate a 1-second delay for form submission
     }
   });
+
+// Function to validate email
+function validateEmail(field) {
+  const errorMessage = field.nextElementSibling;
+  if (!field.value.endsWith("@gmail.com")) {
+    errorMessage.style.display = "inline";
+    return false;
+  } else {
+    errorMessage.style.display = "none";
+    return true;
+  }
+}
+
+// Function to validate phone
+function validatePhone(field) {
+  const errorMessage = field.nextElementSibling;
+  if (isNaN(field.value) || field.value.length !== 10) {
+    errorMessage.style.display = "inline";
+    return false;
+  } else {
+    errorMessage.style.display = "none";
+    return true;
+  }
+}
+
+// Add blur event listeners to email and phone fields
+document.getElementById("email").addEventListener("blur", function () {
+  validateEmail(this);
+});
+
+document.getElementById("phone").addEventListener("blur", function () {
+  validatePhone(this);
+});
+
+// Add event listeners to input fields to hide error messages when user starts typing
+const inputFields = document.querySelectorAll(
+  "#contactForm input, #contactForm textarea"
+);
+inputFields.forEach(function (field) {
+  field.addEventListener("input", function () {
+    const errorMessage = field.nextElementSibling;
+    errorMessage.style.display = "none";
+  });
+});
