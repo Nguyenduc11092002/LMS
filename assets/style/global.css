@@ -772,7 +772,8 @@ body {
     background-color: #F5E9D4;
     color: #838C48;
     text-decoration: none;
-    border-radius: 1px;
+    border-radius: 3px;
+    transition: 0.3s;
 }
 
 .start-learning:hover {
