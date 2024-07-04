@@ -782,13 +782,18 @@ color: rgb(228, 101, 3);
   position: relative;
 
 }
+
 .blog-svg{
   background-image: url(/assets/img/blog-svg-background.jpg);
   background-attachment: fixed;
   background-position:center center;
   background-repeat: no-repeat;
   background-size: cover;
-  width: 100%;
+  
+  
+}
+.blog-svg-container{
+  max-width: 1170px;
   display: flex;
   flex-wrap: wrap;
   text-align: center;
@@ -797,7 +802,6 @@ color: rgb(228, 101, 3);
   margin-top: 100px;
   
 }
-
 .blog-svg svg {
   width: 32px;
   height: 32px;
