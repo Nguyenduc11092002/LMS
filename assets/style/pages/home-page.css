@@ -15,6 +15,11 @@ footer{
     
 }
 
+.container {
+  max-width: 1170px !important;
+  width: 100% !important;
+}
+
 .footer{
     width: 33.3%;
 }
@@ -86,18 +91,25 @@ body, html {
     text-align: center;
     padding: 0px 10px;
     max-width: 100%;
-    top: -131px;
+    top: -139px;
     z-index: -2;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+.banner{
+    display: flex;
+    position: relative;
+    bottom: 630px ;
+}
+.head-container{
+    position: relative;
+    top: 380px;
+    max-width: 1170px;
+}
 
 .hero-all{
     display:block;
-    position: relative;
-    top: 290px;
-   
 }
 
 .hero-content {
@@ -157,8 +169,7 @@ body, html {
     font-optical-sizing: auto;
     font-weight: 600;
     font-style: normal;
-    font-variation-settings:
-      "wdth" 100;
+    font-variation-settings:"wdth" 100;
 }
 
 
@@ -170,6 +181,7 @@ body, html {
     color: #000000;
     transform: translateY(-2.1rem);
     transition: all 0.5s ease-out;
+    
 }
 
 .hero-stats.animate {
@@ -200,16 +212,16 @@ body, html {
 }
 
 .hero-stats .stat .number {
-     /* Change this to your desired color for the list items */
-    border-bottom: 3px solid #838C48; /* Add a small line under each list item */
-    padding-bottom: 10px; /* Add some padding at the bottom */
-    margin-bottom: 10px; /* Add some margin at the bottom */
+    
+    border-bottom: 3px solid #838C48; 
+    padding-bottom: 10px; 
+    margin-bottom: 10px; 
 }
 
 
 
 
-/*Blog*/
+/* Blog - Phat */
 .blog{
     max-width: 1200px;
     margin: 0 auto;
@@ -221,6 +233,107 @@ body, html {
 .blog img{
     max-width: 100%;
 }
+
+.courses__button:hover {
+    color: #fff;
+    background: #838C48;
+    border: 2px solid transparent;
+
+}
+
+.course__image {
+    width: 100%;
+    height: auto;
+}
+
+.course__badge {
+    font-size: 0.875rem;
+    margin-bottom: 0.5rem;
+}
+
+.course__title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.course__category,
+.course__time,
+.course__rating {
+    font-size: 0.875rem;
+    color: #666;
+}
+
+.ad__image {
+    width: 100%;
+    height: auto;
+}
+
+.col-md-8 {
+  width: calc(100% - (100% / 3));
+  display: inline-flex;
+}
+
+.col-md-4 {
+  width: calc(100% / 3);
+}
+
+
+/* This is Blog part */
+.blog {
+  max-width: 1200px;
+  padding: 60px 0 70px 0;
+  margin: 0;
+}
+
+.blog-title h2 {
+  font-weight: 400;
+  font-size: 24px;
+}
+.blog img {
+  max-width: 100%;
+}
+/*  */
+.blog-container {
+    position: relative;
+    overflow: hidden; /* Ẩn các phần tử vượt ra ngoài container */
+}
+.blog img.card-img-top{
+    width: 120%;
+    height: 120%;
+  
+}
+
+
+.blog-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Màu nền và độ mờ cho lớp phủ */
+    display: flex;
+    align-items: flex-end;
+    opacity: 0; /* Ẩn lớp phủ khi không di chuột */
+   
+}
+
+.overlay-text {
+    color: white;
+    font-size: 14px;
+    text-align: center;
+}
+
+.blog-container:hover .card-img-top {
+    transform: scale(0.8); /* Thu nhỏ hình ảnh khi di chuột vào */
+}
+
+.blog-container:hover .blog-overlay {
+    opacity: 1; /* Hiển thị lớp phủ khi di chuột vào */
+}
+
+/*  */
+
 .btn-group-vertical{
     display:grid;
 }

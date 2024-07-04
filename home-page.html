@@ -30,40 +30,45 @@
     />
   </head>
   <body>
-    <div class="effect-image"></div>
     <div id="header-placeholder"></div>
-    <div class="hero">
-      <div class="hero-all">
-      <div class="hero-content">
-        <div class="search-bar">
-            <input type="text" placeholder="Keywords">
-            <button type="button"><img src="/assets/img/search.png" alt="Search Icon" /></button>
+    <div class="effect-image"></div>
+    <!-- Pháp -->
+        <div class="hero">
+          <div class="head-container">
+          <div class="hero-all">
+          <div class="hero-content">
+            <p class="courses-text">We have the largest collection of courses</p>
+            <a href="#" class="view-courses">View All Courses ≫</a>
         </div>
-        <p class="courses-text">We have the largest collection of courses</p>
-        <a href="#" class="view-courses">View All Courses ≫</a>
     </div>
     <div class="hero-stats">
       <div class="stat">
-        <span class="number" data-target="332">0</span>
-        <span class="label">Courses</span>
+        <span  class="number" data-target="332">0</span>
+        <span  data-i18n="translation.Course" class="label">Courses</span>
     </div>
     <div class="stat">
         <span class="number" data-target="1403">0</span>
-        <span class="label">Members</span>
+        <span data-i18n="translation.Members" class="label">Members</span>
     </div>
     <div class="stat">
         <span class="number" data-target="60">0</span>
-        <span class="label">Authors</span>
+        <span data-i18n="translation.Authors" class="label">Authors</span>
     </div>
     <div class="stat">
         <span class="number" data-target="120">0</span>
-        <span class="label">Subjects</span>
+        <span data-i18n="translation.Subjects" class="label">Subjects</span>
         </div>
     </div>
     </div>
+  </div>
     </div>
     <main class="container mt-5">
-      <div class="banner"></div>
+      
+      <div class="banner"><div class="search-bar">
+        <input type="text" placeholder="Keywords">
+        <button type="button"><img src="/assets/img/search.png" alt="Search Icon" /></button>
+    </div>
+  </div>
       <div class="icon_banner"></div>
       <div class="courses" mt-4>
         <h2 class="courses__title"data-aos="fade-up" data-i18n="translation.Courses">
@@ -129,11 +134,13 @@
             </div>
         </section>
       </div>
+
+      <!-- Phát -->
       <div class="blog">
         <div class="text-center blog-title">
-          <h2 data-i18n="translation.menuBlog">BLOG</h2>
+          <h2 data-i18n="translation.menuBlog" data-aos="fade-up">BLOG</h2>
         </div>
-        <div class="blog-cards">
+        <div class="blog-cards" data-aos="fade-up">
           <!-- Blog Card 1 -->
           <div class="card blog-card">
             <div class="blog-container">
@@ -211,7 +218,7 @@
             </div>
           </div>
         </div>
-        <div class="blog-svg">
+        <div class="blog-svg" data-aos="fade-up">
           <div>
             <div class="blog-icon-html5">
               <div class="blog-icon">
@@ -319,13 +326,13 @@
             <p>Ruby</p>
           </div>
         </div>
-        <div class="blog-events">
+        <div class="blog-events" data-aos="fade-up">
           <div class="blog-events-title">
             <h1 data-i18n="translation.blogEvent">UPCOMING EVENTS</h1>
           </div>
           <div class="line"></div>
         </div>
-        <div class="blog-events-detail">
+        <div class="blog-events-detail" data-aos="fade-up">
           <img src="/assets/img/blog-event.jpg" alt="" />
           <div class="blog-card-details">
             <h2 data-i18n="translation.blogCardDetail">Welcoming 25th Batch</h2>
@@ -337,7 +344,7 @@
             </p>
           </div>
         </div>
-        <div class="blog-footer">
+        <div class="blog-footer" data-aos="fade-up">
           <div class="getin">
             <h1 data-i18n="translation.blogGetin">GET IN TOUCH WITH US</h1>
             <p data-i18n="translation.blogFooter">
@@ -352,20 +359,11 @@
                   <button type="submit">SUBCRIBE</button>
               </form>
           </div>
-            <!-- <div class="getin-btn">
-              <input
-                type="email"
-                name="email"
-                required="required"
-                placeholder="Your Email Address"
-                value=""
-              />
-              <button type="submit">SUBCRIBE</button>
-            </div> -->
           </div>
         </div>
       </div>
 
+      <!-- Đức -->
       <div class="process"></div>
       </div>
       <div class="our_process">

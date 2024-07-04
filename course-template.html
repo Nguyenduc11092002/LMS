@@ -27,10 +27,12 @@
     
 
   <main>
-  <div class="breadcrumb">
-        <h1>Courses-Template</h1>
-        <div class="breadcrumb-link">
-          <a href="#">Home</a> / Courses-Template
+      <div class="breadcrumb">
+          <div class="breadcrumb-container">
+            <h1 data-i18n="translation.courseHeader">Courses-Template</h1>
+            <div data-i18n="translation.courseMiniHeader" class="breadcrumb-link">
+            <a href="#">Home</a> / Courses-Template
+          </div>
         </div>
       </div>
 
@@ -45,47 +47,47 @@
           </div>
 
           <div class="col-md-4">
-            <h6><span class="course">Course Categories</span></h6>
+            <h6><span data-i18n="translation.courseSideCate" class="course">Course Categories</span></h6>
             <div class="form-check">
               <input class="form-check-input" type="checkbox" id="education">
-              <label class="form-check-label" for="education">Education</label>
+              <label data-i18n="translation.courseSideEdu" class="form-check-label" for="education">Education</label>
             </div>
             <div class="form-check">
               <input class="form-check-input" type="checkbox" id="engineering">
-              <label class="form-check-label" for="engineering">Engineering</label>
+              <label data-i18n="translation.courseSideEngine" class="form-check-label" for="engineering">Engineering</label>
             </div>
             <div class="form-check">
               <input class="form-check-input" type="checkbox" id="health">
-              <label class="form-check-label" for="health">Health</label>
+              <label data-i18n="translation.courseSideHealth" class="form-check-label" for="health">Health</label>
             </div>
             <div class="form-check">
               <input class="form-check-input" type="checkbox" id="law">
-              <label class="form-check-label" for="law">Law</label>
+              <label data-i18n="translation.courseSideLaw" class="form-check-label" for="law">Law</label>
             </div>
             <div class="form-check">
               <input class="form-check-input" type="checkbox" id="mathematics">
-              <label class="form-check-label" for="mathematics">Mathematics</label>
+              <label data-i18n="translation.courseSideMath" class="form-check-label" for="mathematics">Mathematics</label>
             </div>
           </div>
     
           <div class="col-md-4">
-            <h6><span class="cost">Cost</span></h6>
+            <h6><span data-i18n="translation.courseCost" class="cost">Cost</span></h6>
             <div class="form-check">
               <input class="form-check-input" type="radio" name="cost" id="all">
-              <label class="form-check-label" for="all">All</label>
+              <label data-i18n="translation.courseCostAll" class="form-check-label" for="all">All</label>
             </div>
             <div class="form-check">
               <input class="form-check-input" type="radio" name="cost" id="free">
-              <label class="form-check-label" for="free">Free</label>
+              <label data-i18n="translation.courseCostFree" class="form-check-label" for="free">Free</label>
             </div>
             <div class="form-check">
               <input class="form-check-input" type="radio" name="cost" id="paid">
-              <label class="form-check-label" for="paid">Paid</label>
+              <label data-i18n="translation.courseCostPaid" class="form-check-label" for="paid">Paid</label>
             </div>
           </div>
 
           <div class="col-md-4">
-            <h6><span class="start-date">Start Date :</span></h6>
+            <h6><span data-i18n="translation.courseDate" class="start-date">Start Date :</span></h6>
             <div class="input-group">
               <input type="text" id="start-date" class="form-control" placeholder="Start Date">
               <i class="fas fa-calendar-alt"></i>
@@ -95,37 +97,42 @@
         </div>
 
         <div class="course-content">
-        <div class="course-detail">
+          <div class="course-detail">
             <button class="grid-button active">
               <img src="/assets/img/grid.png" alt="">
-              GRID
+              <p data-i18n="translation.courseGrid" >GRID</p>
             </button>
             <button class="list-button">
               <img src="/assets/img/list.png" alt="">
-              LIST
+              <p data-i18n="translation.courseList" >LIST</p>
             </button>
         
-          <div class="order-by">
-            Order by :
-            <select>
-              <option value="Select Order" selected disabled>Select Order</option>
-              <option value="recent">Recent Courses</option>
-              <option value="highest">Highest Rated</option>
-              <option value="members">Most Members</option>
-              <option value="alphabetical">Alphabetical</option>
-            </select>
+            <div class="order-by">
+              Order by :
+              <select>
+                <option value="Select Order" selected disabled>Select Order</option>
+                <option value="recent">Recent Courses</option>
+                <option value="highest">Highest Rated</option>
+                <option value="members">Most Members</option>
+                <option value="alphabetical">Alphabetical</option>
+              </select>
+            </div>
           </div>
-        </div>
           
           <div class="course-cards">
             <div class="course-card">
+              <div class="course-card-img">
               <img src="/assets/img/courses-listing-image-1.jpg" class="course-card-image">
+              <div class="view-course">
+                <span data-i18n="translation.courseViewCourse">VIEW COURSE</span>
+              </div>
+              </div>
               <div class="course-card-header">
-                <h5>Free</h5>
+                <h5 data-i18n="translation.courseCardHeader1">Free</h5>
               </div>
               <div class="course-card-body">
-                <a href="#">Power Electronics</a>
-                <p><a href="#">Education</a> | 7 Curriculum</p>
+                <a data-i18n="translation.courseCardTitle1" href="#">Power Electronics</a>
+                <p  data-i18n="translation.courseCardCate1"><a href="#">Education</a> | 7 Curriculum</p>
               </div>
                 <div class="details">
                   <div class="duration">
@@ -143,13 +150,18 @@
                 </div>
             </div>
             <div class="course-card">
+              <div class="course-card-img">
               <img src="/assets/img/courses-listing-image-2.jpg" class="course-card-image">
+              <div class="view-course">
+                <span data-i18n="translation.courseViewCourse">VIEW COURSE</span>
+              </div>
+              </div>
               <div class="course-card-header">
-                <h5>Free</h5>
+                <h5 data-i18n="translation.courseCardHeader1">Free</h5>
               </div>
               <div class="course-card-body">
-                <a href="#">Introduction to Calculus</a>
-                <p><a href="#">Mathematics</a> | 5 Curriculum</p>
+                <a data-i18n="translation.courseCardTitle2" href="#">Introduction to Calculus</a>
+                <p data-i18n="translation.courseCardCate2"><a href="#">Mathematics</a> | 5 Curriculum</p>
               </div>
                 <div class="details">
                   <div class="duration">
@@ -167,13 +179,18 @@
                 </div>
             </div>
             <div class="course-card">
+              <div class="course-card-img">
               <img src="/assets/img/courses-listing-image-3.jpg" class="course-card-image">
+              <div class="view-course">
+                <span data-i18n="translation.courseViewCourse">VIEW COURSE</span>
+              </div>
+              </div>
               <div class="course-card-header">
-                <h5>Free</h5>
+                <h5 data-i18n="translation.courseCardHeader1">Free</h5>
               </div>
               <div class="course-card-body">
-                <a href="#">Basic Laws and Policies</a>
-                <p><a href="#">Law</a> | 5 Curriculum</p>
+                <a data-i18n="translation.courseCardTitle3" href="#">Basic Laws and Policies</a>
+                <p data-i18n="translation.courseCardCate3"><a href="#">Law</a> | 5 Curriculum</p>
               </div>
                 <div class="details">
                   <div class="duration">
@@ -191,13 +208,18 @@
                 </div>
             </div>
             <div class="course-card">
-              <img src="/assets/img/courses-listing-image-4.jpg" class="course-card-image">
+              <div class="course-card-img">
+                <img src="/assets/img/courses-listing-image-4.jpg" class="course-card-image">
+                <div class="view-course">
+                  <span data-i18n="translation.courseViewCourse">VIEW COURSE</span>
+                </div>
+              </div>
               <div class="course-card-header">
-                <h5>$50</h5>
+                <h5 data-i18n="translation.courseCardHeader2">$50</h5>
               </div>
               <div class="course-card-body">
-                <a href="#">Healthcare Delivery</a>
-                <p><a href="#">Health</a> | 4 Curriculum</p>
+                <a data-i18n="translation.courseCardTitle4" href="#">Healthcare Delivery</a>
+                <p data-i18n="translation.courseCardCate4"><a href="#">Health</a> | 4 Curriculum</p>
               </div>
                 <div class="details">
                   <div class="duration">
@@ -215,13 +237,18 @@
                 </div>
             </div>
             <div class="course-card">
-              <img src="/assets/img/courses-listing-image-5.jpg" class="course-card-image">
+              <div class="course-card-img">
+                <img src="/assets/img/courses-listing-image-5.jpg" class="course-card-image">
+                <div class="view-course">
+                  <span data-i18n="translation.courseViewCourse">VIEW COURSE</span>
+                </div>
+                </div>
               <div class="course-card-header">
-                <h5>Free</h5>
+                <h5 data-i18n="translation.courseCardHeader1">Free</h5>
               </div>
               <div class="course-card-body">
-                <a href="#">General Business Law</a>
-                <p><a href="#">Law</a> | 7 Curriculum</p>
+                <a data-i18n="translation.courseCardTitle5" href="#">General Business Law</a>
+                <p data-i18n="translation.courseCardCate5"><a href="#">Law</a> | 7 Curriculum</p>
               </div>
                 <div class="details">
                   <div class="duration">
@@ -239,13 +266,18 @@
                 </div>
             </div>
             <div class="course-card">
-              <img src="/assets/img/courses-listing-image-6.jpg" class="course-card-image">
+              <div class="course-card-img">
+                <img src="/assets/img/courses-listing-image-6.jpg" class="course-card-image">
+                <div class="view-course">
+                  <span data-i18n="translation.courseViewCourse">VIEW COURSE</span>
+                </div>
+                </div>
               <div class="course-card-header">
-                <h5>Free</h5>
+                <h5 data-i18n="translation.courseCardHeader6">Free</h5>
               </div>
               <div class="course-card-body">
-                <a href="#">Emergin Trends and Technologies</a>
-                <p><a href="#">Engineering</a> | 4 Curriculum</p>
+                <a data-i18n="translation.courseCardTitle6" href="#">Emergin Trends and Technologies</a>
+                <p data-i18n="translation.courseCardCate2"><a href="#">Engineering</a> | 4 Curriculum</p>
               </div>
               <div class="details">
                 <div class="duration">
@@ -265,8 +297,8 @@
         </div>
         
         <div class="page-button">
-          <button class="page-num active">1</button>
-          <button class="page-num">2</button>
+          <button class="page-num active" data-page="1">1</button>
+          <button class="page-num" data-page="2">2</button>
           <button class="page-num">Next <i class="fas fa-arrow-right"></i></button>
         </div>
         </div>

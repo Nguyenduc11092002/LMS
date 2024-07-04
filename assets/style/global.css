@@ -13,6 +13,11 @@ body {
   background-color: #fcf5e9 !important;
 }
 
+.container {
+    max-width: 1170px;
+    width: 100%;
+}
+
 .header {
   padding: 20px 0 !important;
   display: flex; /* Add flexbox to the header */
@@ -22,55 +27,57 @@ body {
 
 .header .col-md-2 {
     margin: 0 !important;
+    padding: 0 !important;
 }
 
-.text-end {
-  margin: 0 !important;
+.header .text-end {
+    margin: 0 !important;
 }
 
-.logo {
+.header .logo {
     width: 45%
 }
 
-.nav-bar {
+.header .nav-bar {
     display: flex;
     margin-right: 100px !important;
 }
 
-.nav-link {
-  color: black !important;
-  text-decoration: none;
+.header .nav-link {
+    color: black !important;
+    text-decoration: none;
 }
 
-.nav-link:hover {
-  color: gray;
+.header .nav-link:hover {
+    color: gray
 }
 
-.navbar-nav {
-  margin-right: 0 !important;
+.header .navbar-nav {
+    margin-right: 0 !important;
 }
 
-.navbar-nav .nav-item {
+.header .navbar-nav .nav-item {
     display: flex;
     justify-items: center;
     align-items: center;
     margin-right: 30px;
     font-size: 14px;
+    white-space: nowrap;
 }
 
-.language {
+.header .language {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 0px !important;
 }
 
-.language ul {
-  display: flex;
-  flex-wrap: nowrap;
+.header .language ul {
+    display: flex;
+    flex-wrap: nowrap;
 }
 
-.language button {
+.header .language button {
     background-color: transparent;
     border: none;
     padding: 0;
@@ -78,187 +85,464 @@ body {
     cursor: pointer;
 }
 
-.nav-icon {
-  width: 40px;
-  padding: 11px;
-  border: 2px solid black;
-  border-radius: 3px;
+.header .nav-icon {
+    width: 40px;
+    padding: 11px;
+    border: 2px solid black;
+    border-radius: 3px;
 }
 
-.nav-icon2 {
-  width: 15px;
+.header .nav-icon2 {
+    width: 15px;
 }
 
-.btn {
-  display: flex;
-  justify-items: center;
-  align-items: center;
+.header .btn {
+    display: flex;
+    justify-items: center ;
+    align-items: center;
 }
 
-.language button:hover {
-  background-color: transparent;
+.header .language button:hover {
+    background-color: transparent;
 }
 
-.language button:hover .nav-link {
-  color: #da853d !important; /* Màu của văn bản */
+.header .language button:hover .nav-link {
+    color: #DA853D !important; /* Màu của văn bản */
 }
 
-.language button:hover .nav-icon {
-  filter: invert(58%) sepia(30%) saturate(728%) hue-rotate(336deg)
-    brightness(94%) contrast(96%);
+.header .language button:hover .nav-icon {
+    filter: invert(58%) sepia(30%) saturate(728%) hue-rotate(336deg) brightness(94%) contrast(96%);
 }
 
-.nav-icon:hover {
-  filter: invert(58%) sepia(30%) saturate(728%) hue-rotate(336deg)
-    brightness(94%) contrast(96%);
+.header .nav-icon:hover {
+    filter: invert(58%) sepia(30%) saturate(728%) hue-rotate(336deg) brightness(94%) contrast(96%);
 }
 
-.nav-icon2:hover {
-  filter: invert(58%) sepia(30%) saturate(728%) hue-rotate(336deg)
-    brightness(94%) contrast(96%);
+.header .nav-icon2:hover {
+    filter: invert(58%) sepia(30%) saturate(728%) hue-rotate(336deg) brightness(94%) contrast(96%);
 }
 
-.nav-item.active {
+.header .nav-item.active {
     border: 2px solid black;
     border-radius: 3px;
     padding: 0 20px;
+    background: transparent;
+}
+
+.header .nav-item.active .nav-link {
+    color: black !important;
+}
+
+.header .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    float: left;
+    min-width: 10rem;
+    padding: 15px;
+    margin: .125rem 0 0;
+    font-size: 1rem;
+    color: #212529;
+    text-align: left;
+    list-style: none;
+    background-clip: padding-box;
+    border: none;
+    border-top: 1px solid #FCF5E9;
+    border-radius: .25rem;
+    box-shadow: 0 .5rem 1rem rgba(172, 172, 172, 0.175);
+}
+
+.header .nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+    position: absolute;
+    top: 110%;
+    left: 0;
     background-color: #FCF5E9;
+    border-top: 3px solid #E2D6C1;
+    z-index: 1000;
 }
 
-.nav-item.active .nav-link {
-  color: black !important;
+.header .dropdown-item {
+    display: block;
+    width: 100%;
+    padding: 10px 30px 10px 15px;
+    clear: both;
+    font-weight: 400;
+    border-radius: 3px;
+    color: #212529;
+    text-align: inherit;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+    transition: 0.5s;
 }
 
-.dropdown-menu {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  z-index: 1000;
-  float: left;
-  min-width: 10rem;
-  padding: 15px;
-  margin: 0.125rem 0 0;
-  font-size: 1rem;
-  color: #212529;
-  text-align: left;
-  list-style: none;
-  background-clip: padding-box;
-  border: none;
-  border-top: 1px solid #fcf5e9;
-  border-radius: 0.25rem;
-  box-shadow: 0 0.5rem 1rem rgba(172, 172, 172, 0.175);
+.header .dropdown-item:hover {
+    color: #16181b;
+    text-decoration: none;
+    background-color: #F5E9D4;
 }
 
-.nav-item.dropdown:hover .dropdown-menu {
-  display: block;
-  position: absolute;
-  top: 110%;
-  left: 0;
-  background-color: #fcf5e9;
-  border-top: 3px solid #e2d6c1;
-  z-index: 1000;
+.header .dropdown-submenu {
+    position: relative;
 }
 
-.dropdown-item {
-  display: block;
-  width: 100%;
-  padding: 10px 30px 10px 15px;
-  clear: both;
-  font-weight: 400;
-  border-radius: 3px;
-  color: #212529;
-  text-align: inherit;
-  white-space: nowrap;
-  background-color: transparent;
-  border: 0;
-  transition: 0.5s;
+.header .dropdown-submenu > .mini-menu {
+    display: none;
+    position: absolute;
+    top: 0; /* changed from top: 100% */
+    left: 100%; /* added */
+    z-index: 1000;
+    float: left;
+    min-width: 10rem;
+    padding: 15px;
+    margin: .125rem 0 0;
+    font-size: 1rem;
+    color: #212529;
+    text-align: left;
+    list-style: none;
+    background-color: #FCF5E9;
+    border-top: 3px solid #E2D6C1;
+    background-clip: padding-box;
+    border-radius: .25rem;
+    box-shadow: 0 .5rem 1rem rgba(172, 172, 172, 0.175);
 }
 
-.dropdown-item:hover {
-  color: #16181b;
-  text-decoration: none;
-  background-color: #f5e9d4;
+.header .dropdown-submenu:hover > .mini-menu {
+    display: block;
 }
 
-.dropdown-submenu {
-  position: relative;
+.header .nav-link.dropdown-toggle {
+    display: inline-block;
+    padding-bottom: 10px
+}
+  
+.header .nav-link.dropdown-toggle::after {
+    display: none;
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-80%);
+    font-size: 20px;
+    color: #333;
 }
 
-.dropdown-submenu > .mini-menu {
-  display: none;
-  position: absolute;
-  top: 0; /* changed from top: 100% */
-  left: 100%; /* added */
-  z-index: 1000;
-  float: left;
-  min-width: 10rem;
-  padding: 15px;
-  margin: 0.125rem 0 0;
-  font-size: 1rem;
-  color: #212529;
-  text-align: left;
-  list-style: none;
-  background-color: #fcf5e9;
-  border-top: 3px solid #e2d6c1;
-  background-clip: padding-box;
-  border-radius: 0.25rem;
-  box-shadow: 0 0.5rem 1rem rgba(172, 172, 172, 0.175);
+.header .nav-item.dropdown:hover .nav-link.dropdown-toggle::after {
+    display: block;
 }
 
-.dropdown-submenu:hover > .mini-menu {
-  display: block;
+.header .dropdown-menu.blog-dropdown {
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1000px;
 }
 
-.nav-link.dropdown-toggle {
-  display: inline-block;
-  padding-bottom: 10px;
+.header .dropdown-menu.gallery-dropdown {
+    left: 50%;
+    transform: translateX(-58%);
+    width: 1000px;
 }
 
-.nav-link.dropdown-toggle::after {
-  display: none;
-  content: "";
-  position: absolute;
-  bottom: -8px;
-  left: 50%;
-  transform: translateX(-80%);
-  font-size: 20px;
-  color: #333;
+.header .dropdown-menu.shop-dropdown {
+    left: 50%;
+    transform: translateX(-68%);
+    width: 1000px;
 }
 
-.nav-item.dropdown:hover .nav-link.dropdown-toggle::after {
-  display: block;
+.header .blog-container {
+    display: flex;
+    width: 100%;
 }
 
-.dropdown-menu.blog-dropdown {
-  left: 50%;
-  transform: translateX(-50%);
-  width: 1000px;
+.header .column{
+    margin-top: 10px;
+    width: 23%;
 }
 
-.dropdown-menu.gallery-dropdown {
-  left: 50%;
-  transform: translateX(-58%);
-  width: 1000px;
+.header .column h5 {
+    padding-bottom: 10px;
+    display: inline-block;
+    position: relative;
+    text-transform: uppercase;
 }
 
-.dropdown-menu.shop-dropdown {
-  left: 50%;
-  transform: translateX(-68%);
-  width: 1000px;
+.header .column h5::before {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 50%;
+    border-bottom: 2px solid #ef9c21;
 }
 
-.blog-container {
-  display: flex;
-  width: 100%;
+.header .column ul{
+    list-style: none;
+    margin: 10px 0 20px;
+    padding: 0;
 }
 
-.login-register ul span {
-    margin: 0 10px;
+.header .column ul li{
+    font-size: 15px;
 }
 
+.header .column ul li a {
+    padding-left: 0;
+    transition: padding-left 0.5s ease
+}
 
+.header .column ul li a:hover {
+    padding-left: 15px;
+}
 
+.header .img-box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.header .fullwidth h5 {
+    padding: 0 0 10px 10px;
+    display: inline-block;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.header .fullwidth h5::before {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 10px;
+    width: 30%;
+    border-bottom: 2px solid #ef9c21;
+}
+
+.header .fullwidth img {
+    padding: 10px;
+}
+
+.header .column-form {
+    margin-top: 10px;
+    width: 23%;
+}
+
+.header .column-form h5 {
+    padding-bottom: 10px;
+    display: inline-block;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.header .column-form h5::before {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 30%;
+    border-bottom: 2px solid #ef9c21;
+}
+
+.header input[type="text"],
+.header input[type="email"],
+.header textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 15px 0 0;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    resize: vertical;
+}
+
+.header textarea {
+    height: 150px;
+}
+
+.header input[type="text"]:focus,
+.header input[type="email"]:focus,
+.header textarea:focus {
+    border-color: #aaa;
+}
+
+.header input[type="text"]::placeholder,
+.header input[type="email"]::placeholder,
+.header textarea::placeholder {
+    color: #aaa;
+    font-size: 16px;
+}
+
+.header .column-form button {
+    background-color: #838C49;
+    color: white;
+    padding: 12px 10px;
+    margin: 10px 0 10px 110px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    width: 50%;
+    transition: 0.5s ease
+}
+
+.header .column-form button:hover {
+    background-color: #ef9c21;
+}
+
+.header .column-product {
+    margin: 10px 100px 0 10px;
+    width: 21%;
+}
+
+.header .column-product h5 {
+    padding-bottom: 10px;
+    display: inline-block;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.header .column-product h5::before {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 25%;
+    border-bottom: 2px solid #ef9c21;
+}
+
+.header .nav-item.dropdown .dropdown-menu .column-product ul {
+    list-style: none;
+    margin: 10px 0 20px 0;
+    padding: 0;
+}
+
+.header .column-product ul li {
+    font-size: 15px;
+    margin-top: 10px;
+    gap: 10px;
+}
+
+.header .column-product ul li a:hover {
+    color: #838C49;
+    background: transparent;
+}
+
+.header .product-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #ccc;
+}
+
+.header .column-product ul li a {
+    padding-left: 0;
+    width: 120px;
+    white-space: normal;
+    word-wrap: break-word;
+}
+
+.header .column-product img {
+    width: 57px;
+    height: 57px;
+    padding: 3px;
+    border: 1px solid #ccc;
+}
+
+.header .original-price {
+    font-size: 13px;
+    text-decoration: line-through; /* Gạch ngang */
+    color: #777; /* Màu xám nhạt */
+}
+
+.header .discounted-price {
+    color: #777; /* Màu đen hoặc màu bạn muốn cho giá giảm */
+}
+
+.header .column-account {
+    margin-top: 10px;
+    width: 18%;
+}
+
+.header .column-account h5 {
+    padding-bottom: 10px;
+    display: inline-block;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.header .column-account h5::before {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -3px; /* Adjust this to position the underline */
+    left: 0;
+    width: 37%;
+    border-bottom: 2px solid #ef9c21;
+}
+
+.header .column-account ul{
+    list-style: none;
+    margin: 10px 0 20px;
+    padding: 0;
+}
+
+.header .column-account ul li{
+    font-size: 15px;
+}
+
+.header .column-account ul li a {
+    padding-left: 0;
+    transition: padding-left 0.5s ease
+}
+
+.header .column-account ul li a:hover {
+    padding-left: 15px;
+}
+
+.header .column-shop{
+    margin-top: 10px;
+    width: 18%;
+}
+
+.header .column-shop h5 {
+    padding-bottom: 10px;
+    display: inline-block;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.header .column-shop h5::before {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 50%;
+    border-bottom: 2px solid #ef9c21;
+}
+
+.header .column-shop ul{
+    list-style: none;
+    margin: 10px 0 20px;
+    padding: 0;
+}
+
+.header .column-shop ul li{
+    font-size: 15px;
+}
+
+.header .column-shop ul li a {
+    padding-left: 0;
+    transition: padding-left 0.5s ease
+}
+
+.header .column-shop ul li a:hover {
+    padding-left: 15px;
+}
 
 /*Footer Pháp*/
 
@@ -275,7 +559,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    max-width: 1200px;
+    max-width: 1170px;
     margin: 0 auto;
     position: relative;
     top: auto;
@@ -323,7 +607,7 @@ body {
 }
 
 .footer-section .footer-links li {
-    color: #838C48; /* Change this to your desired color for the list items */
+    color: #33333393; /* Change this to your desired color for the list items */
 }
 
 /* đường line dưới câu */
@@ -394,7 +678,7 @@ body {
 
 .footer-section3 .footer-links3 i {
     color: #838C48; /* Change this to your desired color for the icons */
-    margin-right: 10px; /* Add some space between the icon and the text */
+    margin-right: 10px;
 }
 
 .footer-logo img {
