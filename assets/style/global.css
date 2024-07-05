@@ -20,8 +20,8 @@ body {
 
 .header {
   padding: 20px 0 !important;
-  display: flex; /* Add flexbox to the header */
-  justify-content: space-between; /* Distribute child elements horizontally */
+  display: flex;
+  justify-content: space-between;
   align-items: center;
   position: relative;
   z-index: 100;
@@ -464,12 +464,12 @@ body {
 
 .header .original-price {
   font-size: 13px;
-  text-decoration: line-through; /* Gạch ngang */
-  color: #777; /* Màu xám nhạt */
+  text-decoration: line-through;
+  color: #777;
 }
 
 .header .discounted-price {
-  color: #777; /* Màu đen hoặc màu bạn muốn cho giá giảm */
+  color: #777;
 }
 
 .header .column-account {
@@ -488,7 +488,7 @@ body {
   content: "";
   display: block;
   position: absolute;
-  bottom: -3px; /* Adjust this to position the underline */
+  bottom: -3px;
   left: 0;
   width: 37%;
   border-bottom: 2px solid #ef9c21;
@@ -555,7 +555,6 @@ body {
 }
 
 /*Footer Pháp*/
-
 .site-footer {
   background: #f5e9d4;
   padding: 0px 0;
@@ -589,7 +588,11 @@ body {
   margin-bottom: 0;
 }
 
-.hover-text a {
+.hover-text-footer {
+  position: static;
+}
+
+.hover-text-footer a {
   padding-left: 5px;
   text-decoration: none;
   color: #fff;
@@ -814,31 +817,29 @@ body {
 }
 
 .social-icons a img {
-  width: 30px; /* Adjust the size of the icons */
-  height: 30px; /* Adjust the size of the icons */
+  width: 30px;
+  height: 30px;
 }
 
 .social-icons a:hover img {
-  opacity: 0.7; /* Add a hover effect */
+  opacity: 0.7;
 }
 
 .hover-text {
-  color: #fff; /* Default text color */
-  transition: color 0.3s; /* Smooth transition */
+  color: #fff;
+  transition: color 0.3s;
   position: relative;
   right: 110px;
 }
 
 .hover-text:hover {
-  color: #de884a; /* Change this to your desired hover color */
+  color: #de884a;
 }
 
-/* phần của nguyên */
 .start-learning {
   display: inline-block;
   margin-top: 0px;
   padding: 10px 20px;
-  /* background-color: #f5e9d4; */
   color: #838c48;
   text-decoration: none;
   border-radius: 3px;
@@ -851,7 +852,7 @@ body {
   color: #fff;
 }
 
-address p {
+.address p {
   margin: 0;
   margin-bottom: 10px;
 }
@@ -1058,12 +1059,12 @@ textarea::placeholder {
 
 .original-price {
   font-size: 13px;
-  text-decoration: line-through; /* Gạch ngang */
-  color: #777; /* Màu xám nhạt */
+  text-decoration: line-through;
+  color: #777;
 }
 
 .discounted-price {
-  color: #777; /* Màu đen hoặc màu bạn muốn cho giá giảm */
+  color: #777;
 }
 
 .column-account {
@@ -1082,8 +1083,7 @@ textarea::placeholder {
   content: "";
   display: block;
   position: absolute;
-  bottom: -3px; /* Adjust this to position the underline */
-  left: 0;
+  bottom: -3px;
   width: 37%;
   border-bottom: 2px solid #ef9c21;
 }

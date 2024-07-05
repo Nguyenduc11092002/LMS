@@ -204,11 +204,7 @@ button:hover {
 
 .info-text a {
   text-decoration: none;
-<<<<<<< HEAD
-  color: rgb(48, 48, 48)
-=======
   color: rgb(48, 48, 48) !important
->>>>>>> d5aed9e3f5eed744d1f4fc35f2503cae7566e160
 }
 
 .info-text:hover a {
