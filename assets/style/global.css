@@ -23,6 +23,8 @@ body {
   display: flex; /* Add flexbox to the header */
   justify-content: space-between; /* Distribute child elements horizontally */
   align-items: center;
+  position: relative;
+  z-index: 100;
 }
 
 .header .row {
@@ -563,10 +565,6 @@ body {
   padding-top: 43px;
 }
 
-.container-footer {
-  padding-bottom: 40px;
-}
-
 .footer-container {
   display: flex;
   flex-wrap: wrap;
@@ -580,9 +578,43 @@ body {
   text-align: left;
 }
 
+.footer-content-text {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-left: 0;
+}
+
+.footer-content-text p {
+  margin-bottom: 0;
+}
+
+.hover-text a {
+  padding-left: 5px;
+  text-decoration: none;
+  color: #fff;
+  position: static;
+}
+
+.footer-copyright-text {
+  margin-left: 0;
+  border-right: solid 1px #fff;
+  padding-right: 5px;
+}
+
+
+.hover-text:hover a {
+  color: #ef9c21;
+}
+
 .footer-links {
   list-style: none;
   padding-left: 0;
+}
+
+.footer-content-text {
+  display: flex;
+  flex-direction: row;
 }
 
 .footer-section {
@@ -757,34 +789,6 @@ body {
   margin: 0 auto;
   padding: 0 20px;
   position: relative;
-  line-height: 24px;
-  font-size: 14px;
-}
-
-.footer-content-text {
-  display: flex;
-  margin-left: 0;
-  align-items: center;
-}
-
-.footer-content-text p {
-  margin-bottom: 0;
-}
-
-.hover-text a {
-  color: #fff; /* Default text color */
-  transition: color 0.3s; /* Smooth transition */
-  font-size: 14px;
-  line-height: 22px;
-  text-decoration: none;
-  padding-left: 8px;
-}
-
-.footer-copyright-text {
-  font-size: 14px;
-  line-height: 22px;
-  border-right: 1px solid #fff;
-  padding-right: 8px;
 }
 
 .social-icons {
@@ -810,15 +814,22 @@ body {
 }
 
 .social-icons a img {
-  width: 20px; /* Adjust the size of the icons */
-  height: 20px; /* Adjust the size of the icons */
+  width: 30px; /* Adjust the size of the icons */
+  height: 30px; /* Adjust the size of the icons */
 }
 
 .social-icons a:hover img {
   opacity: 0.7; /* Add a hover effect */
 }
 
-.hover-text:hover a {
+.hover-text {
+  color: #fff; /* Default text color */
+  transition: color 0.3s; /* Smooth transition */
+  position: relative;
+  right: 110px;
+}
+
+.hover-text:hover {
   color: #de884a; /* Change this to your desired hover color */
 }
 
@@ -827,22 +838,20 @@ body {
   display: inline-block;
   margin-top: 0px;
   padding: 10px 20px;
-  /* background-color: #F5E9D4; */
+  /* background-color: #f5e9d4; */
   color: #838c48;
   text-decoration: none;
   border-radius: 3px;
   transition: 0.3s;
-  border: 1px solid #838c48;
-  font-weight: 600;
+  border: 2px solid #838c48;
 }
 
 .start-learning:hover {
   background-color: #838c48;
   color: #fff;
-  border: 1px solid transparent;
 }
 
-.address p {
+address p {
   margin: 0;
   margin-bottom: 10px;
 }

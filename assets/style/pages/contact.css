@@ -204,7 +204,11 @@ button:hover {
 
 .info-text a {
   text-decoration: none;
+<<<<<<< HEAD
   color: rgb(48, 48, 48)
+=======
+  color: rgb(48, 48, 48) !important
+>>>>>>> d5aed9e3f5eed744d1f4fc35f2503cae7566e160
 }
 
 .info-text:hover a {
@@ -245,6 +249,7 @@ button:hover {
   width: 100%;
   height: 490px;
 }
+
 .spinner {
   display: none;
   margin-left: -160px;
@@ -320,7 +325,7 @@ button:hover {
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 576px) {
   .form-contact-layout {
     padding: 15px;
   }
@@ -340,5 +345,28 @@ button:hover {
   button {
     width: 100%;
     padding: 10px;
+  }
+}
+
+@media (max-width: 360px) {
+  .form-contact-layout {
+    padding: 10px;
+  }
+
+  .form-contact-layout h2 {
+    font-size: 1em;
+  }
+
+  .info-text {
+    font-size: 12px;
+  }
+
+  .contact-map iframe {
+    height: 250px;
+  }
+
+  button {
+    width: 100%;
+    padding: 8px;
   }
 }

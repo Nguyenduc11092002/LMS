@@ -22,6 +22,8 @@
     "Members": "Members",
     "Authors": "Authors",
     "Subjects": "Subjects",
+    "courseText": "We have the largest collection of courses",
+    "viewCourse": "View All Courses",
 
     "AboutUs": "About Us",
     "footerLoremipsum": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et lobortis diam. Duis tellus enim, vestibulum eget varius id, vulputate et mi. Nullam feugiat, diam quis interdum varius",
@@ -81,6 +83,10 @@
     "courseCardCate4": "Health | 4 Curriculum",
     "courseCardCate5": "Law | 7 Curriculum",
     "courseCardCate6": "Engineering | 7 Curriculum",
+    "courseCardDescription1": "Donec eu congue sem. Fusce ut eu est semper augue accumsan. Integer consequat ultricies arcu a feugiat. In hac habitasse platea dictumst. Donec vel efficitur mauris, et tempor ipsum",
+    "courseCardDescription2": "Phasellus erat est, consectetur eget fringilla ac, porttitor mollis lectus. Cras dignissim laoreet diam sit amet tempor. Sed mi purus, hendrerit eget lacus ut, ornare cursus augue",
+    "courseCardDescription3": "Vestibulum cursus quam id lorem iaculis, vel pulvinar dui tincidunt. Fusce in cursus enim. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos",
+    "courseCardDescription4": "Fusce in cursus enim. Duis ullamcorper mi et tincidunt. Donec fringilla sem eu ipsum nec volutpat ex ultricies. Nunc justo mauris, euismod egestas blandit. Integer id maximus quam",
 
 
 
