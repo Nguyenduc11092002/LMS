@@ -1,12 +1,12 @@
 /* CSS Home Page */
 .effect-image {
+  z-index: 99;
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   height: 150px; /* Chiều cao của hiệu ứng */
   background: linear-gradient(to bottom, rgba(245, 233, 217, 1.9), rgba(0, 0, 0, 0));
-  z-index: -1; /* Đảm bảo nằm dưới nội dung header nhưng trên hình nền */
 }
 
 
@@ -55,6 +55,8 @@ width: 100% !important;
 .social-icons{
   text-align: center;
   padding: 0;
+  
+
 }
 
 .social-icons li{
@@ -82,38 +84,42 @@ body, html {
 }
 
 .hero {
-  height: 100vh;
-  background: url('/assets/img/fullscreen-slider.jpg') no-repeat center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  position: relative;
-  color: white;
-  text-align: center;
-  padding: 0px 10px;
-  max-width: 100%;
-  top: -140px;
-  z-index: -2;
-  flex-direction: column;
+  height: calc(100vh + 120px);
+  margin-top: 150px;
+  width: 100%;
+  display: flex;
   justify-content: center;
   align-items: center;
 }
-.banner{
-    display: flex;
-    position: relative;
-    bottom: 0px ;
-    
-}
-.head-container{
-    position: relative;
-    top: 470px;
-    max-width: 1170px;
+
+.wrapper {
+  margin-top: 150px;
+  width: 100%;
 }
 
-.hero-all{
-    display:block;
+.header-placeholder {
+  position: relative;
+  z-index: 100;
+}
+
+.head-container{
+    position: relative;
+    /* top: 300px; */
+    display: block;
+    box-sizing: border-box;
+    background-image: url('/assets/img/fullscreen-slider.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    margin-top: -120px;
+    z-index: 1
 }
 
 .hero-content {
+  position: relative;
+  /* top: 370px; */
+  max-width: 1170px;
+  display: block;
   margin-bottom: 30px;
   opacity: 0;
   transform: translateY(100px);
@@ -131,45 +137,59 @@ body, html {
 }
 
 .search-bar {
-  display: flex;
-  align-items: center;
-  margin-bottom: 15px;
+  display: block;
   position: relative;
   justify-content: center;
-  bottom: 980px;
+  bottom: 0px;
+  width: 500px;
+  /* bottom: 850px; */
+   height: 100px;
+   z-index: 999;
  
 }
 
+.search-bar a:hover{
+  color: #0000007c;
+   
+}
+
 .search-bar input[type="text"] {
-  padding: 10px;
-  font-size: 16px;
+  padding: 14px 12px;
+  font-size: 18px;
   border: none;
   border-radius: 5px 0 0 5px;
-  width: 400px;
+  width: 430px;
 }
 
 .search-bar button {
-  padding: 10px;
+  padding: 15px;
   border: none;
   background-color: #838C48;
   border-radius: 0 5px 5px 0;
   position: relative;
-  top: 7px;
+  left: -5px;
+}
+
+
+.btn-search i {
+  color: white;
 }
 
 .courses-text{
+  
   font-size: 20px;
   color: black;
   margin: 20px 0;
+  width: 370px;
   font-optical-sizing: auto;
-font-weight: 390;
-font-style: italic;
-font-variation-settings:
-  "wdth" 100;
+  font-weight: 480;
+  font-style: italic;
+  font-variation-settings:"wdth" 100;
+  left: 80px;
+  position: relative;
 }
 
 .view-courses {
-  display: inline-block;
   padding: 10px 20px;
   color: #838C48;
   text-decoration: none;
@@ -179,8 +199,9 @@ font-variation-settings:
   font-optical-sizing: auto;
   font-weight: 600;
   font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
+  font-variation-settings: "wdth" 100;
+  position: relative;
+  left: 150px;
 }
 
 
@@ -192,6 +213,10 @@ font-variation-settings:
   color: #000000;
   transform: translateY(-2.1rem);
   transition: all 0.5s ease-out;
+  max-width: 1170px;
+  position: relative;
+  z-index: 2;
+  margin-top: 130px;
 }
 
 .hero-stats.animate {
@@ -216,9 +241,9 @@ font-variation-settings:
 
 .number{
   font-family: "Raleway", sans-serif;
-font-optical-sizing: auto;
-font-weight: 800;
-font-style: normal;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
 }
 
 .hero-stats .stat .number {
@@ -227,6 +252,7 @@ font-style: normal;
     padding-bottom: 10px; 
     margin-bottom: 10px; 
 }
+
 
 
 /* Media - Nguyen  */
