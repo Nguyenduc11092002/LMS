@@ -1,17 +1,23 @@
 document.addEventListener('DOMContentLoaded', function () {
     const gridButton = document.querySelector('.grid-button');
     const listButton = document.querySelector('.list-button');
+    const courseCards = document.querySelector('.course-cards');
+    const courseCard1 = document.querySelector('.course-cards-1');
     const pageButtons = document.querySelectorAll('.page-num');
     const nextButton = document.querySelector('.page-num i');
 
     gridButton.addEventListener('click', function () {
         gridButton.classList.add('active');
         listButton.classList.remove('active');
+        courseCards.style.display = 'flex';
+        courseCard1.style.display = 'none';
     });
 
     listButton.addEventListener('click', function () {
         listButton.classList.add('active');
         gridButton.classList.remove('active');
+        courseCards.style.display = 'none';
+        courseCard1.style.display = 'block';
     });
 
     pageButtons.forEach(button => {
