@@ -23,6 +23,8 @@
     display: flex; /* Add flexbox to the header */
     justify-content: space-between; /* Distribute child elements horizontally */
     align-items: center;
+    position: relative;
+    z-index: 100;
   }
   
   .header .row {
