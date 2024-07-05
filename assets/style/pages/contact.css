@@ -306,7 +306,7 @@ button:hover {
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 576px) {
   .form-contact-layout {
     padding: 15px;
   }
@@ -326,5 +326,28 @@ button:hover {
   button {
     width: 100%;
     padding: 10px;
+  }
+}
+
+@media (max-width: 360px) {
+  .form-contact-layout {
+    padding: 10px;
+  }
+
+  .form-contact-layout h2 {
+    font-size: 1em;
+  }
+
+  .info-text {
+    font-size: 12px;
+  }
+
+  .contact-map iframe {
+    height: 250px;
+  }
+
+  button {
+    width: 100%;
+    padding: 8px;
   }
 }
